@@ -38,15 +38,5 @@ class ironman_processor(basic_processor):
         else:
             return None
 
-    def handle_input(self):
-        return self.input_module.handle_input()
-
-    def handle_output(self, user_input):
-        if user_input == "quit":
-            return eEvent_Loop_Status.eEvent_Loop_Exit
-        else:
-            self.output_module.handle_output(user_input)
-            return eEvent_Loop_Status.eEvent_Loop_Continue
-
     def process(self, input):
         return NotImplemented

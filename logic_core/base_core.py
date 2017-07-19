@@ -1,5 +1,5 @@
 from processors import basic_processor
-
+from event_loop_status import eCommand_Process_Status
 
 class base_core(object):
     def __init__(self, processor: basic_processor):
@@ -12,4 +12,7 @@ class base_core(object):
     def process_command(self, command):
         if command in self.command_dict:
             self.command_dict[command]()
+            return eCommand_Process_Status.eCommand_Process_Status_Processed
+        else:
+            return eCommand_Process_Status.eCommand_Process_Status_Passed
 
