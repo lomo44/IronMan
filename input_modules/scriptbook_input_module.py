@@ -9,7 +9,7 @@ class scriptbook_input_module(base_input_module):
     def set_script(self, script: list):
         self.script = script
 
-    def get_input(self):
+    def handle_input(self):
         if self.script is not None:
             if self.counter < len(self.script):
                 output = self.script[self.counter]

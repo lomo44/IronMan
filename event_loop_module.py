@@ -1,4 +1,4 @@
-from event_loop_flags import event_loop_flags
+from event_loop_status import eEvent_Loop_Status
 from processors.basic_processor import basic_processor
 from processors.echo_processor import echo_processor
 from converse_context import converse_context
@@ -13,10 +13,11 @@ class event_loop_module(object):
     def start(self):
         self.processor.attach_converse_context(converse_context())
         while True:
-            user_input = self.processor.get_input()
+            user_input = self.processor.handle_input()
             self.processor.converse_context.history_input.append(user_input)
-            flag = self.processor.get_output(user_input)
-            if flag == event_loop_flags.event_loop_exit:
+            output = self.processor.process(user_input);
+            flag = self.processor.handle_output(output)
+            if flag == eEvent_Loop_Status.eEvent_Loop_Exit:
                 break
 
 if __name__ == "__main__":
