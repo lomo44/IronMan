@@ -1,5 +1,5 @@
 from event_loop_status import eEvent_Loop_Status
-from pipelines.basic_pipeline import basic_pipeline
+from pipelines.Basic_pipeline import basic_pipeline
 from converse_context import converse_context
 
 class event_loop(object):

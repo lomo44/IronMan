@@ -1,4 +1,4 @@
-from pipelines.basic_pipeline import basic_pipeline
+from pipelines.Basic_pipeline import basic_pipeline
 from event_loop_status import eEvent_Loop_Status
 from enum import Enum
 from marvel_wikia_module import get_marvel_basic_info, marvel_hero_name

@@ -1,8 +1,8 @@
 import unittest
-from input_modules.scriptbook_input_module import scriptbook_input_module
-from output_modules.scriptbook_output_module import scriptbook_output_module
+from input_modules.Scriptbook_input_module import scriptbook_input_module
+from output_modules.Scriptbook_output_module import scriptbook_output_module
 from event_loop import event_loop
-from pipelines.echo_pipeline import echo_pipeline
+from pipelines.Echo_pipeline import echo_pipeline
 
 
 class test_echo_processor(unittest.TestCase):

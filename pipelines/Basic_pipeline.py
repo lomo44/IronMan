@@ -1,19 +1,19 @@
 from event_loop_status import eEvent_Loop_Status
 from converse_context import converse_context
-from input_modules.base_input_module import base_input_module
-from output_modules.base_output_module import base_output_module
+from input_modules.Base_input_module import Base_input_module
+from output_modules.Base_output_module import Base_output_module
+from modules.Module_packet import Module_packet,eModule_packet_flag
 from collections import deque
 
 
 class basic_pipeline(object):
-    def __init__(self, input_module: base_input_module, output_module: base_output_module):
+    def __init__(self, input_module: Base_input_module, output_module: Base_output_module):
         self.input_module = input_module
         self.output_module = output_module
         self.converse_context = None
         self.on_create()
         self.modules = []
         self.output_deque = deque()
-        self.QUIT_COMMAND = "quit"
         pass
 
     def on_create(self):
@@ -29,7 +29,7 @@ class basic_pipeline(object):
         """
         self.converse_context = context
 
-    def output(self, _output: str):
+    def output(self, _output:Module_packet):
         """
         Use this function to pipe out output, 
         :param _output: string to output
@@ -43,7 +43,7 @@ class basic_pipeline(object):
         """
         return self.input_module.handle_input()
 
-    def process(self, user_input: str):
+    def process(self, user_input:Module_packet):
         """
         Process the user input and generate corresponding output, should be overloaded for each processer
         :param user_input: input string from the input module
@@ -58,7 +58,7 @@ class basic_pipeline(object):
         """
         while len(self.output_deque) is not 0:
             user_input = self.output_deque.pop()
-            if user_input == self.QUIT_COMMAND:
+            if user_input.flag == eModule_packet_flag.eBase_module_packet_flag_EXIT:
                 return eEvent_Loop_Status.eEvent_Loop_Exit
             else:
                 self.output_module.handle_output(user_input)
