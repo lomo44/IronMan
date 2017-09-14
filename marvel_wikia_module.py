@@ -5,13 +5,13 @@ import pprint
 import json
 class marvel_hero_name(Enum):
     eMarvel_Hero_Iron_Man = 0
-    marvel_hero_captain_america = 1
+    eMarvel_Hero_Captain_America = 1
 
 def get_marvel_basic_info(hero_name:marvel_hero_name):
     marvel_url = ''
     if hero_name == marvel_hero_name.eMarvel_Hero_Iron_Man:
         marvel_url = "http://marvel.wikia.com/wiki/Anthony_Stark_(Earth-616)"
-    elif hero_name == marvel_hero_name.marvel_hero_captain_america:
+    elif hero_name == marvel_hero_name.eMarvel_Hero_Captain_America:
         marvel_url = "http://marvel.wikia.com/wiki/Steven_Rogers_(Earth-616)"
     return_dict = {}
     if marvel_url != '':
@@ -34,7 +34,7 @@ def get_marvel_basic_info(hero_name:marvel_hero_name):
 
 
 if __name__ == "__main__":
-    iron_man_info = get_marvel_basic_info(marvel_hero_name.eMarvel_Hero_Iron_Man)
+    iron_man_info = get_marvel_basic_info(marvel_hero_name.eMarvel_Hero_Captain_America)
     pprint.pprint(iron_man_info,indent=4)
-    with open("data\Iron_Man.json","w") as file:
+    with open("data\Captain_America.json","w") as file:
         json.dump(iron_man_info,file, sort_keys=True, indent=4)

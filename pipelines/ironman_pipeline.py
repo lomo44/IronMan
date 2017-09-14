@@ -1,4 +1,4 @@
-from processors.basic_processor import basic_processor
+from pipelines.basic_pipeline import basic_pipeline
 from event_loop_status import eEvent_Loop_Status
 from enum import Enum
 from marvel_wikia_module import get_marvel_basic_info, marvel_hero_name
@@ -15,7 +15,7 @@ class eIM_Data_Loading_Type(Enum):
 
 
 
-class ironman_processor(basic_processor):
+class ironman_pipeline(basic_pipeline):
     def load_data(self, data_loading_type: eIM_Data_Loading_Type):
         def load_data_online():
             return get_marvel_basic_info(marvel_hero_name.eMarvel_Hero_Iron_Man)

@@ -5,13 +5,13 @@ from output_modules.base_output_module import base_output_module
 from collections import deque
 
 
-class basic_processor(object):
+class basic_pipeline(object):
     def __init__(self, input_module: base_input_module, output_module: base_output_module):
         self.input_module = input_module
         self.output_module = output_module
         self.converse_context = None
         self.on_create()
-        self.logic_cores = []
+        self.modules = []
         self.output_deque = deque()
         self.QUIT_COMMAND = "quit"
         pass
@@ -69,4 +69,4 @@ class basic_processor(object):
         Add logic cores to the processor to further enlarge the command set
         :param core: new logic core
         """
-        self.logic_cores.append(core)
+        self.modules.append(core)
