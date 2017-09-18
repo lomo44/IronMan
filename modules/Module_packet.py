@@ -4,7 +4,7 @@ class eModule_packet_flag(Enum):
     eBase_module_packet_flag_OK = 0,
     eBase_module_packet_flag_SKIP = 1,
     eBase_module_packet_flag_EXIT = 2,
-    eBase_module_packet_flag_TESTECHO = 3
+    eModule_packet_flag_test = 3
 
 class Module_packet(object):
     def __init__(self):

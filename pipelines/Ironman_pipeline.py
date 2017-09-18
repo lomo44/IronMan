@@ -1,6 +1,14 @@
 from pipelines.Basic_pipeline import basic_pipeline
-from event_loop_status import eEvent_Loop_Status
+from modules.Module_packet import Module_packet,eModule_packet_flag
+from input_modules.Base_input_module import Base_input_module
+from output_modules.Base_output_module import Base_output_module
 from enum import Enum
+
+from modules.IM_Control_Module import IM_Control_Module
+from modules.IM_NLG_Module import IM_NLG_Module
+from modules.IM_NLU_Module import IM_NLU_Module
+from modules.IM_Process_Module import IM_Process_Module
+
 from marvel_wikia_module import get_marvel_basic_info, marvel_hero_name
 import json
 
@@ -16,27 +24,31 @@ class eIM_Data_Loading_Type(Enum):
 
 
 class ironman_pipeline(basic_pipeline):
+    def __init__(self, input_module: Base_input_module, output_module: Base_output_module):
+        basic_pipeline.__init__(self, input_module, output_module)
+        self.nlg_module = IM_NLG_Module()
+        self.nlu_module = IM_NLU_Module()
+        self.control_module = IM_Control_Module()
+        self.process_module = IM_Process_Module()
+
+
     def load_data(self, data_loading_type: eIM_Data_Loading_Type):
-        def load_data_online():
-            return get_marvel_basic_info(marvel_hero_name.eMarvel_Hero_Iron_Man)
+        pass
 
-        def load_data_local():
-            file = open("data/Iron_Man.json", "r")
-            if file is not None:
-                return json.load(file)
-            return None
-
-        if data_loading_type is eIM_Data_Loading_Type.eIM_Data_Loading_Default:
-            data = load_data_online()
-            if data is None:
-                data = load_data_local()
-            return data
-        elif data_loading_type is eIM_Data_Loading_Type.eIM_Data_Loading_Local:
-            return load_data_local()
-        elif data_loading_type is eIM_Data_Loading_Type.eIM_Data_Loading_Online:
-            return load_data_online()
+    def process(self, input:Module_packet):
+        newpayload = {
+            "input_payload":input.payload,
+            "output_payload": []
+        }
+        input.payload = newpayload
+        control_output = self.control_module.process(input)
+        if control_output.flag == eModule_packet_flag.eBase_module_packet_flag_EXIT:
+            self.output(control_output)
         else:
-            return None
+            nlu_output = self.nlu_module.process(control_output)
+            process_output = self.process_module.process(nlu_output)
+            nlg_output = self.nlg_module.process(process_output)
 
-    def process(self, input):
-        return NotImplemented
+            for item in nlg_output.payload["output_payload"]:
+                self.output(Module_packet(item))
+            return NotImplemented
