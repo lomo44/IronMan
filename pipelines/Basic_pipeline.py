@@ -1,9 +1,11 @@
-from event_loop_status import eEvent_Loop_Status
-from converse_context import converse_context
-from input_modules.Base_input_module import Base_input_module
-from output_modules.Base_output_module import Base_output_module
-from modules.Module_packet import Module_packet,eModule_packet_flag
 from collections import deque
+
+from modules.converse_context import converse_context
+
+from input_modules.Base_input_module import Base_input_module
+from modules.Module_packet import Module_packet, eModule_packet_flag
+from modules.event_loop_status import eEvent_Loop_Status
+from output_modules.Base_output_module import Base_output_module
 
 
 class basic_pipeline(object):

@@ -1,6 +1,6 @@
 import unittest
-from nlg_module import nlg_module
-import time
+
+from modules.nlg_module import nlg_module
 
 
 class test_nlg_module_basic(unittest.TestCase):

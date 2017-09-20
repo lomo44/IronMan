@@ -1,8 +1,10 @@
 import unittest
+
 from input_modules.Scriptbook_input_module import scriptbook_input_module
+from modules.event_loop_module import event_loop
 from output_modules.Scriptbook_output_module import scriptbook_output_module
-from event_loop import event_loop
 from pipelines.Ironman_pipeline import ironman_pipeline
+
 
 class test_IM_pipeline(unittest.TestCase):
     def setUp(self):

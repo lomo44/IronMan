@@ -1,16 +1,13 @@
-from pipelines.Basic_pipeline import basic_pipeline
-from modules.Module_packet import Module_packet,eModule_packet_flag
-from input_modules.Base_input_module import Base_input_module
-from output_modules.Base_output_module import Base_output_module
 from enum import Enum
 
+from input_modules.Base_input_module import Base_input_module
 from modules.IM_Control_Module import IM_Control_Module
 from modules.IM_NLG_Module import IM_NLG_Module
 from modules.IM_NLU_Module import IM_NLU_Module
 from modules.IM_Process_Module import IM_Process_Module
-
-from marvel_wikia_module import get_marvel_basic_info, marvel_hero_name
-import json
+from modules.Module_packet import Module_packet, eModule_packet_flag
+from output_modules.Base_output_module import Base_output_module
+from pipelines.Basic_pipeline import basic_pipeline
 
 regex_Get = r"[g|G][e|E][t|T] (.*)"
 

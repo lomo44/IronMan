@@ -1,5 +1,8 @@
 import unittest
-from wit_ai_module import wit_ai_module,wit_ai_context
+
+from modules.wit_ai_module import wit_ai_module, wit_ai_context
+
+
 class test_wit_ai(unittest.TestCase):
     def setUp(self):
         self.wit_context = wit_ai_context("KQPROP4YWPPURXOOT6U3FCY4APDGXC2H","NUZVZ5V2JWA5RXMYSHROS74C4KG7VPZM")

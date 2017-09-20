@@ -1,5 +1,6 @@
 import unittest
-from marvel_wikia_module import get_marvel_basic_info,marvel_hero_name
+
+from modules.marvel_wikia_module import get_marvel_basic_info, marvel_hero_name
 
 
 class test_marvel_wikia_module(unittest.TestCase):
