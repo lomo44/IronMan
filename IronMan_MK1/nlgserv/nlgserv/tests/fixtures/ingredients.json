@@ -1,0 +1,23 @@
+{"sentence": {
+    "subject": {
+	"type": "noun_phrase",
+	"head": "ingredients",
+	"determiner": "the",
+	"features":{"number":"plural"}
+	},
+    "verb": "is",
+    "object": {
+	"type": "coordinated_phrase",
+	"conjunction": "and",
+	"coordinates": [
+	    "flour",
+	    "sugar",
+	    "butter",
+	    {"type":"noun_phrase",
+	     "head": "egg",
+	     "features":{"number":"plural"}}	    
+	]
+    },
+    "features":{"tense":"past"}
+    }
+}

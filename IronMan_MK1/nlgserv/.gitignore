@@ -1,0 +1,8 @@
+.classpath
+.project
+*$py.class
+
+*.pyc
+*~
+
+*.log
