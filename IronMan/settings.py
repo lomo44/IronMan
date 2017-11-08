@@ -26,7 +26,8 @@ SECRET_KEY = 'trgv7&h$jl$g17=5)6=s^f8#@b61=#j)nkz_^2o^v@mi*_rd=$'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "1c8b33f3.ngrok.io"
+    "1c8b33f3.ngrok.io",
+    'afternoon-hamlet-33802.herokuapp.com'
 ]
 
 
