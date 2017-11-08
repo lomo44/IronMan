@@ -1,1 +1,1 @@
-web: gunicorn IronMan.wsgi
+web: gunicorn IronMan.wsgi --log-file -
