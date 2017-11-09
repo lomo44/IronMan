@@ -50,6 +50,6 @@ class fb_echo(generic.View):
                     pprint(message)
                     if 'text' in mesasge['mssage']:
                         post_fb_messager_msg(message['sender']['id'], message['message']['text'])
-                    else
+                    else:
                         post_fb_messager_msg(message['sender']['id'], "Image/Gif support is limited")
         return HttpResponse()
