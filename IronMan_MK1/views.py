@@ -49,7 +49,10 @@ class fb_echo(generic.View):
                     # Print the message to the terminal
                     pprint(message)
                     if 'text' in message['message']:
-                        post_fb_messager_msg(message['sender']['id'], message['message']['text'])
+                        if message['message']['text'] == 'mike is stupid':
+                            post_fb_messager_msg(message['sender']['id'],"Fuck you")
+                        else:
+                            post_fb_messager_msg(message['sender']['id'], message['message']['text'])
                     else:
                         post_fb_messager_msg(message['sender']['id'], "Image/Gif support is limited")
         return HttpResponse()
