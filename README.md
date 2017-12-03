@@ -8,7 +8,7 @@ Tools requirement
 Python Module Requirement
 1. Wit.ai
 2. BeautifulSoup4
-3. Djangon
+3. Django
 4. Whitenoise
 5. Gunicorn
 
