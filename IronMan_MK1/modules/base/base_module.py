@@ -1,5 +1,5 @@
 
-from modules.Module_packet import Module_packet
+from IronMan_MK1.modules.base.packet import Module_packet
 
 
 class Base_module(object):

@@ -27,7 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "1c8b33f3.ngrok.io",
-    'afternoon-hamlet-33802.herokuapp.com'
+    'afternoon-hamlet-33802.herokuapp.com',
+    "0.0.0.0"
 ]
 
 

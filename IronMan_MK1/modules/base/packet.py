@@ -10,6 +10,4 @@ class Module_packet(object):
     def __init__(self):
         self.payload = None
         self.flag = eModule_packet_flag.eBase_module_packet_flag_OK
-    def __init__(self, payload):
-        self.payload = payload
-        self.flag = eModule_packet_flag.eBase_module_packet_flag_OK
+
