@@ -50,7 +50,7 @@ class fb_echo(generic.View):
                     pprint(message)
                     if 'text' in message['message']:
                         if message['message']['text'] == 'mike is stupid':
-                            post_fb_messager_msg(message['sender']['id'],"Fuck you")
+                            post_fb_messager_msg(message['sender']['id'],"No, he is smart")
                         else:
                             post_fb_messager_msg(message['sender']['id'], message['message']['text'])
                     else:
