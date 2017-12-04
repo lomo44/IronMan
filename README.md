@@ -19,7 +19,7 @@ https://dashboard.heroku.com/apps/afternoon-hamlet-33802
 ### Heroku local server setup
 
 1. Makesure django,whitenoise are installed using pip
-2. Run comman "heroku local"
+2. Run comman "heroku local web"
 
 ### Note
 
