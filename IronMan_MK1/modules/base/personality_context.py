@@ -20,5 +20,9 @@ class personality_context():
 
     def add_known_personal_context(self, personality:personality_context):
         self.known_personal_context[personality.get_identifier()] = personality.get_deepcopy()
+        
+    def update_known_personal_context(self, personality:personality_context):
+        if personality.get_identifier() in self.known_personal_context:
+            self.known_personal_context[personality.get_identifier()].attribute_dict = personality.attribute_dict
     
 
