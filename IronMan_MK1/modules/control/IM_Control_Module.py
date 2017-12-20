@@ -29,6 +29,7 @@ class IM_Control_Module(Base_module):
         # check if the participant already in the context
         participant_ID = _input.get_sender_id()
         if participant_ID not in self.contexts_list:
+            # converse context does not exist, create a new one
             self.contexts_list[participant_ID] = converse_context(get_default_ironman_context(), personality_context())
         # append the packet to the corresponding context
         self.contexts_list[participant_ID].append_packet(_input)
@@ -40,7 +41,8 @@ class IM_Control_Module(Base_module):
         if _input.get_text() == "debug/debug_enable":
             self.debug_enable = True
         if _input.get_text() == "debug/debug_disable":
-            self.debug_enable = False  
+            self.debug_enable = False
+            
     def get_converse_context_from_particiant_ID(self, FB_ID) -> converse_context:
         """
         Based on the FB id, get the corresponding converse context

@@ -6,12 +6,12 @@ class personality_context():
         self.attribute_dict = {
             "memory_ability" : 100
         }
-        self.identifier = uuid.uuid1()
+        self.id = uuid.uuid1()
         self.known_personal_context = {}
     def get_memory_ability(self):
         return self.attribute_dict["memory_ability"]
-    def get_identifier(self):
-        return self.identifier
+    def get_id(self):
+        return self.id
     def get_deepcopy(self):
         """ 
         return a deep copy of the personality context
@@ -19,12 +19,16 @@ class personality_context():
         return copy.deepcopy(self)
 
     def add_known_personal_context(self, personality):
-        self.known_personal_context[personality.get_identifier()] = personality.get_deepcopy()
+        self.known_personal_context[personality.get_id()] = personality.get_deepcopy()
         
     def update_known_personal_context(self, personality):
-        if personality.get_identifier() in self.known_personal_context:
-            self.known_personal_context[personality.get_identifier()].attribute_dict = personality.attribute_dict
+        if personality.get_id() in self.known_personal_context:
+            self.known_personal_context[personality.get_id()].attribute_dict = personality.attribute_dict
     
 
 def get_default_ironman_context() -> personality_context:
+    """
+    Generate the initial stage of the iron man personality
+    Current stage is very limited. We need to add more traits
+    """
     return personality_context()
