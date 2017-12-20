@@ -26,3 +26,5 @@ class personality_context():
             self.known_personal_context[personality.get_identifier()].attribute_dict = personality.attribute_dict
     
 
+def get_default_ironman_context() -> personality_context:
+    return personality_context()

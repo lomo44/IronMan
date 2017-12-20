@@ -1,5 +1,6 @@
 import uuid
 from IronMan_MK1.modules.base.personality_context import personality_context
+from IronMan_MK1.modules.base.fb_packet import FB_packet
 
 class converse_context(object):
     def __init__(self, characterA: personality_context, characterB: personality_context):
@@ -33,3 +34,5 @@ class converse_context(object):
                 return packet.get_text()
         return None
     
+    def append_packet(self, new_packet: FB_packet):
+        self.history_converse_packets.append(new_packet)
