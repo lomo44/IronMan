@@ -27,13 +27,18 @@ class FB_packet(Base_packet):
     def get_text(self):
         return self.json['entry']['messaging']['text']
     @staticmethod
-    def initialize_from_json(input_json):   
+    def initialize_from_json(input_json):
+        """ 
+        Initialize a FB_packet from a real FB packet
+        """   
         ret_obj = FB_packet()
         ret_obj.json = input_json
         return ret_obj
     @staticmethod
     def generate_mock_packet(sender_id,message):
-        
+        """
+        Return a mocked fb packet
+        """
         ret_obj = FB_packet()
         ret_obj.set_sender_id(sender_id)
         ret_obj.set_text(message)
