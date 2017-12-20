@@ -1,7 +1,11 @@
+
 import json
 
-class fb_packet(object):
+from IronMan_MK1.modules.base.base_packet import Base_packet, ePacket_flag
+class FB_packet(Base_packet):    
     def __init__(self):
+        Base_packet.__init__(self)
+        self.type = ePacket_flag.ePacketType_FB
         self.json = {
             'entry':{
             'messaging' : {
@@ -24,13 +28,13 @@ class fb_packet(object):
         return self.json['entry']['messaging']['text']
     @staticmethod
     def initialize_from_json(input_json):   
-        ret_obj = fb_packet()
+        ret_obj = FB_packet()
         ret_obj.json = input_json
         return ret_obj
     @staticmethod
     def generate_mock_packet(sender_id,message):
         
-        ret_obj = fb_packet()
+        ret_obj = FB_packet()
         ret_obj.set_sender_id(sender_id)
         ret_obj.set_text(message)
         return ret_obj

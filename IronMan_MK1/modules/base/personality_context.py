@@ -18,10 +18,10 @@ class personality_context():
         """
         return copy.deepcopy(self)
 
-    def add_known_personal_context(self, personality:personality_context):
+    def add_known_personal_context(self, personality):
         self.known_personal_context[personality.get_identifier()] = personality.get_deepcopy()
         
-    def update_known_personal_context(self, personality:personality_context):
+    def update_known_personal_context(self, personality):
         if personality.get_identifier() in self.known_personal_context:
             self.known_personal_context[personality.get_identifier()].attribute_dict = personality.attribute_dict
     
