@@ -26,9 +26,17 @@ class personality_context():
             self.known_personal_context[personality.get_id()].attribute_dict = personality.attribute_dict
     
 
+def get_default_ironman_context_id():
+    """
+    Return the default iron man personality id
+    """
+    return "Iron_Man"
+
 def get_default_ironman_context() -> personality_context:
     """
     Generate the initial stage of the iron man personality
     Current stage is very limited. We need to add more traits
     """
-    return personality_context()
+    ironman = personality_context()
+    ironman.id = "Iron_Man"
+    return ironman

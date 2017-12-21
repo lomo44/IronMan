@@ -3,6 +3,7 @@ import sys
 import os 
 from IronMan_MK1.modules.control.IM_Control_Module import IM_Control_Module
 from IronMan_MK1.modules.base.fb_packet import FB_packet
+from IronMan_MK1.modules.base.personality_context import get_default_ironman_context_id
 
 class test_IM_control_module(unittest.TestCase):
     def setUp(self):
@@ -29,7 +30,8 @@ class test_IM_control_module(unittest.TestCase):
         self.control_module.process(packet)
         converse_context = self.control_module.get_converse_context_from_particiant_ID("123")
         self.assertNotEqual(converse_context,None,msg="Invalid Context")
-        self.assertEqual(converse_context.get_participants_latest_msg("123"),"msg")
+        self.assertEqual(converse_context.get_participants_latest_msg("123"),"msg", msg = "Invalid message")
+        self.assertEqual(converse_context.characterA.get_id(),get_default_ironman_context_id())
 
 
 if __name__ == "__main__":
