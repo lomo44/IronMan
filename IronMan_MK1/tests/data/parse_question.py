@@ -3,9 +3,9 @@ import json
 import re
 
 def writeJosn(filename,data):
-    file_full_name = './'+'filename'+'.json'
+    file_full_name = './'+filename+'.json'
     with open(file_full_name,'w') as file_out:
-        json.dump(data, file_out)
+        json.dump(data, file_out,indent=4)
 
 
 with open('input_p.txt','r') as file_in:
@@ -30,7 +30,7 @@ with open('input_p.txt','r') as file_in:
                 q_polar.append(list_element)
             if question_type == 'Closed':
                 list_element = {'Question': question[0], 'Answer': question[1]}
-                q_polar.append(list_element)
-    data = {'polar':q_polar,'closed':q_closed,'open_ended':q_open}
+                q_closed.append(list_element)
+    data = {'Polar Question':q_polar,'Closed Question':q_closed,'Open_ended Question':q_open}
 
     writeJosn('tests_questions', data)

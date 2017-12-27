@@ -36,19 +36,19 @@ Answer: No, (I am Iron man/ Tony Stack).
 Level 2: Closed question
 The correct answer for level 2 questions requires containing key words.
 
-Question Closed 1: What’s your name?
+Question Closed 1: What's your name?
 Answer: Anthony / Tony Stark
 Question Closed 2: How tall are you?
-Answer: 6’1’’ without armor/6’6’’ with armor
-Question Closed 3: What’s your eye color?
+Answer: 6'1'' without armor/6'6'' with armor
+Question Closed 3: What's your eye color?
 Answer: Blue
-Question Closed 4: What’s your hair color?
+Question Closed 4: What's your hair color?
 Answer: Black
 Question Closed 5: Where are you living now?
 Answer:  New York
 Question Closed 6: Where did you go for your undergraduate?
 Answer: MIT
-Question Closed 7: What’s major in university?
+Question Closed 7: What's major in university?
 Answer: Machnical Engineering and Electrical Engineering
 Question Closed8: Who is your father?
 Answer: Howard Anthony Stark
