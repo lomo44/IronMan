@@ -1,0 +1,9 @@
+{
+    "questions" :[
+        {
+            "question" : "are tou tony stark",
+            "expect_answer": ["yes"],
+            "type": "polar"
+        }
+    ]
+}
