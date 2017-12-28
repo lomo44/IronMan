@@ -1,4 +1,27 @@
 {
+    "Music": [
+        "Heavy metal music",
+        "Rock Music",
+        "Black Sabbath",
+        "AC/DC",
+        "Queen"
+    ],
+    "Personality": [
+        "paranoid",
+        "anxious",
+        "arrogant"
+    ],
+    "Hair": [
+        "Black"
+    ],
+    "Eyes": [
+        "Blue"
+    ],
+    "Relationship": [
+        "Virginia (Pepper)Potts (girl friend)",
+        "Christine Everhart (one night stand)",
+        "Maya Hansen, Former Love Interest"
+    ],
     "Affiliation": [
         "Formerly Stark Industries (CEO)",
         "Avengers",
@@ -21,33 +44,12 @@
         "Alcoholics Anonymous",
         "Damage Control"
     ],
-    "Aliases": [
-        "Actor",
-        "Golden Gladiator",
-        "Bullet-Head",
-        "Golden Avenger",
-        "Shellhead",
-        "Armored Avenger",
-        "Spare Parts Man",
-        "Crimson Dynamo",
-        "Tetsujin",
-        "Hogan Potts",
-        "Anthony of York",
-        "Randall Pierce",
-        "Cobalt Man",
-        "Iron Gentleman",
-        "Metal Man",
-        "Man of Iron",
-        "Tin Man",
-        "\"Irene",
-        "\" Electro",
-        "The Enginerer",
-        "T",
-        "Master of Machines",
-        "Space-Knight",
-        "Richard Franco",
-        "Martini",
-        "\"Iron Pig\""
+    "Current Alias": [
+        "Iron Man"
+    ],
+    "Universe": [
+        "Earth-616",
+        "Marvel Universe"
     ],
     "Base Of Operations": [
         "Stark Tower",
@@ -68,9 +70,72 @@
         "and Los Angeles",
         "California."
     ],
-    "Citizenship": [
-        "American",
-        "Bulgarian"
+    "Real Name": [
+        "Anthony Edward Stark",
+        "Tony Stark"
+    ],
+    "Identity": [
+        "Public Identity"
+    ],
+    "Allies": [
+        "Happy Hogan, Close Friend and Former Bodyguard",
+        "Maria Hill, Employee and Former S.H.I.E.L.D. Deputy Director",
+        "JARVIS, Former Partner, Assistant and Close Friend",
+        "FRIDAY, Partner and Assistant",
+        "Karen, Creation and Appointed Assistant to Spider-Man",
+        "Christine Everhart, One Night Stand",
+        "Ho Yinsen, Fellow Captive and Friend",
+        "Edwin Jarvis, Former Butler of the Stark Family",
+        "Avengers, Former Teammates",
+        "Natasha Ramonoff/Black Widow, Former Teammate",
+        "James Rhodes/War Machine, Best Friend and Military Liaison",
+        "Vision, Creation",
+        "Steve Rogers/Captain America, Former Team Leader, Close Friend and Rival",
+        "Clint Barton/Hawkeye",
+        "Sam Wilson/Falcon",
+        "Wanda Maximoff/Scarlet Witch - Former Enemy and Enthraller Turned Former Teammate",
+        "Thor - Former Teammate",
+        "Bruce Banner/Hulk - Collaborator, Colleague and Close Friend",
+        "Pietro Maximoff/Quicksilver, Former Enemy Turned Teammate",
+        "SHIELD, (First Incarnation)",
+        "Nick Fury, Former Director",
+        "Phil Coulson, Former Liaison and Friend",
+        "Maya Hansen, Former Love Interest"
+    ],
+    "Family": [
+        "Isaac Stark (adoptive ancestor)",
+        "Howard Stark (paternal adoptive grandfather, deceased)",
+        "Amanda Armstrong (biological mother)",
+        "Jude (biological father)",
+        "Howard Anthony Stark (adoptive father, deceased)",
+        "Maria Stark (adoptive mother, deceased)",
+        "Arno Stark (adoptive brother)",
+        "Edward Stark (adoptive uncle, deceased)",
+        "Morgan Stark (adoptive cousin)"
+    ],
+    "Editorial Names": [
+        "Invincible Iron Man",
+        "International Iron Man; formerly Superior Iron Man",
+        "Iron Man: Director of S.H.I.E.L.D."
+    ],
+    "Gender": [
+        "Male"
+    ],
+    "Medical History": [
+        "Post Traumatic Stress Disorder (PTSD)"
+    ],
+    "Designs": [
+        "Just A Rather Very Intelligent System (Javis)",
+        "Ultron",
+        "Spider-Man Suit",
+        "FRIDAY",
+        "Karen"
+    ],
+    "Self-description": [
+        "genius",
+        "billionaire",
+        "playboy",
+        "philanthropist"
     ],
     "Creators": [
         "Stan Lee",
@@ -78,36 +143,76 @@
         "Don Heck",
         "Jack Kirby"
     ],
-    "Current Alias": [
-        "Iron Man"
+    "Aliases": [
+        "Actor",
+        "Golden Gladiator",
+        "Bullet-Head",
+        "Golden Avenger",
+        "Shellhead",
+        "Armored Avenger",
+        "Spare Parts Man",
+        "Crimson Dynamo",
+        "Tetsujin",
+        "Hogan Potts",
+        "Anthony of York",
+        "Randall Pierce",
+        "Cobalt Man",
+        "Iron Gentleman",
+        "Metal Man",
+        "Man of Iron",
+        "Tin Man",
+        "Irene",
+        "Electro",
+        "The Enginerer",
+        "T",
+        "Master of Machines",
+        "Space-Knight",
+        "Richard Franco",
+        "Martini",
+        "Iron Pig"
     ],
-    "Editorial Names": [
-        "Invincible Iron Man",
-        "International Iron Man; formerly Superior Iron Man",
-        "Iron Man: Director of S.H.I.E.L.D."
+    "Origin": [
+        "Human using super-suits;Anthony \"Tony\" Stark was adopted by Howard and Maria Stark. During a conflict in Afghanistan",
+        "Stark was captured by terrorists and",
+        "with a piece of shrapnel in his heart",
+        "was about to die. Constructing a suit of iron armor that would also help with his recovery",
+        "Stark broke out of captivity and journeyed back home to the United States where he built an advanced suit of armor and become the armored superhero Iron Man."
+    ],
+    "Enemies": [
+        "Obadiah Stane/Iron Monger, Former Business Partner",
+        "Ten Rings",
+        "Loki",
+        "HYDRA",
+        "Ultron"
+    ],
+    "Citizenship": [
+        "American",
+        "Bulgarian"
+    ],
+    "Weight": [
+        "225 lbs (102 kg) (without armor)",
+        "425 lbs (193 kg) (including armor)"
+    ],
+    "Height": [
+        "6' 1\" (without armor)",
+        "6'6\" (including armor)"
+    ],
+    "Marital Status": [
+        "Single"
+    ],
+    "Place of Birth": [
+        "Sofia",
+        "Bulgaria"
+    ],
+    "Prefer color": [
+        "Red",
+        "Gold"
     ],
     "Education": [
         "MIT (Massachusetts Institute of Technology)",
         "multiple PhDs in physics",
-        "mechanical engineering and electrical engineering"
-    ],
-    "Eyes": [
-        "Blue"
-    ],
-    "Gender": [
-        "Male"
-    ],
-    "Hair": [
-        "Black"
-    ],
-    "Height": [
-        "6' 1\" (without armor); 6'6\" (including armor)"
-    ],
-    "Identity": [
-        "Public Identity"
-    ],
-    "Marital Status": [
-        "Single"
+        "mechanical engineering",
+        "electrical engineering"
     ],
     "Occupation": [
         "Mechanical Engineer",
@@ -122,33 +227,5 @@
         "Executive Director of S.H.I.E.L.D.",
         "CEO of Stark Solutions",
         "Circuits Maximus and Stark International"
-    ],
-    "Origin": [
-        "Human using super-suits;Anthony \"Tony\" Stark was adopted by Howard and Maria Stark. During a conflict in Afghanistan",
-        "Stark was captured by terrorists and",
-        "with a piece of shrapnel in his heart",
-        "was about to die. Constructing a suit of iron armor that would also help with his recovery",
-        "Stark broke out of captivity and journeyed back home to the United States where he built an advanced suit of armor and become the armored superhero Iron Man."
-    ],
-    "Place of Birth": [
-        "Sofia",
-        "Bulgaria"
-    ],
-    "Real Name": [
-        "Anthony Edward \"Tony\" Stark"
-    ],
-    "Relatives": [
-        "Isaac Stark (adoptive ancestor);Howard Stark",
-        "Sr. (paternal adoptive grandfather",
-        "deceased);Amanda Armstrong (biological mother);Jude (biological father);Howard Anthony Stark (adoptive father",
-        "deceased);Maria Stark (adoptive mother",
-        "deceased);Arno Stark (adoptive brother);Edward Stark (adoptive uncle",
-        "deceased);Morgan Stark (adoptive cousin);"
-    ],
-    "Universe": [
-        "Earth-616"
-    ],
-    "Weight": [
-        "225 lbs (102 kg) (without armor); 425 lbs (193 kg) (including armor)"
     ]
 }
