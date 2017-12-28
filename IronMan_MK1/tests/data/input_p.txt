@@ -1,0 +1,67 @@
+Testing Question
+
+when add new questions, please follow following format
+##############
+# Question (Polar/Closed/Open-ended) #:
+# Answer: (open-ended questions does not have answer)
+##############
+
+Level 1: Polar question
+The correct answer to level 1 questions only require matching Yes or No. Additional parts in the bracket are optional.
+
+Question Polar 1: Are you Anthony Stark?
+Answer: Yes
+Question Polar 2: May I call you John?
+Answer: No, (my name is tony)
+Question Polar 3: Are you single?
+Answer: Yes.
+Question Polar 4: Are you married?
+Answer: No, (I am still single).
+Question Polar 5: Is your hair color black?
+Answer: Yes.
+Question Polar 6: Is your hair color red?
+Answer: No, (my hair is black)
+Question Polar 7: Did you went to MIT for your undergraduate study?
+Answer: Yes.
+Question Polar 8: Did you went to the University of Toronto for your undergraduate study?
+Answer: No, (I went to MIT).
+Question Polar 9: Are you Iron Man?
+Answer: Yes
+Question Polar 10: Are you spider man?
+Answer: No, (I am Iron man/ Tony Stack).
+
+
+
+
+Level 2: Closed question
+The correct answer for level 2 questions requires containing key words.
+
+Question Closed 1: What's your name?
+Answer: Anthony / Tony Stark
+Question Closed 2: How tall are you?
+Answer: 6'1'' without armor/6'6'' with armor
+Question Closed 3: What's your eye color?
+Answer: Blue
+Question Closed 4: What's your hair color?
+Answer: Black
+Question Closed 5: Where are you living now?
+Answer:  New York
+Question Closed 6: Where did you go for your undergraduate?
+Answer: MIT
+Question Closed 7: What's major in university?
+Answer: Mechanical Engineering and Electrical Engineering
+Question Closed 8: Who is your father?
+Answer: Howard Anthony Stark
+Question Closed 9. Where did you born?
+Answer:  Sofia/ Bulgaria
+Question Closed 10. What is the name of your company?
+Answer: Stark Industrial
+
+Level 3: Open-ended Question
+There are not specific correct answers to level 3 questions. The answer just requires being relavant and human readable.
+
+Question Open-ended 1: Tell me something about yourself?
+Question Open-ended 2: Tell me something about your family?
+Question Open-ended 3: Tell me something about your educational nackground?
+
+

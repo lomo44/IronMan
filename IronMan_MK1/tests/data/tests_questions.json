@@ -1,9 +1,100 @@
 {
-    "questions" :[
+    "Open_ended Question": [
         {
-            "question" : "are tou tony stark",
-            "expect_answer": ["yes"],
-            "type": "polar"
+            "Answer": null, 
+            "Question": "Tell me something about yourself?"
+        }, 
+        {
+            "Answer": null, 
+            "Question": "Tell me something about your family?"
+        }, 
+        {
+            "Answer": null, 
+            "Question": "Tell me something about your educational nackground?"
+        }
+    ], 
+    "Closed Question": [
+        {
+            "Answer": "Anthony / Tony Stark", 
+            "Question": "What's your name?"
+        }, 
+        {
+            "Answer": "6'1'' without armor/6'6'' with armor", 
+            "Question": "How tall are you?"
+        }, 
+        {
+            "Answer": "Blue", 
+            "Question": "What's your eye color?"
+        }, 
+        {
+            "Answer": "Black", 
+            "Question": "What's your hair color?"
+        }, 
+        {
+            "Answer": "New York", 
+            "Question": "Where are you living now?"
+        }, 
+        {
+            "Answer": "MIT", 
+            "Question": "Where did you go for your undergraduate?"
+        }, 
+        {
+            "Answer": "Mechanical Engineering and Electrical Engineering", 
+            "Question": "What's major in university?"
+        }, 
+        {
+            "Answer": "Howard Anthony Stark", 
+            "Question": "Who is your father?"
+        }, 
+        {
+            "Answer": "Sofia/ Bulgaria", 
+            "Question": "Who is your father?"
+        }, 
+        {
+            "Answer": "Stark Industrial", 
+            "Question": "Who is your father?"
+        }
+    ], 
+    "Polar Question": [
+        {
+            "Answer": "Yes", 
+            "Question": "Are you Anthony Stark?"
+        }, 
+        {
+            "Answer": "No, (my name is tony)", 
+            "Question": "May I call you John?"
+        }, 
+        {
+            "Answer": "Yes.", 
+            "Question": "Are you single?"
+        }, 
+        {
+            "Answer": "No, (I am still single).", 
+            "Question": "Are you married?"
+        }, 
+        {
+            "Answer": "Yes.", 
+            "Question": "Is your hair color black?"
+        }, 
+        {
+            "Answer": "No, (my hair is black)", 
+            "Question": "Is your hair color red?"
+        }, 
+        {
+            "Answer": "Yes.", 
+            "Question": "Did you went to MIT for your undergraduate study?"
+        }, 
+        {
+            "Answer": "No, (I went to MIT).", 
+            "Question": "Did you went to the University of Toronto for your undergraduate study?"
+        }, 
+        {
+            "Answer": "Yes", 
+            "Question": "Are you Iron Man?"
+        }, 
+        {
+            "Answer": "No, (I am Iron man/ Tony Stack).", 
+            "Question": "Are you spider man?"
         }
     ]
 }
