@@ -49,8 +49,8 @@ Answer:  New York
 Question Closed 6: Where did you go for your undergraduate?
 Answer: MIT
 Question Closed 7: What's major in university?
-Answer: Machnical Engineering and Electrical Engineering
-Question Closed8: Who is your father?
+Answer: Mechanical Engineering and Electrical Engineering
+Question Closed 8: Who is your father?
 Answer: Howard Anthony Stark
 Question Closed 9. Where did you born?
 Answer:  Sofia/ Bulgaria

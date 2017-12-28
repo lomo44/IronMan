@@ -39,8 +39,20 @@
             "Question": "Where did you go for your undergraduate?"
         }, 
         {
-            "Answer": "Machnical Engineering and Electrical Engineering", 
+            "Answer": "Mechanical Engineering and Electrical Engineering", 
             "Question": "What's major in university?"
+        }, 
+        {
+            "Answer": "Howard Anthony Stark", 
+            "Question": "Who is your father?"
+        }, 
+        {
+            "Answer": "Sofia/ Bulgaria", 
+            "Question": "Who is your father?"
+        }, 
+        {
+            "Answer": "Stark Industrial", 
+            "Question": "Who is your father?"
         }
     ], 
     "Polar Question": [
