@@ -2,7 +2,7 @@ import uuid
 from IronMan_MK1.modules.base.personality_context import personality_context
 from IronMan_MK1.modules.base.fb_packet import FB_packet
 
-class converse_context(object):
+class Converse_context(object):
     def __init__(self, characterA: personality_context, characterB: personality_context):
         """
         Initialize a converse context

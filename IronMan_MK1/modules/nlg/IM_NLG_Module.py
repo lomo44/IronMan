@@ -1,8 +1,8 @@
-from modules.Base_module import Base_module
-from modules.Module_packet import eModule_packet_flag, Module_packet
+from typing import List
+from IronMan_MK1.modules.base.base_module import Base_module
+from IronMan_MK1.modules.base.converse_context import Converse_context
+
 
 class IM_NLG_Module(Base_module):
-    def process(self, _input : Module_packet):
-        if _input.flag == eModule_packet_flag.eModule_packet_flag_test:
-            _input.payload["output_payload"].append("IM_NLG_Module")
-        return _input
+    def process(self, _input : List[Converse_context]):
+        pass
