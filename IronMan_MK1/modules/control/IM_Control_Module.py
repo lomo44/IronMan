@@ -2,7 +2,7 @@ from IronMan_MK1.modules.base.base_module import Base_module
 from IronMan_MK1.modules.base.base_packet import ePacket_flag
 from IronMan_MK1.modules.base.fb_packet import FB_packet
 from IronMan_MK1.modules.base.converse_context import Converse_context
-from IronMan_MK1.modules.base.personality_context import personality_context,get_default_ironman_context
+from IronMan_MK1.modules.base.personality_context import Personality_context,get_default_ironman_context
 
 class IM_Control_Module(Base_module):
     def __init__(self):
@@ -30,7 +30,7 @@ class IM_Control_Module(Base_module):
         participant_ID = _input.get_sender_id()
         if participant_ID not in self.contexts_list:
             # converse context does not exist, create a new one
-            self.contexts_list[participant_ID] = Converse_context(get_default_ironman_context(), personality_context())
+            self.contexts_list[participant_ID] = Converse_context(get_default_ironman_context(), Personality_context())
         # append the packet to the corresponding context
         self.contexts_list[participant_ID].append_packet(_input)
 

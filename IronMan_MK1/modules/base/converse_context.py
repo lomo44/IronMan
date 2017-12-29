@@ -1,9 +1,9 @@
 import uuid
-from IronMan_MK1.modules.base.personality_context import personality_context
+from IronMan_MK1.modules.base.personality_context import Personality_context
 from IronMan_MK1.modules.base.fb_packet import FB_packet
 
 class Converse_context(object):
-    def __init__(self, characterA: personality_context, characterB: personality_context):
+    def __init__(self, characterA: Personality_context, characterB: Personality_context):
         """
         Initialize a converse context
         characterA: Main character, this personality context should be our iron man
@@ -18,7 +18,7 @@ class Converse_context(object):
         self.characterA = characterA
         self.characterB = characterB
 
-    def update_personality_contexts(self,characterA:personality_context, characterB:personality_context):
+    def update_personality_contexts(self,characterA:Personality_context, characterB:Personality_context):
         characterA.update_personality_contexts(characterB)
         characterB.update_personality_contexts(characterA)
 
