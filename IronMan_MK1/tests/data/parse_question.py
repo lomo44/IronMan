@@ -2,10 +2,12 @@
 import json
 import re
 
+
 def writejson(filename,data):
     file_full_name = './'+filename+'.json'
     with open(file_full_name,'w') as file_out:
         json.dump(data, file_out,indent=4)
+
 
 def main():
     with open('input_p.txt','r') as file_in:
@@ -33,6 +35,7 @@ def main():
                     q_closed.append(list_element)
         data = {'Polar Question':q_polar,'Closed Question':q_closed,'Open_ended Question':q_open}
         writejson('tests_questions', data)
+
 
 if __name__ == "__main__":
     main()
