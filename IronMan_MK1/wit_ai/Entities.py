@@ -5,6 +5,7 @@ import time
 
 def update_json(database_file,entities_file):
     # update entities_file with data in file in
+    # DEPRECATED
     entities_data = []
     with open(database_file, 'r') as file_in:
         data_in = json.load(file_in)
@@ -25,7 +26,7 @@ def init_entity(access_token, input_json_file):
     # import entities from Json file
     client = Trainer(access_token=access_token)
     client.clean_up()
-    with open(input_json_file) as json_in:
+    with open(input_json_file,'r') as json_in:
         init_data = json.load(json_in)
         exist_entities = client.get_all_entities()
         for new_entity in init_data:
@@ -37,12 +38,11 @@ def init_entity(access_token, input_json_file):
 
 
 def main():
-    data_file_in = "../data/Iron_Man.json";
     keyword_entity_file = "keyword_entities.json"
-    update_json(data_file_in,keyword_entity_file)
     access_token = 'LSNTROWFKS6ACOBBTWQLU2VFC2WUFBAC'
     client = Trainer(access_token=access_token)
     client.init_entity(keyword_entity_file)
+
 
 if __name__ == "__main__":
     main()
