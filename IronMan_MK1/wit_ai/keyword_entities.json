@@ -243,27 +243,30 @@
     "id": "characteristic",
     "values": [
       {
-        "value": "eye color",
+        "value": "eye",
         "expressions": [
-          "eye color"
+          "eye"
         ]
       },
       {
-        "value": "hair color",
+        "value": "hair",
         "expressions": [
-          "hair color"
+          "hair"
         ]
       },
       {
         "value": "height",
         "expressions": [
-          "height"
+          "height",
+          "tall"
         ]
       },
       {
         "value": "weight",
         "expressions": [
-          "weight"
+          "weight",
+          "heavy",
+          "fat"
         ]
       }
     ]
@@ -348,39 +351,39 @@
         ]
       },
       {
-        "value": "Close Friend",
+        "value": "close friend",
         "expressions": [
-          "Close Friend"
+          "close friend"
         ]
       },
       {
-        "value": "Bodyguard",
+        "value": "bodyguard",
         "expressions": [
-          "Bodyguard"
+          "bodyguard"
         ]
       },
       {
-        "value": "Creation",
+        "value": "creation",
         "expressions": [
-          "Creation"
+          "creation"
         ]
       },
       {
-        "value": "Butler",
+        "value": "butler",
         "expressions": [
-          "Butler"
+          "butler"
         ]
       },
       {
-        "value": "Teammate",
+        "value": "teammate",
         "expressions": [
-          "Teammate"
+          "teammate"
         ]
       },
       {
-        "value": "Best Friend",
+        "value": "best friend",
         "expressions": [
-          "Best Friend"
+          "best friend"
         ]
       },
       {
@@ -408,7 +411,7 @@
         ]
       },
       {
-        "value": "fassistant",
+        "value": "assistant",
         "expressions": [
           "assistant"
         ]
@@ -426,21 +429,27 @@
         ]
       },
       {
-        "value": "adoptive ancestor",
+        "value": "ancestor",
         "expressions": [
-          "adoptive ancestor"
+          "ancestor"
         ]
       },
       {
-        "value": "adoptive grandfather",
+        "value": "grandfather",
         "expressions": [
-          "adoptive grandfather"
+          "grandfather"
         ]
       },
       {
         "value": "biological mother",
         "expressions": [
           "biological mother"
+        ]
+      },
+      {
+        "value": "mother",
+        "expressions": [
+          "mother"
         ]
       },
       {
@@ -452,7 +461,13 @@
       {
         "value": "adoptive father",
         "expressions": [
-          "/adoptive father"
+          "adoptive father"
+        ]
+      },
+      {
+        "value": "father",
+        "expressions": [
+          "father"
         ]
       },
       {
@@ -462,21 +477,21 @@
         ]
       },
       {
-        "value": "adoptive brother",
+        "value": "brother",
         "expressions": [
-          "adoptive brother"
+          "brother"
         ]
       },
       {
-        "value": "adoptive uncle",
+        "value": "uncle",
         "expressions": [
-          "adoptive uncle"
+          "uncle"
         ]
       },
       {
-        "value": "adoptive cousin",
+        "value": "cousin",
         "expressions": [
-          "adoptive cousin"
+          "cousin"
         ]
       }
     ]
@@ -787,7 +802,7 @@
     ]
   },
   {
-    "id": "cities",
+    "id": "city",
     "values": [
       {
         "value": "New York",
@@ -899,7 +914,7 @@
     ]
   },
   {
-    "id": "aliase",
+    "id": "alias",
     "values": [
       {
         "value": "Actor",

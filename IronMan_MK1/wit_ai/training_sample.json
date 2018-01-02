@@ -1,0 +1,63 @@
+[
+	{
+		"text" : "What is your name?",
+		"entities" : [
+			{
+				"entity" : "intent",
+				"value" : "name_query"
+			},
+			{
+				"entity" : "person",
+				"start" : 8,
+				"end" : 12,
+				"value" : "you"
+			}
+		]
+	},
+	{
+		"text" : "What is your father's name?",
+		"entities" : [
+			{
+				"entity" : "intent",
+				"value" : "name_query"
+			},
+			{
+				"entity" : "person",
+				"start" : 8,
+				"end" : 19,
+				"value" : "your father"
+			}
+		]
+	},
+	{
+		"text" : "What is your mother's name?",
+		"entities" : [
+			{
+				"entity" : "intent",
+				"value" : "name_query"
+			},
+			{
+				"entity" : "person",
+				"start" : 8,
+				"end" : 19,
+				"value" : "your mother"
+			}
+		]
+	},
+	{
+		"text" : "What is spiderman's name?",
+		"entities" : [
+			{
+				"entity" : "intent",
+				"value" : "name_query"
+			},
+			{
+				"entity" : "person",
+				"start" : 8,
+				"end" : 17,
+				"value" : "spiderman"
+			}
+		]
+	}
+
+]
