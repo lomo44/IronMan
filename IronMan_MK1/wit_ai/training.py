@@ -38,10 +38,13 @@ def init_entity(access_token, input_json_file):
 
 
 def main():
+    access_token = 'I7A4X2OKUPTDRC6DY3NBVSJKWRCREMFQ'
     keyword_entity_file = "keyword_entities.json"
-    access_token = 'LSNTROWFKS6ACOBBTWQLU2VFC2WUFBAC'
+    training_sample_file = "training_sample.json"
     client = Trainer(access_token=access_token)
-    client.init_entity(keyword_entity_file)
+    # client.clean_up()
+    # client.init_entity(keyword_entity_file)
+    client.init_training_sample(training_sample_file)
 
 
 if __name__ == "__main__":

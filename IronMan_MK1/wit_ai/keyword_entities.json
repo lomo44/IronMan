@@ -1,17 +1,24 @@
 [
   {
-    "id": "accessories",
+    "id": "accessory",
     "values": [
       {
         "value": "watch",
         "expressions": [
-          "watch"
+          "watch",
+          "watches"
         ]
       },
       {
         "value": "sunglasses",
         "expressions": [
           "sunglasses"
+        ]
+      },
+      {
+        "value": "glasses",
+        "expressions": [
+          "glasses"
         ]
       }
     ]

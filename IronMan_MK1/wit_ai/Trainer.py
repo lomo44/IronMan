@@ -26,7 +26,6 @@ class Trainer(Wit):
         # will not erase old values
         print(wit.req(self.logger, self.access_token, 'POST', '/entities/{0}/values'.format(entity), {}, data=json.dumps(new_val)))
 
-
     def add_expression(self, entity, value, expression):
         # https://wit.ai/docs/http/20170307#post--entities-:entity-id-values-:value-id-expressions-link
         print(
@@ -36,33 +35,34 @@ class Trainer(Wit):
     def delete_entity(self, entity):
         print(wit.req(self.logger, self.access_token, 'DELETE', '/entities/{0}'.format(entity), {}))
 
+    def delete_value(self, entity, value):
+        print(wit.req(self.logger, self.access_token, 'DELETE', '/entities/{0}/values/{1}'.format(entity, value), {}))
+
     def add_samples(self, samples):
         # https://wit.ai/docs/http/20170307#post--samples-link
         print(wit.req(self.logger, self.access_token, 'POST', '/samples', {}, data=json.dumps(samples)))
 
-    def add_file(self, file_name):
-        with open(file_name) as json_data:
-            d = json.load(json_data)
-            for sample in d:
-                for entity in sample['entities']:
-                    try:
-                        self.add_entity({'id': entity['entity']})
-                    except:
-                        print(entity['entity'] + ' is already added')
-            self.add_samples(d)
-        print('file added')
-
     def clean_up(self):
+        # clean up will delete all user-defined entities and user-defined value in entity "intent"
+        # will not delete built-in entities (wit$***) and intent
         entities = self.get_all_entities()
         for entity in entities:
-            try:
-                self.delete_entity(entity)
-            except:
-                break
+            if entity != 'intent' and 'wit$' not in entity:
+                try:
+                    self.delete_entity(entity)
+                except:
+                    break
+            elif entity == 'intent':
+                values = self.get_entity_info("intent")["values"]
+                for value in values:
+                    try:
+                        self.delete_value("intent", value["value"])
+                    except:
+                        break
 
     def init_entity(self, input_json_file):
         # import entities from Json file
-        self.clean_up()
+        # self.clean_up()
         with open(input_json_file) as json_in:
             init_data = json.load(json_in)
             exist_entities = self.get_all_entities()
@@ -72,3 +72,17 @@ class Trainer(Wit):
                 else:
                     self.update_entity(new_entity['id'], new_entity)
 
+    def init_training_sample(self, input_json_file):
+        # import sample from Json file to training the wit_ai
+        with open(input_json_file) as json_in:
+            init_data = json.load(json_in)
+            self.clean_up()
+            for samples in init_data:
+                for entities_list in samples["entities"]:
+                    if entities_list['entity'] not in self.get_all_entities():
+                        new_entity = {"id": entities_list['entity'], "values": [{"value": entities_list['value'], "expressions": [entities_list['value']]}]}
+                        self.add_entity(new_entity)
+                    elif entities_list['value'] not in self.get_entity_info(entities_list['entity'])["values"]:
+                        new_val = {"value": entities_list['value'], "expressions": [entities_list['value']]}
+                        self.add_value(entities_list['entity'], new_val)
+            self.add_samples(init_data)
