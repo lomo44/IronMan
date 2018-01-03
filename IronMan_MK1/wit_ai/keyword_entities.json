@@ -825,15 +825,10 @@
         ]
       },
       {
-        "value": "cheeseburger",
-        "expressions": [
-          "cheeseburger"
-        ]
-      },
-      {
         "value": "burger",
         "expressions": [
-          "burger"
+          "burger",
+          "cheeseburger"
         ]
       },
       {

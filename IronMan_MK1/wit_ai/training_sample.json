@@ -168,7 +168,7 @@
     ]
   },
   {
-    "text": "Is Pepper Potts your girlfriend?",
+    "text": "Is Pepper your girlfriend?",
     "entities": [
       {
         "entity": "intent",
@@ -177,13 +177,13 @@
       {
         "entity": "person_name",
         "start": 3,
-        "end": 15,
+        "end": 9,
         "value": "Pepper Potts"
       },
       {
         "entity": "relationship",
-        "start": 21,
-        "end": 31,
+        "start": 15,
+        "end": 25,
         "value": "girlfriend"
       }
     ]
@@ -214,7 +214,7 @@
         "entity": "food",
         "start": 12,
         "end": 24,
-        "value": "cheeseburger"
+        "value": "burger"
       }
     ]
   },
