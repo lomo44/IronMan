@@ -3,6 +3,12 @@
     "id": "accessory",
     "values": [
       {
+        "value": "accessory",
+        "expressions": [
+          "accessory"
+        ]
+      },
+      {
         "value": "watch",
         "expressions": [
           "watch",
@@ -27,6 +33,12 @@
     "id": "brand",
     "values": [
       {
+        "value": "brand",
+        "expressions": [
+          "brand"
+        ]
+      },
+      {
         "value": "Rolex",
         "expressions": [
           "Rolex"
@@ -50,6 +62,12 @@
     "id": "music",
     "values": [
       {
+        "value": "music",
+        "expressions": [
+          "music"
+        ]
+      },
+      {
         "value": "heavy metal music",
         "expressions": [
           "heavy metal music",
@@ -68,6 +86,13 @@
   {
     "id": "band",
     "values": [
+      {
+        "value": "music band",
+        "expressions": [
+          "band",
+          "music band"
+        ]
+      },
       {
         "value": "Black Sabbath",
         "expressions": [
@@ -89,41 +114,18 @@
     ]
   },
   {
-    "id": "preference",
-    "values": [
-      {
-        "value": "like",
-        "expressions": [
-          "like"
-        ]
-      },
-      {
-        "value": "dislike",
-        "expressions": [
-          "dislike"
-        ]
-      },
-      {
-        "value": "hate",
-        "expressions": [
-          "hate"
-        ]
-      },
-      {
-        "value": "love",
-        "expressions": [
-          "love"
-        ]
-      }
-    ]
-  },
-  {
     "id": "place",
     "values": [
       {
         "value": "hospital",
         "expressions": [
           "hospital"
+        ]
+      },
+      {
+        "value": "casino",
+        "expressions": [
+          "casino"
         ]
       },
       {
@@ -167,6 +169,12 @@
   {
     "id": "personality",
     "values": [
+      {
+        "value": "personality",
+        "expressions": [
+          "personality"
+        ]
+      },
       {
         "value": "paranoid",
         "expressions": [
@@ -227,6 +235,12 @@
     "id": "marital_status",
     "values": [
       {
+        "value": "marital status",
+        "expressions": [
+          "marital status"
+        ]
+      },
+      {
         "value": "single",
         "expressions": [
           "single"
@@ -275,12 +289,25 @@
           "heavy",
           "fat"
         ]
+      },
+      {
+        "value": "gender",
+        "expressions": [
+          "gender"
+        ]
       }
+
     ]
   },
   {
     "id": "color",
     "values": [
+      {
+        "value": "color",
+        "expressions": [
+          "color"
+        ]
+      },
       {
         "value": "black",
         "expressions": [
@@ -317,6 +344,12 @@
     "id": "language",
     "values": [
       {
+        "value": "language",
+        "expressions": [
+          "language"
+        ]
+      },
+      {
         "value": "English",
         "expressions": [
           "English"
@@ -339,6 +372,12 @@
   {
     "id": "relationship",
     "values": [
+      {
+        "value": "relationship",
+        "expressions": [
+          "relationship"
+        ]
+      },
       {
         "value": "girlfriend",
         "expressions": [
@@ -507,21 +546,31 @@
     "id": "person_name",
     "values": [
       {
+        "value": "name",
+        "expressions": [
+          "name"
+        ]
+      },
+      {
         "value": "Pepper Potts",
         "expressions": [
-          "Pepper Potts"
+          "Pepper Potts",
+          "Pepper Potts",
+          "Pepper"
         ]
       },
       {
         "value": "Christine Everhart",
         "expressions": [
-          "Christine Everhart"
+          "Christine Everhart",
+          "Christine"
         ]
       },
       {
         "value": "Maya Hansen",
         "expressions": [
-          "Maya Hansen"
+          "Maya Hansen",
+          "Maya"
         ]
       },
       {
@@ -533,19 +582,22 @@
       {
         "value": "Anthony Edward Stark",
         "expressions": [
-          "Anthony Edward Stark"
+          "Anthony Edward Stark",
+          "Anthony"
         ]
       },
       {
         "value": "Tony Stark",
         "expressions": [
-          "Tony Stark"
+          "Tony Stark",
+          "Tony"
         ]
       },
       {
         "value": "Obadiah Stane",
         "expressions": [
-          "Obadiah Stane"
+          "Obadiah Stane",
+          "Obadiah"
         ]
       },
       {
@@ -576,12 +628,6 @@
         "value": "Karen",
         "expressions": [
           "Karen"
-        ]
-      },
-      {
-        "value": "Christine Everhart",
-        "expressions": [
-          "Christine Everhart"
         ]
       },
       {
@@ -641,7 +687,8 @@
       {
         "value": "Bruce Banner",
         "expressions": [
-          "Bruce Banner"
+          "Bruce Banner",
+          "Banner"
         ]
       },
       {
@@ -746,6 +793,12 @@
     "id": "country",
     "values": [
       {
+        "value": "country",
+        "expressions": [
+          "country"
+        ]
+      },
+      {
         "value": "Bulgaria",
         "expressions": [
           "Bulgaria"
@@ -765,6 +818,12 @@
   {
     "id": "food",
     "values": [
+      {
+        "value": "food",
+        "expressions": [
+          "food"
+        ]
+      },
       {
         "value": "cheeseburger",
         "expressions": [
@@ -792,25 +851,14 @@
     ]
   },
   {
-    "id": "gender",
-    "values": [
-      {
-        "value": "male",
-        "expressions": [
-          "male"
-        ]
-      },
-      {
-        "value": "female",
-        "expressions": [
-          "female"
-        ]
-      }
-    ]
-  },
-  {
     "id": "city",
     "values": [
+      {
+        "value": "city",
+        "expressions": [
+          "city"
+        ]
+      },
       {
         "value": "New York",
         "expressions": [
@@ -889,6 +937,12 @@
     "id": "hobby",
     "values": [
       {
+        "value": "hobby",
+        "expressions": [
+          "hobby"
+        ]
+      },
+      {
         "value": "car modification",
         "expressions": [
           "car modification"
@@ -901,9 +955,9 @@
         ]
       },
       {
-        "value": "casino",
+        "value": "gamble",
         "expressions": [
-          "casino"
+          "gamble"
         ]
       },
       {
@@ -1044,12 +1098,6 @@
         ]
       },
       {
-        "value": "T",
-        "expressions": [
-          "T"
-        ]
-      },
-      {
         "value": "Master of Machines",
         "expressions": [
           "Master of Machines"
@@ -1138,22 +1186,11 @@
         "expressions": [
           "Avengers"
         ]
-      }
-    ]
-  },
-  {
-    "id": "Universe",
-    "values": [
-      {
-        "value": "Earth/616",
-        "expressions": [
-          "Earth-616"
-        ]
       },
       {
-        "value": "Marvel Universe",
+        "value": "Iron Man",
         "expressions": [
-          "Marvel Universe"
+          "Iron Man"
         ]
       }
     ]
@@ -1309,6 +1346,18 @@
     "id": "car",
     "values": [
       {
+        "value": "car",
+        "expressions": [
+          "car"
+        ]
+      },
+      {
+        "value": "Audi",
+        "expressions": [
+          "Audi"
+        ]
+      },
+      {
         "value": "Audi R8",
         "expressions": [
           "Audi R8"
@@ -1430,7 +1479,8 @@
       {
         "value": "CEO",
         "expressions": [
-          "CEO"
+          "CEO",
+          "C.E.O"
         ]
       },
       {

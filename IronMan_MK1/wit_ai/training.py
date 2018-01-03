@@ -31,6 +31,7 @@ def init_entity(access_token, input_json_file):
         exist_entities = client.get_all_entities()
         for new_entity in init_data:
             if new_entity['id'] not in exist_entities:
+                print ("add {0}".new_entity['id'])
                 client.add_entity(new_entity)
             else:
                 client.update_entity(new_entity['id'], new_entity)
@@ -38,12 +39,12 @@ def init_entity(access_token, input_json_file):
 
 
 def main():
-    access_token = 'I7A4X2OKUPTDRC6DY3NBVSJKWRCREMFQ'
+    access_token = 'ZIYO3ZLCZMKFOSNPGFYOPNPYUWL474KH'
     keyword_entity_file = "keyword_entities.json"
     training_sample_file = "training_sample.json"
     client = Trainer(access_token=access_token)
-    # client.clean_up()
-    # client.init_entity(keyword_entity_file)
+    client.clean_up()
+    client.init_entity(keyword_entity_file)
     client.init_training_sample(training_sample_file)
 
 

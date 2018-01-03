@@ -76,13 +76,14 @@ class Trainer(Wit):
         # import sample from Json file to training the wit_ai
         with open(input_json_file) as json_in:
             init_data = json.load(json_in)
-            self.clean_up()
             for samples in init_data:
                 for entities_list in samples["entities"]:
-                    if entities_list['entity'] not in self.get_all_entities():
-                        new_entity = {"id": entities_list['entity'], "values": [{"value": entities_list['value'], "expressions": [entities_list['value']]}]}
-                        self.add_entity(new_entity)
-                    elif entities_list['value'] not in self.get_entity_info(entities_list['entity'])["values"]:
-                        new_val = {"value": entities_list['value'], "expressions": [entities_list['value']]}
-                        self.add_value(entities_list['entity'], new_val)
+                    if entities_list['entity'] != "intent":
+                        if entities_list['entity'] not in self.get_all_entities():
+                            new_entity = {"id": entities_list['entity'], "values": [{"value": entities_list['value'], "expressions": [entities_list['value']]}]}
+                            self.add_entity(new_entity)
+                        # elif entities_list['value'] not in [ elment["value"] for elment in self.get_entity_info(entities_list['entity'])["values"]]:
+                        #     print(self.get_entity_info(entities_list['entity'])["values"])
+                        #     new_val = {"value": entities_list['value'], "expressions": [entities_list['value']]}
+                        #     self.add_value(entities_list['entity'], new_val)
             self.add_samples(init_data)
