@@ -39,7 +39,7 @@ def init_entity(access_token, input_json_file):
 
 
 def main():
-    access_token = '2TYQHOQY3LRZRIJFHJSMGHH26S6JLEBF'
+    access_token = 'A7EGCVOSY22YSI6GNZ4IZIX7NXIV6HDB'
     keyword_entity_file = "keyword_entities.json"
     training_sample_file = "training_sample.json"
     client = Trainer(access_token=access_token)

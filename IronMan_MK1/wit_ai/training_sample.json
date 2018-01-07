@@ -43,10 +43,25 @@
         "value": "preference"
       },
       {
-        "entity": "music",
+        "entity": "subject",
         "start": 13,
         "end": 18,
         "value": "music"
+      }
+    ]
+  },
+  {
+    "text": "Do you like rock music?",
+    "entities": [
+      {
+        "entity": "intent",
+        "value": "preference"
+      },
+      {
+        "entity": "band",
+        "start": 12,
+        "end": 22,
+        "value": "rock music"
       }
     ]
   },
@@ -91,7 +106,7 @@
     "entities": [
       {
         "entity": "intent",
-        "value": "peronal_info"
+        "value": "personal_info"
       },
       {
         "entity": "personality",
@@ -117,7 +132,7 @@
     ]
   },
   {
-    "text": "What is your hair color?",
+    "text": "Is your hair red?",
     "entities": [
       {
         "entity": "intent",
@@ -125,15 +140,15 @@
       },
       {
         "entity": "characteristic",
-        "start": 13,
-        "end": 17,
+        "start": 8,
+        "end": 12,
         "value": "hair"
       },
       {
         "entity": "color",
-        "start": 18,
-        "end": 23,
-        "value": "color"
+        "start": 13,
+        "end": 16,
+        "value": "red"
       }
     ]
   },
@@ -234,7 +249,7 @@
     ]
   },
   {
-    "text": "What is your hobby?",
+    "text": "Do you like boxing?",
     "entities": [
       {
         "entity": "intent",
@@ -242,9 +257,9 @@
       },
       {
         "entity": "hobby",
-        "start": 13,
+        "start": 12,
         "end": 18,
-        "value": "hobby"
+        "value": "boxing"
       }
     ]
   },
