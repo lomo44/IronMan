@@ -1,0 +1,413 @@
+[
+  {
+    "text": "Do you hate sunglasses?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 22, 
+        "value": "sunglasses", 
+        "entity": "accessory"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you like Rolex watch?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 17, 
+        "value": "Rolex", 
+        "entity": "brand"
+      }, 
+      {
+        "start": 18, 
+        "end": 23, 
+        "value": "watch", 
+        "entity": "accessory"
+      }
+    ]
+  }, 
+  {
+    "text": "What type of music you like?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 13, 
+        "end": 18, 
+        "value": "music", 
+        "entity": "subject"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you like rock music?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 22, 
+        "value": "rock music", 
+        "entity": "music"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you prefer AC/DC or Queen?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 14, 
+        "end": 19, 
+        "value": "AC/DC", 
+        "entity": "band"
+      }, 
+      {
+        "start": 23, 
+        "end": 28, 
+        "value": "Queen", 
+        "entity": "band"
+      }
+    ]
+  }, 
+  {
+    "text": "Where is Stark Tower?", 
+    "entities": [
+      {
+        "value": "location", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 9, 
+        "end": 20, 
+        "value": "Stark Tower", 
+        "entity": "place"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you think you are arrogant?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 21, 
+        "end": 29, 
+        "value": "arrogant", 
+        "entity": "personality"
+      }
+    ]
+  }, 
+  {
+    "text": "Are you rich?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 8, 
+        "end": 12, 
+        "value": "rich", 
+        "entity": "reputation"
+      }
+    ]
+  }, 
+  {
+    "text": "Are you married?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 8, 
+        "end": 15, 
+        "value": "married", 
+        "entity": "marital_status"
+      }
+    ]
+  }, 
+  {
+    "text": "Is your hair red?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 8, 
+        "end": 12, 
+        "value": "hair", 
+        "entity": "characteristic"
+      }, 
+      {
+        "start": 13, 
+        "end": 16, 
+        "value": "red", 
+        "entity": "color"
+      }
+    ]
+  }, 
+  {
+    "text": "Can you speak french?", 
+    "entities": [
+      {
+        "value": "ability", 
+        "entity": "intent"
+      }, 
+      {
+        "start": -1, 
+        "end": 5, 
+        "value": "French", 
+        "entity": "language"
+      }
+    ]
+  }, 
+  {
+    "text": "Who is your father?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 18, 
+        "value": "father", 
+        "entity": "relationship"
+      }
+    ]
+  }, 
+  {
+    "text": "Is Pepper your girlfriend?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 3, 
+        "end": 9, 
+        "value": "Pepper Potts", 
+        "entity": "person_name"
+      }, 
+      {
+        "start": 15, 
+        "end": 25, 
+        "value": "girlfriend", 
+        "entity": "relationship"
+      }
+    ]
+  }, 
+  {
+    "text": "Have you been to America?", 
+    "entities": [
+      {
+        "value": "experience", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 17, 
+        "end": 24, 
+        "value": "America", 
+        "entity": "country"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you like cheeseburger?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 24, 
+        "value": "burger", 
+        "entity": "food"
+      }
+    ]
+  }, 
+  {
+    "text": "Where is New York?", 
+    "entities": [
+      {
+        "value": "location", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 9, 
+        "end": 17, 
+        "value": "New York", 
+        "entity": "city"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you like boxing?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 18, 
+        "value": "boxing", 
+        "entity": "hobby"
+      }
+    ]
+  }, 
+  {
+    "text": "Are you Iron Man?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 8, 
+        "end": 16, 
+        "value": "Iron Man", 
+        "entity": "alias"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you know PTSD?", 
+    "entities": [
+      {
+        "value": "knowledge", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 16, 
+        "value": "PTSD", 
+        "entity": "medical_history"
+      }
+    ]
+  }, 
+  {
+    "text": "What is your opinion towards MIT?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 29, 
+        "end": 32, 
+        "value": "MIT", 
+        "entity": "education"
+      }
+    ]
+  }, 
+  {
+    "text": "Are you American?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 8, 
+        "end": 16, 
+        "value": "American", 
+        "entity": "citizenship"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you prefer whisky or martini?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 14, 
+        "end": 20, 
+        "value": "whisky", 
+        "entity": "liquor"
+      }, 
+      {
+        "start": 24, 
+        "end": 31, 
+        "value": "martini", 
+        "entity": "liquor"
+      }
+    ]
+  }, 
+  {
+    "text": "Did you create Javis?", 
+    "entities": [
+      {
+        "value": "experience", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 15, 
+        "end": 20, 
+        "value": "Javis", 
+        "entity": "creation"
+      }
+    ]
+  }, 
+  {
+    "text": "Do you like Audi R8?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 19, 
+        "value": "Audi R8", 
+        "entity": "car"
+      }
+    ]
+  }, 
+  {
+    "text": "Are you CEO of Stark Industries?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 8, 
+        "end": 11, 
+        "value": "CEO", 
+        "entity": "occupation"
+      }, 
+      {
+        "start": 15, 
+        "end": 31, 
+        "value": "Stark Industries", 
+        "entity": "organization"
+      }
+    ]
+  }
+]

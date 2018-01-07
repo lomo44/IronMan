@@ -1,231 +1,289 @@
 {
-    "Music": [
-        "Heavy metal music",
-        "Rock Music",
+    "accessories": [
+        "Rolex watch", 
+        "Bvlgari watch", 
+        "Jaeger watch", 
+        "sunglasses"
+    ], 
+    "favorite_music": [
+        "heavy metal music",
+        "rock music",
         "Black Sabbath",
-        "AC/DC",
+        "AC/DC", 
         "Queen"
-    ],
-    "Personality": [
-        "paranoid",
-        "anxious",
+    ], 
+    "dislike": [
+        "plan", 
+        "on time", 
+        "hospital"
+    ], 
+    "personality": [
+        "paranoid", 
+        "anxious", 
         "arrogant"
-    ],
-    "Hair": [
-        "Black"
-    ],
-    "Eyes": [
-        "Blue"
-    ],
-    "Relationship": [
-        "Virginia (Pepper)Potts (girl friend)",
-        "Christine Everhart (one night stand)",
-        "Maya Hansen, Former Love Interest"
-    ],
-    "Affiliation": [
-        "Formerly Stark Industries (CEO)",
-        "Avengers",
-        "Avengers (Heroes Reborn)",
-        "Illuminati",
-        "Axis",
-        "Resilient",
-        "S.H.I.E.L.D.",
-        "Guardians of the Galaxy",
-        "Initiative (leader)",
-        "Pro-Registration Superhero Unit (leader)",
-        "New Avengers",
-        "Mighty Avengers",
-        "Hellfire Club",
-        "Force Works",
-        "Avengers West Coast",
-        "United States Department of Defense",
-        "the Mighty",
-        "Knights of the Atomic Round Table",
-        "Alcoholics Anonymous",
-        "Damage Control"
-    ],
-    "Current Alias": [
+    ], 
+    "marital_status": [
+        "single"
+    ], 
+    "eyes": [
+        "blue"
+    ], 
+    "language": [
+        "English", 
+        "French", 
+        "Russian"
+    ], 
+    "relationship": [
+        "Pepper Potts/girl friend",
+        "Christine Everhart/ one night stand",
+        "Maya Hansen/Former Love Interest",
+        "Maxim cover models/one night stand"
+    ], 
+    "place_of_birth": [
+        "Sofia", 
+        "Bulgaria"
+    ], 
+    "favorite_food": [
+        "cheeseburger",
+        "burger",
+        "sandwich",
+        "pizza"
+    ], 
+    "description_of_father": [
+        "cold",
+        "calculating"
+    ], 
+    "current_alias": [
         "Iron Man"
-    ],
-    "Universe": [
-        "Earth-616",
-        "Marvel Universe"
-    ],
-    "Base Of Operations": [
-        "Stark Tower",
-        "New York City",
-        "New York; Stark Industries Airfield",
-        "New Jersey; formerly Stark Island",
-        "San Francisco",
-        "California; Troy; Tony Stark's Penthouse",
-        "New York City",
-        "New York; Avengers Mansion",
-        "New York City",
-        "New York; Avengers Compound; Resilient HQ",
-        "Seattle",
-        "Washington; also has homes in Alexandria",
-        "Virginia",
-        "Seattle",
-        "Washington",
-        "and Los Angeles",
-        "California."
-    ],
-    "Real Name": [
-        "Anthony Edward Stark",
+    ], 
+    "gender": [
+        "male"
+    ], 
+    "base_of_operations": [
+        "Stark Tower", 
+        "New York Stark Industries Airfield",
+        "New Jersey formerly Stark Island",
+        "San Francisco", 
+        "Malibu California Tony Stark's Penthouse",
+        "New York Avengers Mansion",
+        "New York Avengers Compound",
+        "Seattle", 
+        "Washington", 
+        "Alexandria", 
+        "Virginia", 
+        "Seattle", 
+        "Washington", 
+        "Los Angeles"
+    ], 
+    "real_name": [
+        "Anthony Edward Stark", 
         "Tony Stark"
-    ],
-    "Identity": [
+    ], 
+    "identity": [
         "Public Identity"
-    ],
-    "Allies": [
-        "Happy Hogan, Close Friend and Former Bodyguard",
-        "Maria Hill, Employee and Former S.H.I.E.L.D. Deputy Director",
-        "JARVIS, Former Partner, Assistant and Close Friend",
-        "FRIDAY, Partner and Assistant",
-        "Karen, Creation and Appointed Assistant to Spider-Man",
-        "Christine Everhart, One Night Stand",
-        "Ho Yinsen, Fellow Captive and Friend",
-        "Edwin Jarvis, Former Butler of the Stark Family",
-        "Avengers, Former Teammates",
-        "Natasha Ramonoff/Black Widow, Former Teammate",
-        "James Rhodes/War Machine, Best Friend and Military Liaison",
-        "Vision, Creation",
-        "Steve Rogers/Captain America, Former Team Leader, Close Friend and Rival",
+    ], 
+    "allies": [
+        "Happy Hogan/ Close Friend and Former Bodyguard",
+        "Maria Hill/ Employee and Former S.H.I.E.L.D. Deputy Director",
+        "JARVIS/ Former Partner/ Assistant and Close Friend",
+        "FRIDAY/ Partner and Assistant",
+        "Karen/ Creation and Appointed Assistant to Spider/Man",
+        "Christine Everhart/ One Night Stand",
+        "Ho Yinsen/ Fellow Captive and Friend, saved life, dead",
+        "Edwin Jarvis/ Former Butler of the Stark Family",
+        "Avengers/ Former Teammates",
+        "Natasha Ramonoff/ Black Widow/Former Teammate",
+        "James Rhodes/War Machine/Best Friend and Military Liaison",
+        "Vision/Creation",
+        "Steve Rogers/Captain America/Former Team Leader/Close Friend and Rival",
         "Clint Barton/Hawkeye",
         "Sam Wilson/Falcon",
-        "Wanda Maximoff/Scarlet Witch - Former Enemy and Enthraller Turned Former Teammate",
-        "Thor - Former Teammate",
-        "Bruce Banner/Hulk - Collaborator, Colleague and Close Friend",
-        "Pietro Maximoff/Quicksilver, Former Enemy Turned Teammate",
-        "SHIELD, (First Incarnation)",
-        "Nick Fury, Former Director",
-        "Phil Coulson, Former Liaison and Friend",
-        "Maya Hansen, Former Love Interest"
-    ],
-    "Family": [
-        "Isaac Stark (adoptive ancestor)",
-        "Howard Stark (paternal adoptive grandfather, deceased)",
-        "Amanda Armstrong (biological mother)",
-        "Jude (biological father)",
-        "Howard Anthony Stark (adoptive father, deceased)",
-        "Maria Stark (adoptive mother, deceased)",
-        "Arno Stark (adoptive brother)",
-        "Edward Stark (adoptive uncle, deceased)",
-        "Morgan Stark (adoptive cousin)"
-    ],
-    "Editorial Names": [
-        "Invincible Iron Man",
-        "International Iron Man; formerly Superior Iron Man",
-        "Iron Man: Director of S.H.I.E.L.D."
-    ],
-    "Gender": [
-        "Male"
-    ],
-    "Medical History": [
-        "Post Traumatic Stress Disorder (PTSD)"
-    ],
-    "Designs": [
-        "Just A Rather Very Intelligent System (Javis)",
-        "Ultron",
-        "Spider-Man Suit",
-        "FRIDAY",
-        "Karen"
-    ],
-    "Self-description": [
-        "genius",
-        "billionaire",
-        "playboy",
-        "philanthropist"
-    ],
-    "Creators": [
-        "Stan Lee",
-        "Larry Lieber",
-        "Don Heck",
-        "Jack Kirby"
-    ],
-    "Aliases": [
-        "Actor",
-        "Golden Gladiator",
-        "Bullet-Head",
-        "Golden Avenger",
-        "Shellhead",
-        "Armored Avenger",
-        "Spare Parts Man",
-        "Crimson Dynamo",
-        "Tetsujin",
-        "Hogan Potts",
-        "Anthony of York",
-        "Randall Pierce",
-        "Cobalt Man",
-        "Iron Gentleman",
-        "Metal Man",
-        "Man of Iron",
-        "Tin Man",
-        "Irene",
-        "Electro",
-        "The Enginerer",
-        "T",
-        "Master of Machines",
-        "Space-Knight",
-        "Richard Franco",
-        "Martini",
-        "Iron Pig"
-    ],
-    "Origin": [
-        "Human using super-suits;Anthony \"Tony\" Stark was adopted by Howard and Maria Stark. During a conflict in Afghanistan",
-        "Stark was captured by terrorists and",
-        "with a piece of shrapnel in his heart",
-        "was about to die. Constructing a suit of iron armor that would also help with his recovery",
-        "Stark broke out of captivity and journeyed back home to the United States where he built an advanced suit of armor and become the armored superhero Iron Man."
-    ],
-    "Enemies": [
-        "Obadiah Stane/Iron Monger, Former Business Partner",
-        "Ten Rings",
-        "Loki",
-        "HYDRA",
-        "Ultron"
-    ],
-    "Citizenship": [
-        "American",
-        "Bulgarian"
-    ],
-    "Weight": [
-        "225 lbs (102 kg) (without armor)",
-        "425 lbs (193 kg) (including armor)"
-    ],
-    "Height": [
-        "6' 1\" (without armor)",
-        "6'6\" (including armor)"
-    ],
-    "Marital Status": [
-        "Single"
-    ],
-    "Place of Birth": [
-        "Sofia",
-        "Bulgaria"
-    ],
-    "Prefer color": [
-        "Red",
-        "Gold"
-    ],
-    "Education": [
-        "MIT (Massachusetts Institute of Technology)",
-        "multiple PhDs in physics",
-        "mechanical engineering",
-        "electrical engineering"
-    ],
-    "Occupation": [
-        "Mechanical Engineer",
-        "Adventurer",
-        "Superhero",
-        "Inventor",
-        "Industrialist",
-        "founder of the Maria Stark Foundation",
-        "CEO of Stark Industries",
-        "president emeritus of Resilient; former liaison between S.H.I.E.L.D. and the Avengers",
-        "United States Secretary of Defense",
-        "Executive Director of S.H.I.E.L.D.",
-        "CEO of Stark Solutions",
+        "Wanda Maximoff/Scarlet Witch/Former Enemy and Enthraller Turned Former Teammate",
+        "Thor/Former Teammate",
+        "Bruce Banner/Hulk/Collaborator/Colleague and Close Friend",
+        "Pietro Maximoff/Quicksilver/Former Enemy Turned Teammate",
+        "S.H.I.E.L.D./(First Incarnation)",
+        "Nick Fury/Former Director",
+        "Phil Coulson/Former Liaison and Friend",
+        "Maya Hansen/Former Love Interest"
+    ], 
+    "like": [
+        "car modification", 
+        "vintage car", 
+        "casino", 
+        "pole dance", 
+        "boxing"
+    ], 
+    "occupation": [
+        "mechanical engineer",
+        "Adventurer", 
+        "superhero",
+        "inventor",
+        "industrialist",
+        "founder of the Maria Stark Foundation", 
+        "CEO of Stark Industries", 
+        "president emeritus of Resilient", 
+        "United States Secretary of Defense", 
+        "Executive Director of S.H.I.E.L.D.", 
+        "CEO of Stark Solutions", 
         "Circuits Maximus and Stark International"
+    ], 
+    "editorial_names": [
+        "Invincible Iron Man", 
+        "International Iron Man", 
+        "Superior Iron Man", 
+        "Iron Man: Director of S.H.I.E.L.D."
+    ], 
+    "Universe": [
+        "Earth/616", 
+        "Marvel Universe"
+    ], 
+    "medical_history": [
+        "Post Traumatic Stress Disorder (PTSD)",
+        "Palladium Poisoning"
+    ], 
+    "self_description": [
+        "genius", 
+        "billionaire", 
+        "playboy", 
+        "philanthropist", 
+        "rich", 
+        "textbook narcissism"
+    ], 
+    "creators": [
+        "Stan Lee", 
+        "Larry Lieber", 
+        "Don Heck", 
+        "Jack Kirby"
+    ], 
+    "childhood": [
+        "first circuit board/age 4",
+        "first engine/age 6",
+        "MIT/age 17",
+        "CEO of Stark Industrial/age 21"
+    ], 
+    "education": [
+        "MIT",
+        "Massachusetts Institute of Technology",
+        "multiple PhDs in physics", 
+        "mechanical engineering", 
+        "electrical engineering"
+    ], 
+    "citizenship": [
+        "American", 
+        "Bulgarian"
+    ], 
+    "family": [
+        "Isaac Stark/adoptive ancestor",
+        "Howard Stark/paternal adoptive grandfather/deceased",
+        "Amanda Armstrong/biological mother",
+        "Jude ,biological father", 
+        "Howard Anthony Stark/adoptive father/deceased",
+        "Maria Stark/adoptive mother/deceased",
+        "Arno Stark/adoptive brother",
+        "Edward Stark/adoptive uncle/deceased",
+        "Morgan Stark/adoptive cousin"
+    ], 
+    "favourite_color": [
+        "red",
+        "gold"
+    ], 
+    "owned_car": [
+        "Audi R8 Silver", 
+        "Tesla Roadster", 
+        "Audi R8 Spyder", 
+        "Acura NSX", 
+        "Bugatti Veyron SS", 
+        "Ford Flathead Roadster", 
+        "Audi R8 e/tron White", 
+        "Audi R8 e/tron Red", 
+        "Shelby Cobra", 
+        "Saleen S7", 
+        "Ghia Cadillac", 
+        "Mercury Coupe", 
+        "Rolls Royce Phantom", 
+        "Wolf WR Ford Replica"
+    ], 
+    "favourite_liquor": [
+        "whisky", 
+        "martini", 
+        "hot sake", 
+        "champagne"
+    ], 
+    "creation": [
+        "Just A Rather Very Intelligent System (Javis)", 
+        "Ultron", 
+        "Spider/Man Suit", 
+        "FRIDAY", 
+        "Karen", 
+        "Arc Reactor technology"
+    ], 
+    "weight": [
+        "225 lbs (102 kg) (without armor)", 
+        "425 lbs (193 kg) (including armor)"
+    ], 
+    "height": [
+        "185 cm (without armor)",
+        "198 cm (including armor)"
+    ], 
+    "hair_color": [
+        "Black"
+    ], 
+    "affiliation": [
+        "Formerly Stark Industries, CEO", 
+        "Avengers", 
+        "Illuminati", 
+        "Axis", 
+        "Resilient", 
+        "S.H.I.E.L.D.", 
+        "Guardians of the Galaxy", 
+        "Initiative, leader", 
+        "Pro/Registration Superhero Uni, leader", 
+        "New Avengers", 
+        "Mighty Avengers", 
+        "Hellfire Club", 
+        "Force Works", 
+        "Avengers West Coast", 
+        "United States Department of Defense", 
+        "the Mighty", 
+        "Knights of the Atomic Round Table", 
+        "Alcoholics Anonymous", 
+        "Damage Control"
+    ], 
+    "aliases": [
+        "Actor", 
+        "Golden Gladiator", 
+        "Bullet/Head", 
+        "Golden Avenger", 
+        "Shellhead", 
+        "Armored Avenger", 
+        "Spare Parts Man", 
+        "Crimson Dynamo", 
+        "Tetsujin", 
+        "Hogan Potts", 
+        "Anthony of York", 
+        "Randall Pierce", 
+        "Cobalt Man", 
+        "Iron Gentleman", 
+        "Metal Man", 
+        "Man of Iron", 
+        "Tin Man", 
+        "Irene", 
+        "Electro", 
+        "The Enginerer", 
+        "T", 
+        "Master of Machines", 
+        "Space/Knight", 
+        "Richard Franco", 
+        "Martini", 
+        "Iron Pig", 
+        "Merchant of Death"
+    ], 
+    "enemies": [
+        "Obadiah Stane/Iron Monger/Former Business Partner",
+        "Ten Rings", 
+        "Loki", 
+        "HYDRA", 
+        "Ultron"
     ]
 }
