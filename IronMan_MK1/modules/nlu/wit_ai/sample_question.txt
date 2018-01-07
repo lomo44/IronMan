@@ -1,0 +1,26 @@
+#Format: question,intent,entity_id_1, value_1,expression_1,entity_id_2, value_2,expression_2
+Do you hate sunglasses?,preference,accessory,sunglasses,sunglasses
+Do you like Rolex watch?,preference,brand,Rolex,Rolex,accessory,watch,watch
+What type of music you like?,preference,subject,music,music
+Do you like rock music?,preference,music,rock music,rock music
+Do you prefer AC/DC or Queen?,preference,band,AC/DC,AC/DC,band,Queen,Queen
+Where is Stark Tower?,location,place,Stark Tower,Stark Tower
+Do you think you are arrogant?,personal_info,personality,arrogant,arrogant
+Are you rich?,personal_info,reputation,rich,rich
+Are you married?,personal_info,marital_status,married,married
+Is your hair red?,personal_info,characteristic,hair,hair,color,red,red
+Can you speak french?,ability,language,French,French
+Who is your father?,person,relationship,father,father
+Is Pepper your girlfriend?,person,person_name,Pepper Potts,Pepper,relationship,girlfriend,girlfriend
+Have you been to America?,experience,country,America,America
+Do you like cheeseburger?,preference,food,burger,cheeseburger
+Where is New York?,location,city,New York,New York
+Do you like boxing?,personal_info,hobby,boxing,boxing
+Are you Iron Man?,personal_info,alias,Iron Man,Iron Man
+Do you know PTSD?,knowledge,medical_history,PTSD,PTSD
+What is your opinion towards MIT?,preference,education,MIT,MIT
+Are you American?,personal_info,citizenship,American,American
+Do you prefer whisky or martini?,preference,liquor,whisky,whisky,liquor,martini,martini
+Did you create Javis?,experience,creation,Javis,Javis
+Do you like Audi R8?,preference,car,Audi R8,Audi R8
+Are you CEO of Stark Industries?,personal_info,occupation,CEO,CEO,organization,Stark Industries,Stark Industries
