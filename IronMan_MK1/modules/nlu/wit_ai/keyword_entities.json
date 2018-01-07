@@ -295,12 +295,24 @@
         ]
       },
       {
+        "value": "narcissism",
+        "expressions": [
+          "narcissism"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reputation",
+    "values": [
+      {
         "value": "genius",
         "expressions": [
           "genius"
         ]
       },
       {
+
         "value": "billionaire",
         "expressions": [
           "billionaire"
@@ -322,12 +334,6 @@
         "value": "rich",
         "expressions": [
           "rich"
-        ]
-      },
-      {
-        "value": "narcissism",
-        "expressions": [
-          "narcissism"
         ]
       }
     ]
@@ -625,7 +631,6 @@
       {
         "value": "Pepper Potts",
         "expressions": [
-          "Pepper Potts",
           "Pepper Potts",
           "Pepper"
         ]
