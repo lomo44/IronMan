@@ -1,7 +1,7 @@
 import uuid
 import copy
 
-class personality_context():
+class Personality_context():
     def __init__(self):
         self.attribute_dict = {
             "memory_ability" : 100
@@ -32,11 +32,11 @@ def get_default_ironman_context_id():
     """
     return "Iron_Man"
 
-def get_default_ironman_context() -> personality_context:
+def get_default_ironman_context() -> Personality_context:
     """
     Generate the initial stage of the iron man personality
     Current stage is very limited. We need to add more traits
     """
-    ironman = personality_context()
+    ironman = Personality_context()
     ironman.id = "Iron_Man"
     return ironman
