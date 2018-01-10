@@ -29,6 +29,14 @@
             "be" :{
 
             }
+        },
+        "greeting" : {
+            "Hey!" :{
+                "verbal_strength" : 1.0
+            },
+            "Hello!" : {
+                "verbal_strength" : 1.0
+            }
         }
     },
     "templates" : {
