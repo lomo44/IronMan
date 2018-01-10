@@ -24,6 +24,11 @@
             "hate" : {
                 "preference" : -0.5
             }
+        },
+        "be" : {
+            "be" :{
+
+            }
         }
     },
     "templates" : {
@@ -39,5 +44,6 @@
         "greeting" : {
             "pattern" : "{greeting}"
         }
-    }
+    },
+    "default" : "Fuck Off"
 }
