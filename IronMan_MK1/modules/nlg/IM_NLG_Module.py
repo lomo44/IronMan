@@ -8,14 +8,17 @@ import json
 import os
 import sys
 import re
+import random
 
 re_requirement = re.compile("\[.*\]")
 
 class IM_NLG_Module(Base_module):
     def __init__(self):
         self.nlg_data = None
-        self.load_nlg_data("IronMan_MK1/modules/nlg/iron_man_template.json")
-        self.templates : Dict[str,Sentence_template] = {} # type : Dict[str, Sentence_template]
+        self.load_nlg_data("IronMan_MK1/modules/nlg/iron_man_data.json")
+        #self.templates : Dict[str,Sentence_template] = {} # type : Dict[str, Sentence_template]
+        self.templates = {}
+        self.initialize_template()
 
     def load_nlg_data(self,path : str):
         """
@@ -36,17 +39,31 @@ class IM_NLG_Module(Base_module):
                     # initialize templates using its pattern and name
                     self.templates[item] = Sentence_template(self.nlg_data["templates"][item]["pattern"])
 
-    def select_result(self, results)
+    def select_result(self, recipe : NLG_Recipe, results):
         """
         Given a list of results, select the proper one
         """
-        pass
+        results = sorted(results)
+        accepted = -1
+        size = len(results)
+        for i in range(size):
+            if results[i][0] == 0.:
+                accepted = i
+            else:
+                break
+        if accepted== -1:
+            return self.nlg_data["default"]
+        else:
+            return results[random.randrange(accepted)][1]
+
+
 
     def realization(self, recipe : NLG_Recipe) -> str:
         """
-        Generate the realization based on the sentense"
+        Generate the realization based on the sentence"
         """
         results = []
         for template_name in self.templates:
-            result += self.templates[template_name].generate(recipe)
-        return select_result(results)[0]
+            if (self.templates[template_name].is_compatible(recipe)):
+                results.extend(self.templates[template_name].generate(self, recipe))
+        return self.select_result(recipe, results)
