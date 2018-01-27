@@ -44,8 +44,9 @@ def main():
     training_sample_file = "training_sample.json"
     client = Trainer(access_token=access_token)
     # client.clean_up()
-    client.init_entity(keyword_entity_file)
-    client.init_training_sample(training_sample_file)
+    #client.init_entity(keyword_entity_file)
+    #client.init_training_sample(training_sample_file)
+    print(client.get_entity_info("wit$contact"))
 
 
 if __name__ == "__main__":
