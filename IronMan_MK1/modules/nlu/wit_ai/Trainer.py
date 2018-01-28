@@ -42,6 +42,9 @@ class Trainer(Wit):
         # https://wit.ai/docs/http/20170307#post--samples-link
         print(wit.req(self.logger, self.access_token, 'POST', '/samples', {}, data=json.dumps(samples)))
 
+    def get_message(self, message):
+        return ( wit.req(self.logger, self.access_token, 'GET', '/message?q={0}'.format(message), {}))
+
     def clean_up(self):
         # clean up will delete all user-defined entities and user-defined value in entity "intent"
         # will not delete built-in entities (wit$***) and intent

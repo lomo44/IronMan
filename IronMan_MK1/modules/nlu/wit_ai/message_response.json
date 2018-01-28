@@ -1,0 +1,521 @@
+[
+  {
+    "_text": "Do you hate sunglasses?",
+    "entities": {
+      "accessory": [
+        {
+          "confidence": 0.89318818267436,
+          "value": "sunglasses",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99041795476705,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "0x2c6ctg3sXDMc9e8"
+  },
+  {
+    "_text": "Do you like Rolex watch?",
+    "entities": {
+      "brand": [
+        {
+          "confidence": 0.90844311569421,
+          "value": "Rolex",
+          "type": "value"
+        }
+      ],
+      "accessory": [
+        {
+          "confidence": 0.92225170721624,
+          "value": "watch",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99476082596634,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "09CBbsa853FNvIj1z"
+  },
+  {
+    "_text": "What type of music you like?",
+    "entities": {
+      "subject": [
+        {
+          "confidence": 0.89027952829895,
+          "value": "music",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99543379837861,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "0ljGkPZzKaoNJZu9s"
+  },
+  {
+    "_text": "Do you like rock music?",
+    "entities": {
+      "music": [
+        {
+          "confidence": 0.91031651205973,
+          "value": "rock music",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99498317871318,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "0W07ARrYwfIGQtwWk"
+  },
+  {
+    "_text": "Do you prefer AC/DC or Queen?",
+    "entities": {
+      "band": [
+        {
+          "confidence": 0.91977164260223,
+          "value": "AC/DC",
+          "type": "value"
+        },
+        {
+          "confidence": 0.90789690773151,
+          "value": "Queen",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99462007849142,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "010wJnPy1bTyKiLOt"
+  },
+  {
+    "_text": "Where is Stark Tower?",
+    "entities": {
+      "place": [
+        {
+          "confidence": 0.91310904630419,
+          "value": "Stark Tower",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.9918920326827,
+          "value": "location"
+        }
+      ]
+    },
+    "msg_id": "0kBNlk0NiLT93CTdv"
+  },
+  {
+    "_text": "Do you think you are arrogant?",
+    "entities": {
+      "personality": [
+        {
+          "confidence": 0.88326271079893,
+          "value": "arrogant",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99808782182945,
+          "value": "personal_info"
+        }
+      ]
+    },
+    "msg_id": "0QlCV1Jbl2UAR9Cxd"
+  },
+  {
+    "_text": "Are you rich?",
+    "entities": {
+      "reputation": [
+        {
+          "confidence": 0.86742410773804,
+          "value": "rich",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.98947533652034,
+          "value": "personal_info"
+        }
+      ]
+    },
+    "msg_id": "0BDqQEqtJZswdj1uf"
+  },
+  {
+    "_text": "Are you married?",
+    "entities": {
+      "marital_status": [
+        {
+          "confidence": 0.87227324713506,
+          "value": "married",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99434774751803,
+          "value": "personal_info"
+        }
+      ]
+    },
+    "msg_id": "0vuEl2pNwDynMDrCG"
+  },
+  {
+    "_text": "Is your hair red?",
+    "entities": {
+      "characteristic": [
+        {
+          "confidence": 0.90787211785937,
+          "value": "hair",
+          "type": "value"
+        }
+      ],
+      "color": [
+        {
+          "confidence": 0.90167557589432,
+          "value": "red",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.98506284796572,
+          "value": "personal_info"
+        }
+      ]
+    },
+    "msg_id": "04FrV7JZvan1LprAi"
+  },
+  {
+    "_text": "Can you speak french?",
+    "entities": {
+      "language": [
+        {
+          "suggested": true,
+          "confidence": 0.78500907417832,
+          "value": "Can you",
+          "type": "value"
+        },
+        {
+          "confidence": 1,
+          "value": "French",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.98604667276912,
+          "value": "ability"
+        }
+      ]
+    },
+    "msg_id": "0JsHTBdBYRheExy0g"
+  },
+  {
+    "_text": "Who is your father?",
+    "entities": {
+      "relationship": [
+        {
+          "confidence": 0.91249550105615,
+          "value": "father",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.9837080016589,
+          "value": "person"
+        }
+      ]
+    },
+    "msg_id": "07e0UkEWAt7qi9Goy"
+  },
+  {
+    "_text": "Is Pepper your girlfriend?",
+    "entities": {
+      "person_name": [
+        {
+          "confidence": 0.92373582031177,
+          "value": "Pepper Potts",
+          "type": "value"
+        }
+      ],
+      "relationship": [
+        {
+          "confidence": 0.91409804236015,
+          "value": "girlfriend",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99191266642325,
+          "value": "person"
+        }
+      ]
+    },
+    "msg_id": "0xbE4TmO2M0QC476x"
+  },
+  {
+    "_text": "Have you been to America?",
+    "entities": {
+      "country": [
+        {
+          "confidence": 0.88933078258285,
+          "value": "America",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.98732421795627,
+          "value": "experience"
+        }
+      ]
+    },
+    "msg_id": "0RvwML4WOUdRqN8VE"
+  },
+  {
+    "_text": "Do you like cheeseburger?",
+    "entities": {
+      "food": [
+        {
+          "confidence": 0.91226783413648,
+          "value": "burger",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.9961830154256,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "0K9GuAJUTEmXXvPi1"
+  },
+  {
+    "_text": "Where is New York?",
+    "entities": {
+      "city": [
+        {
+          "confidence": 0.90931835117315,
+          "value": "New York",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.98819859825423,
+          "value": "location"
+        }
+      ]
+    },
+    "msg_id": "0y51YvvEGbO3rz7iW"
+  },
+  {
+    "_text": "Do you like boxing?",
+    "entities": {
+      "hobby": [
+        {
+          "confidence": 0.87873744865951,
+          "value": "boxing",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.97833436657464,
+          "value": "personal_info"
+        }
+      ]
+    },
+    "msg_id": "0EwKdMsNu0DGjwjXG"
+  },
+  {
+    "_text": "Are you Iron Man?",
+    "entities": {
+      "alias": [
+        {
+          "confidence": 0.90600416574227,
+          "value": "Iron Man",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99342910768637,
+          "value": "personal_info"
+        }
+      ]
+    },
+    "msg_id": "0XOrmUFeuPFaaodAc"
+  },
+  {
+    "_text": "Do you know PTSD?",
+    "entities": {
+      "medical_history": [
+        {
+          "confidence": 0.87965700029089,
+          "value": "PTSD",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.98808181427299,
+          "value": "knowledge"
+        }
+      ]
+    },
+    "msg_id": "0kHr6LVZ8OAkz4E8z"
+  },
+  {
+    "_text": "What is your opinion towards MIT?",
+    "entities": {
+      "education": [
+        {
+          "confidence": 0.88221890147089,
+          "value": "MIT",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.98994659434221,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "0EATYONUi92kyAD8R"
+  },
+  {
+    "_text": "Are you American?",
+    "entities": {
+      "citizenship": [
+        {
+          "confidence": 0.87091295072334,
+          "value": "American",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99121403737484,
+          "value": "personal_info"
+        }
+      ]
+    },
+    "msg_id": "0FiQfINihUbjczoFC"
+  },
+  {
+    "_text": "Do you prefer whisky or martini?",
+    "entities": {
+      "liquor": [
+        {
+          "confidence": 0.90456627807784,
+          "value": "whisky",
+          "type": "value"
+        },
+        {
+          "confidence": 0.90204660091567,
+          "value": "martini",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99540590217204,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "0ujtsFM9W2U7jEsOA"
+  },
+  {
+    "_text": "Did you create Javis?",
+    "entities": {
+      "creation": [
+        {
+          "confidence": 0.88530445692189,
+          "value": "Javis",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.98669261712728,
+          "value": "experience"
+        }
+      ]
+    },
+    "msg_id": "0KBuxkGRJQDjxDyiE"
+  },
+  {
+    "_text": "Do you like Audi R8?",
+    "entities": {
+      "car": [
+        {
+          "confidence": 0.90465824227031,
+          "value": "Audi R8",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99191874314315,
+          "value": "preference"
+        }
+      ]
+    },
+    "msg_id": "0s3GYYLAhMqvihch1"
+  },
+  {
+    "_text": "Are you CEO of Stark Industries?",
+    "entities": {
+      "occupation": [
+        {
+          "confidence": 0.87849807728601,
+          "value": "CEO",
+          "type": "value"
+        }
+      ],
+      "organization": [
+        {
+          "confidence": 0.91864727146345,
+          "value": "Stark Industries",
+          "type": "value"
+        }
+      ],
+      "intent": [
+        {
+          "confidence": 0.99579894386307,
+          "value": "personal_info"
+        }
+      ]
+    },
+    "msg_id": "0Sovq5tpIVsR7ieIT"
+  }
+]
