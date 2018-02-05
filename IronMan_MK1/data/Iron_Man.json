@@ -1,289 +1,1589 @@
-{
-    "accessories": [
-        "Rolex watch", 
-        "Bvlgari watch", 
-        "Jaeger watch", 
-        "sunglasses"
-    ], 
-    "favorite_music": [
-        "heavy metal music",
-        "rock music",
-        "Black Sabbath",
-        "AC/DC", 
-        "Queen"
-    ], 
-    "dislike": [
-        "plan", 
-        "on time", 
-        "hospital"
-    ], 
-    "personality": [
-        "paranoid", 
-        "anxious", 
-        "arrogant"
-    ], 
-    "marital_status": [
-        "single"
-    ], 
-    "eyes": [
-        "blue"
-    ], 
-    "language": [
-        "English", 
-        "French", 
-        "Russian"
-    ], 
-    "relationship": [
-        "Pepper Potts/girl friend",
-        "Christine Everhart/ one night stand",
-        "Maya Hansen/Former Love Interest",
-        "Maxim cover models/one night stand"
-    ], 
-    "place_of_birth": [
-        "Sofia", 
-        "Bulgaria"
-    ], 
-    "favorite_food": [
-        "cheeseburger",
-        "burger",
-        "sandwich",
-        "pizza"
-    ], 
-    "description_of_father": [
-        "cold",
-        "calculating"
-    ], 
-    "current_alias": [
-        "Iron Man"
-    ], 
-    "gender": [
-        "male"
-    ], 
-    "base_of_operations": [
-        "Stark Tower", 
-        "New York Stark Industries Airfield",
-        "New Jersey formerly Stark Island",
-        "San Francisco", 
-        "Malibu California Tony Stark's Penthouse",
-        "New York Avengers Mansion",
-        "New York Avengers Compound",
-        "Seattle", 
-        "Washington", 
-        "Alexandria", 
-        "Virginia", 
-        "Seattle", 
-        "Washington", 
-        "Los Angeles"
-    ], 
-    "real_name": [
-        "Anthony Edward Stark", 
-        "Tony Stark"
-    ], 
-    "identity": [
-        "Public Identity"
-    ], 
-    "allies": [
-        "Happy Hogan/ Close Friend and Former Bodyguard",
-        "Maria Hill/ Employee and Former S.H.I.E.L.D. Deputy Director",
-        "JARVIS/ Former Partner/ Assistant and Close Friend",
-        "FRIDAY/ Partner and Assistant",
-        "Karen/ Creation and Appointed Assistant to Spider/Man",
-        "Christine Everhart/ One Night Stand",
-        "Ho Yinsen/ Fellow Captive and Friend, saved life, dead",
-        "Edwin Jarvis/ Former Butler of the Stark Family",
-        "Avengers/ Former Teammates",
-        "Natasha Ramonoff/ Black Widow/Former Teammate",
-        "James Rhodes/War Machine/Best Friend and Military Liaison",
-        "Vision/Creation",
-        "Steve Rogers/Captain America/Former Team Leader/Close Friend and Rival",
-        "Clint Barton/Hawkeye",
-        "Sam Wilson/Falcon",
-        "Wanda Maximoff/Scarlet Witch/Former Enemy and Enthraller Turned Former Teammate",
-        "Thor/Former Teammate",
-        "Bruce Banner/Hulk/Collaborator/Colleague and Close Friend",
-        "Pietro Maximoff/Quicksilver/Former Enemy Turned Teammate",
-        "S.H.I.E.L.D./(First Incarnation)",
-        "Nick Fury/Former Director",
-        "Phil Coulson/Former Liaison and Friend",
-        "Maya Hansen/Former Love Interest"
-    ], 
-    "like": [
-        "car modification", 
-        "vintage car", 
-        "casino", 
-        "pole dance", 
-        "boxing"
-    ], 
-    "occupation": [
-        "mechanical engineer",
-        "Adventurer", 
-        "superhero",
-        "inventor",
-        "industrialist",
-        "founder of the Maria Stark Foundation", 
-        "CEO of Stark Industries", 
-        "president emeritus of Resilient", 
-        "United States Secretary of Defense", 
-        "Executive Director of S.H.I.E.L.D.", 
-        "CEO of Stark Solutions", 
-        "Circuits Maximus and Stark International"
-    ], 
-    "editorial_names": [
-        "Invincible Iron Man", 
-        "International Iron Man", 
-        "Superior Iron Man", 
-        "Iron Man: Director of S.H.I.E.L.D."
-    ], 
-    "Universe": [
-        "Earth/616", 
-        "Marvel Universe"
-    ], 
-    "medical_history": [
-        "Post Traumatic Stress Disorder (PTSD)",
-        "Palladium Poisoning"
-    ], 
-    "self_description": [
-        "genius", 
-        "billionaire", 
-        "playboy", 
-        "philanthropist", 
-        "rich", 
-        "textbook narcissism"
-    ], 
-    "creators": [
-        "Stan Lee", 
-        "Larry Lieber", 
-        "Don Heck", 
-        "Jack Kirby"
-    ], 
-    "childhood": [
-        "first circuit board/age 4",
-        "first engine/age 6",
-        "MIT/age 17",
-        "CEO of Stark Industrial/age 21"
-    ], 
-    "education": [
-        "MIT",
-        "Massachusetts Institute of Technology",
-        "multiple PhDs in physics", 
-        "mechanical engineering", 
-        "electrical engineering"
-    ], 
-    "citizenship": [
-        "American", 
-        "Bulgarian"
-    ], 
-    "family": [
-        "Isaac Stark/adoptive ancestor",
-        "Howard Stark/paternal adoptive grandfather/deceased",
-        "Amanda Armstrong/biological mother",
-        "Jude ,biological father", 
-        "Howard Anthony Stark/adoptive father/deceased",
-        "Maria Stark/adoptive mother/deceased",
-        "Arno Stark/adoptive brother",
-        "Edward Stark/adoptive uncle/deceased",
-        "Morgan Stark/adoptive cousin"
-    ], 
-    "favourite_color": [
-        "red",
-        "gold"
-    ], 
-    "owned_car": [
-        "Audi R8 Silver", 
-        "Tesla Roadster", 
-        "Audi R8 Spyder", 
-        "Acura NSX", 
-        "Bugatti Veyron SS", 
-        "Ford Flathead Roadster", 
-        "Audi R8 e/tron White", 
-        "Audi R8 e/tron Red", 
-        "Shelby Cobra", 
-        "Saleen S7", 
-        "Ghia Cadillac", 
-        "Mercury Coupe", 
-        "Rolls Royce Phantom", 
-        "Wolf WR Ford Replica"
-    ], 
-    "favourite_liquor": [
-        "whisky", 
-        "martini", 
-        "hot sake", 
-        "champagne"
-    ], 
-    "creation": [
-        "Just A Rather Very Intelligent System (Javis)", 
-        "Ultron", 
-        "Spider/Man Suit", 
-        "FRIDAY", 
-        "Karen", 
-        "Arc Reactor technology"
-    ], 
-    "weight": [
-        "225 lbs (102 kg) (without armor)", 
-        "425 lbs (193 kg) (including armor)"
-    ], 
-    "height": [
-        "185 cm (without armor)",
-        "198 cm (including armor)"
-    ], 
-    "hair_color": [
-        "Black"
-    ], 
-    "affiliation": [
-        "Formerly Stark Industries, CEO", 
-        "Avengers", 
-        "Illuminati", 
-        "Axis", 
-        "Resilient", 
-        "S.H.I.E.L.D.", 
-        "Guardians of the Galaxy", 
-        "Initiative, leader", 
-        "Pro/Registration Superhero Uni, leader", 
-        "New Avengers", 
-        "Mighty Avengers", 
-        "Hellfire Club", 
-        "Force Works", 
-        "Avengers West Coast", 
-        "United States Department of Defense", 
-        "the Mighty", 
-        "Knights of the Atomic Round Table", 
-        "Alcoholics Anonymous", 
-        "Damage Control"
-    ], 
-    "aliases": [
-        "Actor", 
-        "Golden Gladiator", 
-        "Bullet/Head", 
-        "Golden Avenger", 
-        "Shellhead", 
-        "Armored Avenger", 
-        "Spare Parts Man", 
-        "Crimson Dynamo", 
-        "Tetsujin", 
-        "Hogan Potts", 
-        "Anthony of York", 
-        "Randall Pierce", 
-        "Cobalt Man", 
-        "Iron Gentleman", 
-        "Metal Man", 
-        "Man of Iron", 
-        "Tin Man", 
-        "Irene", 
-        "Electro", 
-        "The Enginerer", 
-        "T", 
-        "Master of Machines", 
-        "Space/Knight", 
-        "Richard Franco", 
-        "Martini", 
-        "Iron Pig", 
-        "Merchant of Death"
-    ], 
-    "enemies": [
-        "Obadiah Stane/Iron Monger/Former Business Partner",
-        "Ten Rings", 
-        "Loki", 
-        "HYDRA", 
-        "Ultron"
+[
+  {
+    "id": "accessory",
+    "values": [
+      {
+        "value": "watch",
+        "expressions": [
+          "watch",
+          "watches"
+        ],
+        "like": 50,
+        "related_info": [
+            "Rolex",
+            "Bvlgari"
+        ]
+      },
+
+
+      {
+        "value": "sunglasses",
+        "expressions": [
+          "sunglasses"
+        ]
+      },
+      {
+        "value": "glasses",
+        "expressions": [
+          "glasses"
+        ]
+      },
+      {
+        "value": "ring",
+        "expressions": [
+          "ring"
+        ]
+      }
     ]
-}
+  },
+  {
+    "id": "brand",
+    "values": [
+      {
+        "value": "Rolex",
+        "expressions": [
+          "Rolex"
+        ]
+      },
+      {
+        "value": "Bvlgari",
+        "expressions": [
+          "Bvlgari"
+        ]
+      },
+      {
+        "value": "Jaeger",
+        "expressions": [
+          "Jaeger"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "music",
+    "values": [
+      {
+        "value": "heavy metal music",
+        "expressions": [
+          "heavy metal music",
+          "heavy metal"
+        ]
+      },
+      {
+        "value": "rock music",
+        "expressions": [
+          "rock music",
+          "rock"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "band",
+    "values": [
+      {
+        "value": "Black Sabbath",
+        "expressions": [
+          "Black Sabbath"
+        ]
+      },
+      {
+        "value": "AC/DC",
+        "expressions": [
+          "AC/DC"
+        ]
+      },
+      {
+        "value": "Queen",
+        "expressions": [
+          "Queen"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "place",
+    "values": [
+      {
+        "value": "hospital",
+        "expressions": [
+          "hospital"
+        ]
+      },
+      {
+        "value": "casino",
+        "expressions": [
+          "casino"
+        ]
+      },
+      {
+        "value": "Stark Tower",
+        "expressions": [
+          "Stark Tower"
+        ]
+      },
+      {
+        "value": "Stark Industries Airfield",
+        "expressions": [
+          "Stark Industries Airfield"
+        ]
+      },
+      {
+        "value": "Stark Island",
+        "expressions": [
+          "formerly Stark Island"
+        ]
+      },
+      {
+        "value": "Tony Stark's Penthouse",
+        "expressions": [
+          "Tony Stark's Penthouse"
+        ]
+      },
+      {
+        "value": "Avengers Mansion",
+        "expressions": [
+          "Avengers Mansion"
+        ]
+      },
+      {
+        "value": "Avengers Compound",
+        "expressions": [
+          "Avengers Compound"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "personality",
+    "values": [
+      {
+        "value": "paranoid",
+        "expressions": [
+          "paranoid"
+        ]
+      },
+      {
+        "value": "anxious",
+        "expressions": [
+          "anxious"
+        ]
+      },
+      {
+        "value": "arrogant",
+        "expressions": [
+          "arrogant"
+        ]
+      },
+      {
+        "value": "narcissism",
+        "expressions": [
+          "narcissism"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reputation",
+    "values": [
+      {
+        "value": "genius",
+        "expressions": [
+          "genius"
+        ]
+      },
+      {
+
+        "value": "billionaire",
+        "expressions": [
+          "billionaire"
+        ]
+      },
+      {
+        "value": "playboy",
+        "expressions": [
+          "playboy"
+        ]
+      },
+      {
+        "value": "philanthropist",
+        "expressions": [
+          "philanthropist"
+        ]
+      },
+      {
+        "value": "rich",
+        "expressions": [
+          "rich"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marital_status",
+    "values": [
+      {
+        "value": "single",
+        "expressions": [
+          "single"
+        ]
+      },
+      {
+        "value": "married",
+        "expressions": [
+          "married"
+        ]
+      },
+      {
+        "value": "divorced",
+        "expressions": [
+          "divorced"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "characteristic",
+    "values": [
+      {
+        "value": "eye",
+        "expressions": [
+          "eye"
+        ]
+      },
+      {
+        "value": "hair",
+        "expressions": [
+          "hair"
+        ]
+      },
+      {
+        "value": "height",
+        "expressions": [
+          "height",
+          "tall"
+        ]
+      },
+      {
+        "value": "weight",
+        "expressions": [
+          "weight",
+          "heavy",
+          "fat"
+        ]
+      },
+      {
+        "value": "gender",
+        "expressions": [
+          "gender"
+        ]
+      }
+
+    ]
+  },
+  {
+    "id": "color",
+    "values": [
+      {
+        "value": "black",
+        "expressions": [
+          "black"
+        ]
+      },
+      {
+        "value": "red",
+        "expressions": [
+          "red"
+        ]
+      },
+      {
+        "value": "gold",
+        "expressions": [
+          "gold"
+        ]
+      },
+      {
+        "value": "silver",
+        "expressions": [
+          "silver"
+        ]
+      },
+      {
+        "value": "blue",
+        "expressions": [
+          "blue"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "language",
+    "values": [
+      {
+        "value": "English",
+        "expressions": [
+          "English"
+        ]
+      },
+      {
+        "value": "French",
+        "expressions": [
+          "French"
+        ]
+      },
+      {
+        "value": "Russian",
+        "expressions": [
+          "Russian"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "relationship",
+    "values": [
+      {
+        "value": "girlfriend",
+        "expressions": [
+          "girlfriend"
+        ]
+      },
+      {
+        "value": "one night stand",
+        "expressions": [
+          "one night stand"
+        ]
+      },
+      {
+        "value": "former girlfriend",
+        "expressions": [
+          "former girlfriend"
+        ]
+      },
+      {
+        "value": "close friend",
+        "expressions": [
+          "close friend"
+        ]
+      },
+      {
+        "value": "bodyguard",
+        "expressions": [
+          "bodyguard"
+        ]
+      },
+      {
+        "value": "creation",
+        "expressions": [
+          "creation"
+        ]
+      },
+      {
+        "value": "butler",
+        "expressions": [
+          "butler"
+        ]
+      },
+      {
+        "value": "teammate",
+        "expressions": [
+          "teammate"
+        ]
+      },
+      {
+        "value": "best friend",
+        "expressions": [
+          "best friend"
+        ]
+      },
+      {
+        "value": "enemy",
+        "expressions": [
+          "enemy"
+        ]
+      },
+      {
+        "value": "former teammate",
+        "expressions": [
+          "former teammate"
+        ]
+      },
+      {
+        "value": "colleague",
+        "expressions": [
+          "colleague"
+        ]
+      },
+      {
+        "value": "collaborator",
+        "expressions": [
+          "collaborator"
+        ]
+      },
+      {
+        "value": "assistant",
+        "expressions": [
+          "assistant"
+        ]
+      },
+      {
+        "value": "former partner",
+        "expressions": [
+          "former partner"
+        ]
+      },
+      {
+        "value": "partner",
+        "expressions": [
+          "partner"
+        ]
+      },
+      {
+        "value": "ancestor",
+        "expressions": [
+          "ancestor"
+        ]
+      },
+      {
+        "value": "grandfather",
+        "expressions": [
+          "grandfather"
+        ]
+      },
+      {
+        "value": "biological mother",
+        "expressions": [
+          "biological mother"
+        ]
+      },
+      {
+        "value": "mother",
+        "expressions": [
+          "mother"
+        ]
+      },
+      {
+        "value": "biological father",
+        "expressions": [
+          "biological father"
+        ]
+      },
+      {
+        "value": "adoptive father",
+        "expressions": [
+          "adoptive father"
+        ]
+      },
+      {
+        "value": "father",
+        "expressions": [
+          "father"
+        ]
+      },
+      {
+        "value": "adoptive mother",
+        "expressions": [
+          "adoptive mother"
+        ]
+      },
+      {
+        "value": "brother",
+        "expressions": [
+          "brother"
+        ]
+      },
+      {
+        "value": "uncle",
+        "expressions": [
+          "uncle"
+        ]
+      },
+      {
+        "value": "cousin",
+        "expressions": [
+          "cousin"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "person_name",
+    "values": [
+      {
+        "value": "Pepper Potts",
+        "expressions": [
+          "Pepper Potts",
+          "Pepper"
+        ]
+      },
+      {
+        "value": "Christine Everhart",
+        "expressions": [
+          "Christine Everhart",
+          "Christine"
+        ]
+      },
+      {
+        "value": "Maya Hansen",
+        "expressions": [
+          "Maya Hansen",
+          "Maya"
+        ]
+      },
+      {
+        "value": "Maxim cover models",
+        "expressions": [
+          "Maxim cover models"
+        ]
+      },
+      {
+        "value": "Anthony Edward Stark",
+        "expressions": [
+          "Anthony Edward Stark",
+          "Anthony"
+        ]
+      },
+      {
+        "value": "Tony Stark",
+        "expressions": [
+          "Tony Stark",
+          "Tony"
+        ]
+      },
+      {
+        "value": "Obadiah Stane",
+        "expressions": [
+          "Obadiah Stane",
+          "Obadiah"
+        ]
+      },
+      {
+        "value": "Loki",
+        "expressions": [
+          "Loki"
+        ]
+      },
+      {
+        "value": "Ultron",
+        "expressions": [
+          "Ultron"
+        ]
+      },
+      {
+        "value": "Happy Hogan",
+        "expressions": [
+          "Happy Hogan"
+        ]
+      },
+      {
+        "value": "Maria Hill",
+        "expressions": [
+          "Maria Hill"
+        ]
+      },
+      {
+        "value": "Karen",
+        "expressions": [
+          "Karen"
+        ]
+      },
+      {
+        "value": "Ho Yinsen",
+        "expressions": [
+          "Ho Yinsen"
+        ]
+      },
+      {
+        "value": "Edwin Jarvis",
+        "expressions": [
+          "Edwin Jarvis"
+        ]
+      },
+      {
+        "value": "Natasha Ramonoff",
+        "expressions": [
+          "Natasha Ramonoff"
+        ]
+      },
+      {
+        "value": "James Rhodes",
+        "expressions": [
+          "James Rhodes"
+        ]
+      },
+      {
+        "value": "Steve Rogers",
+        "expressions": [
+          "Steve Rogers"
+        ]
+      },
+      {
+        "value": "Clint Bartone",
+        "expressions": [
+          "Clint Barton"
+        ]
+      },
+      {
+        "value": "Sam Wilson",
+        "expressions": [
+          "Sam Wilson"
+        ]
+      },
+      {
+        "value": "Wanda Maximoff",
+        "expressions": [
+          "Wanda Maximoff"
+        ]
+      },
+      {
+        "value": "Thor",
+        "expressions": [
+          "Thor"
+        ]
+      },
+      {
+        "value": "Bruce Banner",
+        "expressions": [
+          "Bruce Banner",
+          "Banner"
+        ]
+      },
+      {
+        "value": "Pietro Maximoff",
+        "expressions": [
+          "Pietro Maximoff"
+        ]
+      },
+      {
+        "value": "Nick Fury",
+        "expressions": [
+          "Nick Fury"
+        ]
+      },
+      {
+        "value": "Phil Coulson",
+        "expressions": [
+          "Phil Coulson"
+        ]
+      },
+      {
+        "value": "Stan Lee",
+        "expressions": [
+          "Stan Lee"
+        ]
+      },
+      {
+        "value": "Larry Lieber",
+        "expressions": [
+          "Larry Lieber"
+        ]
+      },
+      {
+        "value": "Don Heck",
+        "expressions": [
+          "Don Heck"
+        ]
+      },
+      {
+        "value": "Jack Kirby",
+        "expressions": [
+          "Jack Kirby"
+        ]
+      },
+      {
+        "value": "Isaac Stark",
+        "expressions": [
+          "Isaac Stark"
+        ]
+      },
+      {
+        "value": "Howard Stark",
+        "expressions": [
+          "Howard Stark"
+        ]
+      },
+      {
+        "value": "Amanda Armstrong",
+        "expressions": [
+          "Amanda Armstrong"
+        ]
+      },
+      {
+        "value": "Jude",
+        "expressions": [
+          "Jude ,biological father"
+        ]
+      },
+      {
+        "value": "Howard Anthony Stark",
+        "expressions": [
+          "Howard Anthony Stark"
+        ]
+      },
+      {
+        "value": "Maria Stark",
+        "expressions": [
+          "Maria Stark"
+        ]
+      },
+      {
+        "value": "Arno Stark",
+        "expressions": [
+          "Arno Stark"
+        ]
+      },
+      {
+        "value": "Edward Stark",
+        "expressions": [
+          "Edward Stark"
+        ]
+      },
+      {
+        "value": "Morgan Stark",
+        "expressions": [
+          "Morgan Stark"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "country",
+    "values": [
+      {
+        "value": "Bulgaria",
+        "expressions": [
+          "Bulgaria"
+        ]
+      },
+      {
+        "value": "America",
+        "expressions": [
+          "America",
+          "US",
+          "USA",
+          "U.S.A."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "food",
+    "values": [
+      {
+        "value": "burger",
+        "expressions": [
+          "burger",
+          "cheeseburger"
+        ]
+      },
+      {
+        "value": "sandwich",
+        "expressions": [
+          "sandwich"
+        ]
+      },
+      {
+        "value": "pizza",
+        "expressions": [
+          "pizza"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "city",
+    "values": [
+      {
+        "value": "New York",
+        "expressions": [
+          "New York"
+        ]
+      },
+      {
+        "value": "New Jersey",
+        "expressions": [
+          "New Jersey"
+        ]
+      },
+      {
+        "value": "San Francisco",
+        "expressions": [
+          "San Francisco"
+        ]
+      },
+      {
+        "value": "Malibu",
+        "expressions": [
+          "Malibu"
+        ]
+      },
+      {
+        "value": "Seattle",
+        "expressions": [
+          "Seattle"
+        ]
+      },
+      {
+        "value": "Washington",
+        "expressions": [
+          "Washington"
+        ]
+      },
+      {
+        "value": "Alexandria",
+        "expressions": [
+          "Alexandria"
+        ]
+      },
+      {
+        "value": "Virginia",
+        "expressions": [
+          "Virginia"
+        ]
+      },
+      {
+        "value": "Seattle",
+        "expressions": [
+          "Seattle"
+        ]
+      },
+      {
+        "value": "California",
+        "expressions": [
+          "California"
+        ]
+      },
+      {
+        "value": "Los Angeles",
+        "expressions": [
+          "Los Angeles"
+        ]
+      },
+      {
+        "value": "Sofia",
+        "expressions": [
+          "Sofia"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hobby",
+    "values": [
+      {
+        "value": "car modification",
+        "expressions": [
+          "car modification"
+        ]
+      },
+      {
+        "value": "vintage car",
+        "expressions": [
+          "vintage car"
+        ]
+      },
+      {
+        "value": "gamble",
+        "expressions": [
+          "gamble"
+        ]
+      },
+      {
+        "value": "pole dance",
+        "expressions": [
+          "pole dance"
+        ]
+      },
+      {
+        "value": "boxing",
+        "expressions": [
+          "boxing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "alias",
+    "values": [
+      {
+        "value": "Actor",
+        "expressions": [
+          "Actor"
+        ]
+      },
+      {
+        "value": "Golden Gladiator",
+        "expressions": [
+          "Golden Gladiator"
+        ]
+      },
+      {
+        "value": "Bullet Head",
+        "expressions": [
+          "Bullet Head"
+        ]
+      },
+      {
+        "value": "Golden Avenger",
+        "expressions": [
+          "Golden Avenger"
+        ]
+      },
+      {
+        "value": "Shellhead",
+        "expressions": [
+          "Shellhead"
+        ]
+      },
+      {
+        "value": "Armored Avenger",
+        "expressions": [
+          "Armored Avenger"
+        ]
+      },
+      {
+        "value": "Spare Parts Man",
+        "expressions": [
+          "Spare Parts Man"
+        ]
+      },
+      {
+        "value": "Crimson Dynamo",
+        "expressions": [
+          "Crimson Dynamo"
+        ]
+      },
+      {
+        "value": "Tetsujin",
+        "expressions": [
+          "Tetsujin"
+        ]
+      },
+      {
+        "value": "Hogan Potts",
+        "expressions": [
+          "Hogan Potts"
+        ]
+      },
+      {
+        "value": "Anthony of York",
+        "expressions": [
+          "Anthony of York"
+        ]
+      },
+      {
+        "value": "Randall Pierce",
+        "expressions": [
+          "Randall Pierce"
+        ]
+      },
+      {
+        "value": "Cobalt Man",
+        "expressions": [
+          "Cobalt Man"
+        ]
+      },
+      {
+        "value": "Iron Gentleman",
+        "expressions": [
+          "Iron Gentleman"
+        ]
+      },
+      {
+        "value": "Metal Man",
+        "expressions": [
+          "Metal Man"
+        ]
+      },
+      {
+        "value": "Man of Iron",
+        "expressions": [
+          "Man of Iron"
+        ]
+      },
+      {
+        "value": "Tin Man",
+        "expressions": [
+          "Tin Man"
+        ]
+      },
+      {
+        "value": "Irene",
+        "expressions": [
+          "Irene"
+        ]
+      },
+      {
+        "value": "Electro",
+        "expressions": [
+          "Electro"
+        ]
+      },
+      {
+        "value": "The Enginerer",
+        "expressions": [
+          "The Enginerer"
+        ]
+      },
+      {
+        "value": "Master of Machines",
+        "expressions": [
+          "Master of Machines"
+        ]
+      },
+      {
+        "value": "Space/Knight",
+        "expressions": [
+          "Space/Knight"
+        ]
+      },
+      {
+        "value": "Richard Franco",
+        "expressions": [
+          "Richard Franco"
+        ]
+      },
+      {
+        "value": "Martini",
+        "expressions": [
+          "Martini"
+        ]
+      },
+      {
+        "value": "Iron Pig",
+        "expressions": [
+          "Iron Pig"
+        ]
+      },
+      {
+        "value": "Merchant of Death",
+        "expressions": [
+          "Merchant of Death"
+        ]
+      },
+      {
+        "value": "Black Widow",
+        "expressions": [
+          "Black Widow"
+        ]
+      },
+      {
+        "value": "War Machine",
+        "expressions": [
+          "War Machine"
+        ]
+      },
+      {
+        "value": "Captain America",
+        "expressions": [
+          "Captain America"
+        ]
+      },
+      {
+        "value": "Hawkeye",
+        "expressions": [
+          "Hawkeye"
+        ]
+      },
+      {
+        "value": "Falcon",
+        "expressions": [
+          "Falcon"
+        ]
+      },
+      {
+        "value": "Scarlet Witch",
+        "expressions": [
+          "Scarlet Witch"
+        ]
+      },
+      {
+        "value": "Hulk",
+        "expressions": [
+          "Hulk"
+        ]
+      },
+      {
+        "value": "Quicksilver",
+        "expressions": [
+          "Quicksilver"
+        ]
+      },
+      {
+        "value": "Avengers",
+        "expressions": [
+          "Avengers"
+        ]
+      },
+      {
+        "value": "Iron Man",
+        "expressions": [
+          "Iron Man"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "medical_history",
+    "values": [
+      {
+        "value": "PTSD",
+        "expressions": [
+          "Post Traumatic Stress Disorder",
+          "PTSD"
+        ]
+      },
+      {
+        "value": "Palladium Poisoning",
+        "expressions": [
+          "Palladium Poisoning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "values": [
+      {
+        "value": "school",
+        "expressions": [
+          "school"
+        ]
+      },
+      {
+        "value": "high school",
+        "expressions": [
+          "high school"
+        ]
+      },
+      {
+        "value": "university",
+        "expressions": [
+          "university"
+        ]
+      },
+      {
+        "value": "college",
+        "expressions": [
+          "college"
+        ]
+      },
+      {
+        "value": "MIT",
+        "expressions": [
+          "MIT"
+        ]
+      },
+      {
+        "value": "Massachusetts Institute of Technology",
+        "expressions": [
+          "Massachusetts Institute of Technology"
+        ]
+      },
+      {
+        "value": "PhDs",
+        "expressions": [
+          "PhDs"
+        ]
+      },
+      {
+        "value": "physics",
+        "expressions": [
+          "physics"
+        ]
+      },
+      {
+        "value": "mechanical engineering",
+        "expressions": [
+          "mechanical engineering"
+        ]
+      },
+      {
+        "value": "electrical engineering",
+        "expressions": [
+          "electrical engineering"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "citizenship",
+    "values": [
+      {
+        "value": "American",
+        "expressions": [
+          "American"
+        ]
+      },
+      {
+        "value": "Bulgarian",
+        "expressions": [
+          "Bulgarian"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "liquor",
+    "values": [
+      {
+        "value": "whisky",
+        "expressions": [
+          "whisky"
+        ]
+      },
+      {
+        "value": "martini",
+        "expressions": [
+          "martini"
+        ]
+      },
+      {
+        "value": "hot sake",
+        "expressions": [
+          "hot sake"
+        ]
+      },
+      {
+        "value": "champagne",
+        "expressions": [
+          "champagne"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "creation",
+    "values": [
+      {
+        "value": "Javis",
+        "expressions": [
+          "Just A Rather Very Intelligent System",
+          "Javis"
+        ]
+      },
+      {
+        "value": "Ultron",
+        "expressions": [
+          "Ultron"
+        ]
+      },
+      {
+        "value": "Spider Man Suit",
+        "expressions": [
+          "Spider Man Suit"
+        ]
+      },
+      {
+        "value": "FRIDAY",
+        "expressions": [
+          "FRIDAY"
+        ]
+      },
+      {
+        "value": "Karen",
+        "expressions": [
+          "Karen"
+        ]
+      },
+      {
+        "value": "Arc Reactor technology",
+        "expressions": [
+          "Arc Reactor technology"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "car",
+    "values": [
+      {
+        "value": "Audi",
+        "expressions": [
+          "Audi"
+        ]
+      },
+      {
+        "value": "Audi R8",
+        "expressions": [
+          "Audi R8"
+        ]
+      },
+      {
+        "value": "Tesla Roadster",
+        "expressions": [
+          "Tesla Roadster"
+        ]
+      },
+      {
+        "value": "Audi R8 Spyder",
+        "expressions": [
+          "Audi R8 Spyder"
+        ]
+      },
+      {
+        "value": "Acura NSX",
+        "expressions": [
+          "Acura NSX"
+        ]
+      },
+      {
+        "value": "Bugatti Veyron SS",
+        "expressions": [
+          "Bugatti Veyron SS"
+        ]
+      },
+      {
+        "value": "Ford Flathead Roadster",
+        "expressions": [
+          "Ford Flathead Roadster"
+        ]
+      },
+      {
+        "value": "Audi R8 e/tron",
+        "expressions": [
+          "Audi R8 e/tron"
+        ]
+      },
+      {
+        "value": "Shelby Cobra",
+        "expressions": [
+          "Shelby Cobra"
+        ]
+      },
+      {
+        "value": "Saleen S7",
+        "expressions": [
+          "Saleen S7"
+        ]
+      },
+      {
+        "value": "Ghia Cadillac",
+        "expressions": [
+          "Ghia Cadillac"
+        ]
+      },
+      {
+        "value": "Coupe",
+        "expressions": [
+          "Coupe"
+        ]
+      },
+      {
+        "value": "Rolls Royce Phantom",
+        "expressions": [
+          "Rolls Royce Phantom"
+        ]
+      },
+      {
+        "value": "Wolf WR Ford Replica",
+        "expressions": [
+          "Wolf WR Ford Replica"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "occupation",
+    "values": [
+      {
+        "value": "mechanical engineer",
+        "expressions": [
+          "mechanical engineer"
+        ]
+      },
+      {
+        "value": "adventurer",
+        "expressions": [
+          "adventurer"
+        ]
+      },
+      {
+        "value": "superhero",
+        "expressions": [
+          "superhero"
+        ]
+      },
+      {
+        "value": "inventor",
+        "expressions": [
+          "inventor"
+        ]
+      },
+      {
+        "value": "industrialist",
+        "expressions": [
+          "industrialist"
+        ]
+      },
+      {
+        "value": "founder",
+        "expressions": [
+          "founder"
+        ]
+      },
+      {
+        "value": "CEO",
+        "expressions": [
+          "CEO",
+          "C.E.O"
+        ]
+      },
+      {
+        "value": "president emeritus",
+        "expressions": [
+          "president emeritus"
+        ]
+      },
+      {
+        "value": "Secretary of Defense",
+        "expressions": [
+          "Secretary of Defense"
+        ]
+      },
+      {
+        "value": "Executive Director",
+        "expressions": [
+          "Executive Director"
+        ]
+      },
+      {
+        "value": "leader",
+        "expressions": [
+          "leader"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "organization",
+    "values": [
+      {
+        "value": "Maria Stark Foundation",
+        "expressions": [
+          "Maria Stark Foundation"
+        ]
+      },
+      {
+        "value": "Stark Industries",
+        "expressions": [
+          "Stark Industries"
+        ]
+      },
+      {
+        "value": "S.H.I.E.L.D.",
+        "expressions": [
+          "S.H.I.E.L.D."
+        ]
+      },
+      {
+        "value": "Avengers",
+        "expressions": [
+          "Avengers"
+        ]
+      },
+      {
+        "value": "Illuminati",
+        "expressions": [
+          "Illuminati"
+        ]
+      },
+      {
+        "value": "Axis",
+        "expressions": [
+          "Axis"
+        ]
+      },
+      {
+        "value": "Resilient",
+        "expressions": [
+          "Resilient"
+        ]
+      },
+      {
+        "value": "Guardians of the Galaxy",
+        "expressions": [
+          "Guardians of the Galaxy"
+        ]
+      },
+      {
+        "value": "Initiative",
+        "expressions": [
+          "Initiative"
+        ]
+      },
+      {
+        "value": "New Avengers",
+        "expressions": [
+          "New Avengers"
+        ]
+      },
+      {
+        "value": "Mighty Avengers",
+        "expressions": [
+          "Mighty Avengers"
+        ]
+      },
+      {
+        "value": "Hellfire Club",
+        "expressions": [
+          "Hellfire Club"
+        ]
+      },
+      {
+        "value": "Force Works",
+        "expressions": [
+          "Force Works"
+        ]
+      },
+      {
+        "value": "Avengers West Coast",
+        "expressions": [
+          "Avengers West Coast"
+        ]
+      },
+      {
+        "value": "United States Department of Defense",
+        "expressions": [
+          "United States Department of Defense"
+        ]
+      },
+      {
+        "value": "the Mighty",
+        "expressions": [
+          "the Mighty"
+        ]
+      },
+      {
+        "value": "Knights of the Atomic Round Table",
+        "expressions": [
+          "Knights of the Atomic Round Table"
+        ]
+      },
+      {
+        "value": "Alcoholics Anonymous",
+        "expressions": [
+          "Alcoholics Anonymous"
+        ]
+      },
+      {
+        "value": "Damage Control",
+        "expressions": [
+          "Damage Control"
+        ]
+      },
+      {
+        "value": "Ten Rings",
+        "expressions": [
+          "Ten Rings"
+        ]
+      },
+      {
+        "value": "HYDRA",
+        "expressions": [
+          "HYDRA"
+        ]
+      }
+    ]
+  }
+]
