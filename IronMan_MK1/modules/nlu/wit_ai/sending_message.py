@@ -3,7 +3,7 @@ import urllib.parse
 import json
 
 def main():
-    access_token = 'Q4ITI6D4OHC6P4HJWJFP36QJ6EZQI7VS'
+    access_token = 'MRWCQY74ZTT244XU4DUPHCMU4RIRUDKT'
     client = Trainer(access_token=access_token)
     input_message_file = "sample_question.txt"
     data_out = []

@@ -1,26 +1,46 @@
 #Format: question,intent,entity_id_1, value_1,expression_1,entity_id_2, value_2,expression_2
+Have you joined any organization?,personal_info,subject,organization,organization
+What is your favourite color?,preference,subject,color,color,inform_question,what,What
 Do you hate sunglasses?,preference,accessory,sunglasses,sunglasses
+Which pair of sunglasses is your favourite?,preference,accessory,sunglasses,sunglasses,inform_question,which,Which
 Do you like Rolex watch?,preference,brand,Rolex,Rolex,accessory,watch,watch
-What type of music you like?,preference,subject,music,music
+How do you like your Rolex watches?,preference,accessory,watch,watches,brand,Rolex,Rolex,inform_question,how,How
 Do you like rock music?,preference,music,rock music,rock music
+How do you like the rock music?,preference,music,rock music,rock music,inform_question,how,How
 Do you prefer AC/DC or Queen?,preference,band,AC/DC,AC/DC,band,Queen,Queen
-Where is Stark Tower?,location,place,Stark Tower,Stark Tower
+What is your opinion towards AC/DC?,opinion,band,AC/DC,AC/DC,inform_question,what,What
+Are you living in Stark Tower?,personal_info,place,Stark Tower,Stark Tower
+Where is Stark Tower?,location,place,Stark Tower,Stark Tower,inform_question,where,Where
 Do you think you are arrogant?,personal_info,personality,arrogant,arrogant
+Who you think is arrogant?,person,personality,arrogant,arrogant,inform_question,who,Who
 Are you rich?,personal_info,reputation,rich,rich
+Who is rich?,person,reputation,rich,rich,inform_question,who,Who
 Are you married?,personal_info,marital_status,married,married
+Who is still single?,person,marital_status,single,single,inform_question,who,Who
 Is your hair red?,personal_info,characteristic,hair,hair,color,red,red
-Can you speak french?,ability,language,French,French
-Who is your father?,person,relationship,father,father
+What is your eye color?,personal_info,characteristic,eye,eye,subject,color,color,inform_question,what,What
+Can you speak French?,ability,language,French,French
+Who speaks English?,person,language,English,English,inform_question,who,Who
 Is Pepper your girlfriend?,person,person_name,Pepper Potts,Pepper,relationship,girlfriend,girlfriend
+Who is your father?,person,relationship,father,father,inform_question,who,Who
 Have you been to America?,experience,country,America,America
+Where is USA?,location,country,America,USA,inform_question,where,Where
 Do you like cheeseburger?,preference,food,burger,cheeseburger
-Where is New York?,location,city,New York,New York
-Do you like boxing?,personal_info,hobby,boxing,boxing
+Where is my cheeseburger?,location,food,burger,cheeseburger,inform_question,where,Where
+Are you living in New Jersey?,personal_info,city,New Jersey,New Jersey
+Where is New York?,location,city,New York,New York,inform_question,where,Where
+Do you like boxing?,preference,hobby,boxing,boxing
+Who like boxing?,person,hobby,boxing,boxing,inform_question,who,Who
 Are you Iron Man?,personal_info,alias,Iron Man,Iron Man
-Do you know PTSD?,knowledge,medical_history,PTSD,PTSD
-What is your opinion towards MIT?,preference,education,MIT,MIT
+Who is Iron Man?,person,alias,Iron Man,Iron Man,inform_question,who,Who
+Do you know PTSD?,information,medical_history,PTSD,PTSD
+What is PTSD?,information,medical_history,PTSD,PTSD,inform_question,what,What
+Did you went to MIT?,opinion,education,MIT,MIT
+What is your opinion towards MIT?,opinion,education,MIT,MIT,inform_question,what,What
 Are you American?,personal_info,citizenship,American,American
 Do you prefer whisky or martini?,preference,liquor,whisky,whisky,liquor,martini,martini
+Where I can buy some whisky?,location,liquor,whisky,whisky,inform_question,where,Where
 Did you create Javis?,experience,creation,Javis,Javis
+Who is Javis?,person,creation,Javis,Javis,inform_question,who,Who
 Do you like Audi R8?,preference,car,Audi R8,Audi R8
 Are you CEO of Stark Industries?,personal_info,occupation,CEO,CEO,organization,Stark Industries,Stark Industries
