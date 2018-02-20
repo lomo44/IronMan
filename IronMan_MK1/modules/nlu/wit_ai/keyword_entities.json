@@ -462,6 +462,12 @@
     "id": "relationship",
     "values": [
       {
+        "value": "you",
+        "expressions": [
+          "you"
+        ]
+      },
+      {
         "value": "girlfriend",
         "expressions": [
           "girlfriend"
@@ -1703,6 +1709,48 @@
           "HYDRA"
         ]
       }
+    ]
+  },
+  {
+    "id": "inform_question",
+    "values": [
+      {
+        "value": "what",
+        "expressions": [
+          "what"
+        ]
+      },
+      {
+        "value": "how",
+        "expressions": [
+          "how"
+        ]
+      },
+      {
+        "value": "who",
+        "expressions": [
+          "who"
+        ]
+      },
+      {
+        "value": "where",
+        "expressions": [
+          "where"
+        ]
+      },
+      {
+        "value": "when",
+        "expressions": [
+          "when"
+        ]
+      },
+      {
+        "value": "which",
+        "expressions": [
+          "which"
+        ]
+      }
+
     ]
   }
 ]

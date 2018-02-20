@@ -39,14 +39,13 @@ def init_entity(access_token, input_json_file):
 
 
 def main():
-    access_token = 'Q4ITI6D4OHC6P4HJWJFP36QJ6EZQI7VS'
+    access_token = 'MRWCQY74ZTT244XU4DUPHCMU4RIRUDKT'
     keyword_entity_file = "keyword_entities.json"
     training_sample_file = "training_sample.json"
     client = Trainer(access_token=access_token)
     # client.clean_up()
-    #client.init_entity(keyword_entity_file)
-    #client.init_training_sample(training_sample_file)
-    print(client.get_entity_info("wit$contact"))
+    client.init_entity(keyword_entity_file)
+    client.init_training_sample(training_sample_file)
 
 
 if __name__ == "__main__":

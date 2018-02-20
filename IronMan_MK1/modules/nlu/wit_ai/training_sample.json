@@ -1,5 +1,41 @@
 [
   {
+    "text": "Have you joined any organization?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 20, 
+        "end": 32, 
+        "value": "organization", 
+        "entity": "subject"
+      }
+    ]
+  }, 
+  {
+    "text": "What is your favourite color?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 23, 
+        "end": 28, 
+        "value": "color", 
+        "entity": "subject"
+      }, 
+      {
+        "start": 0, 
+        "end": 4, 
+        "value": "what", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
     "text": "Do you hate sunglasses?", 
     "entities": [
       {
@@ -11,6 +47,27 @@
         "end": 22, 
         "value": "sunglasses", 
         "entity": "accessory"
+      }
+    ]
+  }, 
+  {
+    "text": "Which pair of sunglasses is your favourite?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 14, 
+        "end": 24, 
+        "value": "sunglasses", 
+        "entity": "accessory"
+      }, 
+      {
+        "start": 0, 
+        "end": 5, 
+        "value": "which", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -36,17 +93,29 @@
     ]
   }, 
   {
-    "text": "What type of music you like?", 
+    "text": "How do you like your Rolex watches?", 
     "entities": [
       {
         "value": "preference", 
         "entity": "intent"
       }, 
       {
-        "start": 13, 
-        "end": 18, 
-        "value": "music", 
-        "entity": "subject"
+        "start": 27, 
+        "end": 34, 
+        "value": "watch", 
+        "entity": "accessory"
+      }, 
+      {
+        "start": 21, 
+        "end": 26, 
+        "value": "Rolex", 
+        "entity": "brand"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "how", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -62,6 +131,27 @@
         "end": 22, 
         "value": "rock music", 
         "entity": "music"
+      }
+    ]
+  }, 
+  {
+    "text": "How do you like the rock music?", 
+    "entities": [
+      {
+        "value": "preference", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 20, 
+        "end": 30, 
+        "value": "rock music", 
+        "entity": "music"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "how", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -87,6 +177,42 @@
     ]
   }, 
   {
+    "text": "What is your opinion towards AC/DC?", 
+    "entities": [
+      {
+        "value": "opinion", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 29, 
+        "end": 34, 
+        "value": "AC/DC", 
+        "entity": "band"
+      }, 
+      {
+        "start": 0, 
+        "end": 4, 
+        "value": "what", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
+    "text": "Are you living in Stark Tower?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 18, 
+        "end": 29, 
+        "value": "Stark Tower", 
+        "entity": "place"
+      }
+    ]
+  }, 
+  {
     "text": "Where is Stark Tower?", 
     "entities": [
       {
@@ -98,6 +224,12 @@
         "end": 20, 
         "value": "Stark Tower", 
         "entity": "place"
+      }, 
+      {
+        "start": 0, 
+        "end": 5, 
+        "value": "where", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -117,6 +249,27 @@
     ]
   }, 
   {
+    "text": "Who you think is arrogant?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 17, 
+        "end": 25, 
+        "value": "arrogant", 
+        "entity": "personality"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "who", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
     "text": "Are you rich?", 
     "entities": [
       {
@@ -132,6 +285,27 @@
     ]
   }, 
   {
+    "text": "Who is rich?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 7, 
+        "end": 11, 
+        "value": "rich", 
+        "entity": "reputation"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "who", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
     "text": "Are you married?", 
     "entities": [
       {
@@ -143,6 +317,27 @@
         "end": 15, 
         "value": "married", 
         "entity": "marital_status"
+      }
+    ]
+  }, 
+  {
+    "text": "Who is still single?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 13, 
+        "end": 19, 
+        "value": "single", 
+        "entity": "marital_status"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "who", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -168,32 +363,65 @@
     ]
   }, 
   {
-    "text": "Can you speak french?", 
+    "text": "What is your eye color?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 13, 
+        "end": 16, 
+        "value": "eye", 
+        "entity": "characteristic"
+      }, 
+      {
+        "start": 17, 
+        "end": 22, 
+        "value": "color", 
+        "entity": "subject"
+      }, 
+      {
+        "start": 0, 
+        "end": 4, 
+        "value": "what", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
+    "text": "Can you speak French?", 
     "entities": [
       {
         "value": "ability", 
         "entity": "intent"
       }, 
       {
-        "start": -1, 
-        "end": 5, 
+        "start": 14, 
+        "end": 20, 
         "value": "French", 
         "entity": "language"
       }
     ]
   }, 
   {
-    "text": "Who is your father?", 
+    "text": "Who speaks English?", 
     "entities": [
       {
         "value": "person", 
         "entity": "intent"
       }, 
       {
-        "start": 12, 
+        "start": 11, 
         "end": 18, 
-        "value": "father", 
-        "entity": "relationship"
+        "value": "English", 
+        "entity": "language"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "who", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -219,6 +447,27 @@
     ]
   }, 
   {
+    "text": "Who is your father?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 18, 
+        "value": "father", 
+        "entity": "relationship"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "who", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
     "text": "Have you been to America?", 
     "entities": [
       {
@@ -230,6 +479,27 @@
         "end": 24, 
         "value": "America", 
         "entity": "country"
+      }
+    ]
+  }, 
+  {
+    "text": "Where is USA?", 
+    "entities": [
+      {
+        "value": "location", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 9, 
+        "end": 12, 
+        "value": "America", 
+        "entity": "country"
+      }, 
+      {
+        "start": 0, 
+        "end": 5, 
+        "value": "where", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -249,6 +519,42 @@
     ]
   }, 
   {
+    "text": "Where is my cheeseburger?", 
+    "entities": [
+      {
+        "value": "location", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 12, 
+        "end": 24, 
+        "value": "burger", 
+        "entity": "food"
+      }, 
+      {
+        "start": 0, 
+        "end": 5, 
+        "value": "where", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
+    "text": "Are you living in New Jersey?", 
+    "entities": [
+      {
+        "value": "personal_info", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 18, 
+        "end": 28, 
+        "value": "New Jersey", 
+        "entity": "city"
+      }
+    ]
+  }, 
+  {
     "text": "Where is New York?", 
     "entities": [
       {
@@ -260,6 +566,12 @@
         "end": 17, 
         "value": "New York", 
         "entity": "city"
+      }, 
+      {
+        "start": 0, 
+        "end": 5, 
+        "value": "where", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -267,7 +579,7 @@
     "text": "Do you like boxing?", 
     "entities": [
       {
-        "value": "personal_info", 
+        "value": "preference", 
         "entity": "intent"
       }, 
       {
@@ -275,6 +587,27 @@
         "end": 18, 
         "value": "boxing", 
         "entity": "hobby"
+      }
+    ]
+  }, 
+  {
+    "text": "Who like boxing?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 9, 
+        "end": 15, 
+        "value": "boxing", 
+        "entity": "hobby"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "who", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -294,10 +627,31 @@
     ]
   }, 
   {
+    "text": "Who is Iron Man?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 7, 
+        "end": 15, 
+        "value": "Iron Man", 
+        "entity": "alias"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "who", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
     "text": "Do you know PTSD?", 
     "entities": [
       {
-        "value": "knowledge", 
+        "value": "information", 
         "entity": "intent"
       }, 
       {
@@ -309,10 +663,46 @@
     ]
   }, 
   {
+    "text": "What is PTSD?", 
+    "entities": [
+      {
+        "value": "information", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 8, 
+        "end": 12, 
+        "value": "PTSD", 
+        "entity": "medical_history"
+      }, 
+      {
+        "start": 0, 
+        "end": 4, 
+        "value": "what", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
+    "text": "Did you went to MIT?", 
+    "entities": [
+      {
+        "value": "opinion", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 16, 
+        "end": 19, 
+        "value": "MIT", 
+        "entity": "education"
+      }
+    ]
+  }, 
+  {
     "text": "What is your opinion towards MIT?", 
     "entities": [
       {
-        "value": "preference", 
+        "value": "opinion", 
         "entity": "intent"
       }, 
       {
@@ -320,6 +710,12 @@
         "end": 32, 
         "value": "MIT", 
         "entity": "education"
+      }, 
+      {
+        "start": 0, 
+        "end": 4, 
+        "value": "what", 
+        "entity": "inform_question"
       }
     ]
   }, 
@@ -360,6 +756,27 @@
     ]
   }, 
   {
+    "text": "Where I can buy some whisky?", 
+    "entities": [
+      {
+        "value": "location", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 21, 
+        "end": 27, 
+        "value": "whisky", 
+        "entity": "liquor"
+      }, 
+      {
+        "start": 0, 
+        "end": 5, 
+        "value": "where", 
+        "entity": "inform_question"
+      }
+    ]
+  }, 
+  {
     "text": "Did you create Javis?", 
     "entities": [
       {
@@ -371,6 +788,27 @@
         "end": 20, 
         "value": "Javis", 
         "entity": "creation"
+      }
+    ]
+  }, 
+  {
+    "text": "Who is Javis?", 
+    "entities": [
+      {
+        "value": "person", 
+        "entity": "intent"
+      }, 
+      {
+        "start": 7, 
+        "end": 12, 
+        "value": "Javis", 
+        "entity": "creation"
+      }, 
+      {
+        "start": 0, 
+        "end": 3, 
+        "value": "who", 
+        "entity": "inform_question"
       }
     ]
   }, 
