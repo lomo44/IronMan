@@ -1712,7 +1712,7 @@
     ]
   },
   {
-    "id": "inform_question",
+    "id": "info_question",
     "values": [
       {
         "value": "what",
@@ -1748,6 +1748,12 @@
         "value": "which",
         "expressions": [
           "which"
+        ]
+      },
+      {
+        "value": "why",
+        "expressions": [
+          "why"
         ]
       }
 
