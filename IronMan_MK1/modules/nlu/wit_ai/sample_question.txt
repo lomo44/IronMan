@@ -35,7 +35,7 @@ Are you Iron Man?,personal_info,alias,Iron Man,Iron Man
 Who is Iron Man?,person,alias,Iron Man,Iron Man,inform_question,who,Who
 Do you know PTSD?,information,medical_history,PTSD,PTSD
 What is PTSD?,information,medical_history,PTSD,PTSD,inform_question,what,What
-Did you went to MIT?,opinion,education,MIT,MIT
+Did you go to MIT?,opinion,education,MIT,MIT
 What is your opinion towards MIT?,opinion,education,MIT,MIT,inform_question,what,What
 Are you American?,personal_info,citizenship,American,American
 Do you prefer whisky or martini?,preference,liquor,whisky,whisky,liquor,martini,martini
