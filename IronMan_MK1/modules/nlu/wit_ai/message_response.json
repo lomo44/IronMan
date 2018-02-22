@@ -11,19 +11,19 @@
       ],
       "subject": [
         {
-          "confidence": 1,
+          "confidence": 0.90644150504451,
           "value": "organization",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99946277460074,
-          "value": "personal_info"
+          "confidence": 0.99857089354925,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0Z8e0zPsPqAJilQzh"
+    "msg_id": "08LgU4XA2JoCVAk1L"
   },
   {
     "_text": "What is your favourite color?",
@@ -37,19 +37,19 @@
       ],
       "subject": [
         {
-          "confidence": 1,
+          "confidence": 0.93000239458841,
           "value": "color",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99989797081,
-          "value": "personal_info"
+          "confidence": 0.99885585623316,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0wBNmXAgbIJl49j3M"
+    "msg_id": "0qCKEqVSJ22ioOfyX"
   },
   {
     "_text": "Do you hate sunglasses?",
@@ -63,26 +63,26 @@
       ],
       "accessory": [
         {
-          "confidence": 1,
+          "confidence": 0.93279608278967,
           "value": "sunglasses",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99878463901703,
-          "value": "personal_info"
+          "confidence": 0.9971674667637,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0qEtB5lAsp5ocEAKN"
+    "msg_id": "0zx0LfZfnoUzqZNRW"
   },
   {
     "_text": "Which pair of sunglasses is your favourite?",
     "entities": {
       "accessory": [
         {
-          "confidence": 1,
+          "confidence": 0.92116624384698,
           "value": "sunglasses",
           "type": "value"
         }
@@ -94,14 +94,14 @@
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99998228432376,
-          "value": "personal_info"
+          "confidence": 0.99800292545687,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0F5BaEr52kTQkrwFq"
+    "msg_id": "0QrVGhMHfNcSLreYF"
   },
   {
     "_text": "Do you like Rolex watch?",
@@ -115,26 +115,26 @@
       ],
       "brand": [
         {
-          "confidence": 1,
+          "confidence": 0.93977753501203,
           "value": "Rolex",
           "type": "value"
         }
       ],
       "accessory": [
         {
-          "confidence": 1,
+          "confidence": 0.93948252871184,
           "value": "watch",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.9986890087342,
-          "value": "personal_info"
+          "confidence": 0.99556956183908,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0Y8XqzYYQG8kB7KOJ"
+    "msg_id": "04NcYFPIQGPj7mS8f"
   },
   {
     "_text": "How do you like your Rolex watches?",
@@ -153,26 +153,26 @@
       ],
       "brand": [
         {
-          "confidence": 1,
+          "confidence": 0.94579967167952,
           "value": "Rolex",
           "type": "value"
         }
       ],
       "accessory": [
         {
-          "confidence": 1,
+          "confidence": 0.95210704626554,
           "value": "watch",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99998165942255,
-          "value": "personal_info"
+          "confidence": 0.92284095102119,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0z5AVS88BvIkruSMW"
+    "msg_id": "0NwZZOXwZxzluy1b5"
   },
   {
     "_text": "Do you like rock music?",
@@ -186,19 +186,19 @@
       ],
       "music": [
         {
-          "confidence": 1,
+          "confidence": 0.94386849655699,
           "value": "rock music",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99886071731952,
-          "value": "personal_info"
+          "confidence": 0.99555317969989,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "07IkEGFQLB0rebVvj"
+    "msg_id": "0xaw70MRLlVpl4fyI"
   },
   {
     "_text": "How do you like the rock music?",
@@ -212,19 +212,19 @@
       ],
       "music": [
         {
-          "confidence": 1,
+          "confidence": 0.95434810963589,
           "value": "rock music",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99956631378286,
-          "value": "personal_info"
+          "confidence": 0.99320301341404,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0ftnlQgzQ5Zc0OZRp"
+    "msg_id": "001aQs5w5CeH5jqhO"
   },
   {
     "_text": "Do you prefer AC/DC or Queen?",
@@ -238,24 +238,24 @@
       ],
       "band": [
         {
-          "confidence": 1,
+          "confidence": 0.94358979700179,
           "value": "AC/DC",
           "type": "value"
         },
         {
-          "confidence": 1,
+          "confidence": 0.90633052074671,
           "value": "Queen",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99907409525078,
-          "value": "personal_info"
+          "confidence": 0.99909120534038,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0YOfVWgeoASAoTwtJ"
+    "msg_id": "09x48HitWsUHJ0JS0"
   },
   {
     "_text": "What is your opinion towards AC/DC?",
@@ -269,19 +269,19 @@
       ],
       "band": [
         {
-          "confidence": 1,
+          "confidence": 0.94349151838334,
           "value": "AC/DC",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99988155861203,
-          "value": "personal_info"
+          "confidence": 0.99927837313383,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0xN2qYofscaomR2TZ"
+    "msg_id": "0SgcaGnKi5WJLZmyA"
   },
   {
     "_text": "Are you living in Stark Tower?",
@@ -295,38 +295,38 @@
       ],
       "place": [
         {
-          "confidence": 1,
+          "confidence": 0.94910939411001,
           "value": "Stark Tower",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99983554749969,
-          "value": "personal_info"
+          "confidence": 0.99769688628937,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0fx6GngMBh4LtiUVn"
+    "msg_id": "04YO1GqSoOEf2HFU9"
   },
   {
     "_text": "Where is Stark Tower?",
     "entities": {
       "place": [
         {
-          "confidence": 1,
+          "confidence": 0.94195880082864,
           "value": "Stark Tower",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99879393047505,
-          "value": "personal_info"
+          "confidence": 0.99844014155678,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0oVqClwMiO7gphdqh"
+    "msg_id": "08ZjXKoEbeuURiTC1"
   },
   {
     "_text": "Do you think you are arrogant?",
@@ -345,19 +345,19 @@
       ],
       "personality": [
         {
-          "confidence": 1,
+          "confidence": 0.92482630343817,
           "value": "arrogant",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99989427790216,
-          "value": "personal_info"
+          "confidence": 0.99991884141248,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0RoLdKBJ1q3tSD73j"
+    "msg_id": "0OnQvdWHP6Y7M7W7D"
   },
   {
     "_text": "Who you think is arrogant?",
@@ -371,19 +371,19 @@
       ],
       "personality": [
         {
-          "confidence": 1,
+          "confidence": 0.9251877620203,
           "value": "arrogant",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99895588761433,
-          "value": "personal_info"
+          "confidence": 0.99252088327372,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0VFrrlI7oYc7Zw7tB"
+    "msg_id": "0h9ajoPIUvTf5ILFW"
   },
   {
     "_text": "Are you rich?",
@@ -397,38 +397,38 @@
       ],
       "reputation": [
         {
-          "confidence": 1,
+          "confidence": 0.94219583086783,
           "value": "rich",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.999299681755,
-          "value": "personal_info"
+          "confidence": 0.99770778911698,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0mZJRIgtwy1Qfn15Y"
+    "msg_id": "00o4DlSMBrlSbyPf9"
   },
   {
     "_text": "Who is rich?",
     "entities": {
       "reputation": [
         {
-          "confidence": 1,
+          "confidence": 0.94723910650983,
           "value": "rich",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99671783126916,
-          "value": "personal_info"
+          "confidence": 0.99718813074151,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0Z8Zo25C9l7P8NCfv"
+    "msg_id": "0hANUIzd11fdxDxfa"
   },
   {
     "_text": "Are you married?",
@@ -442,38 +442,38 @@
       ],
       "marital_status": [
         {
-          "confidence": 1,
+          "confidence": 0.87755144178077,
           "value": "married",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.9986985879062,
-          "value": "personal_info"
+          "confidence": 0.99865753934827,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "04T0eeiiACEpceX79"
+    "msg_id": "0TYHXuT7FDAOSLUGb"
   },
   {
     "_text": "Who is still single?",
     "entities": {
       "marital_status": [
         {
-          "confidence": 1,
+          "confidence": 0.89150220805043,
           "value": "single",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99815291661228,
-          "value": "personal_info"
+          "confidence": 0.99888539410269,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0AiodoxbESZHd9AG4"
+    "msg_id": "0qThUngNDjhK0uqPU"
   },
   {
     "_text": "Is your hair red?",
@@ -487,26 +487,26 @@
       ],
       "characteristic": [
         {
-          "confidence": 1,
+          "confidence": 0.92074915785213,
           "value": "hair",
           "type": "value"
         }
       ],
       "color": [
         {
-          "confidence": 1,
+          "confidence": 0.89373420812932,
           "value": "red",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99828130298682,
-          "value": "personal_info"
+          "confidence": 0.99516971292525,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0TrBvWpRT3DEX6arw"
+    "msg_id": "0Sbbp1QAF9B5nGdKz"
   },
   {
     "_text": "What is your eye color?",
@@ -520,26 +520,26 @@
       ],
       "characteristic": [
         {
-          "confidence": 1,
+          "confidence": 0.90793150254859,
           "value": "eye",
           "type": "value"
         }
       ],
       "subject": [
         {
-          "confidence": 1,
+          "confidence": 0.96146152824663,
           "value": "color",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99957512795822,
-          "value": "personal_info"
+          "confidence": 0.99854077713938,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0vd300m23DInixJiG"
+    "msg_id": "0eplTpkNMdtg85jwh"
   },
   {
     "_text": "Can you speak French?",
@@ -553,45 +553,45 @@
       ],
       "language": [
         {
-          "confidence": 1,
+          "confidence": 0.89599508242303,
           "value": "French",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.9986838239752,
-          "value": "personal_info"
+          "confidence": 0.9962849505892,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0ciKBaV6QmKHRj3AR"
+    "msg_id": "0sWkU2zgQJdzYYqmI"
   },
   {
     "_text": "Who speaks English?",
     "entities": {
       "language": [
         {
-          "confidence": 1,
+          "confidence": 0.89681424670268,
           "value": "English",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99713683233673,
-          "value": "personal_info"
+          "confidence": 0.9958263303088,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0md1bPNcch4kMFZKB"
+    "msg_id": "033GjFdsEJU3AyrDe"
   },
   {
     "_text": "Is Pepper your girlfriend?",
     "entities": {
       "person_name": [
         {
-          "confidence": 1,
+          "confidence": 0.88426335778138,
           "value": "Pepper Potts",
           "type": "value"
         }
@@ -603,19 +603,19 @@
           "type": "value"
         },
         {
-          "confidence": 1,
+          "confidence": 0.89555114719559,
           "value": "girlfriend",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99900438433993,
-          "value": "personal_info"
+          "confidence": 0.99722135934929,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0jhZXlsAylZS0vpDp"
+    "msg_id": "0ojj1FQhI8fMVmgHj"
   },
   {
     "_text": "Who is your father?",
@@ -627,19 +627,19 @@
           "type": "value"
         },
         {
-          "confidence": 1,
+          "confidence": 0.97466353924716,
           "value": "father",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99971493770707,
-          "value": "personal_info"
+          "confidence": 0.99802588016815,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0EA6jADWUBQ9o70nI"
+    "msg_id": "0EV0dL8DEJL7nB6ar"
   },
   {
     "_text": "Have you been to America?",
@@ -653,38 +653,38 @@
       ],
       "country": [
         {
-          "confidence": 1,
+          "confidence": 0.89504024475624,
           "value": "America",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.9991703704021,
-          "value": "personal_info"
+          "confidence": 0.99724518929686,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0Wd1sqKj9zEDA3rgO"
+    "msg_id": "0ImDSutPhtddDWQFu"
   },
   {
     "_text": "Where is USA?",
     "entities": {
       "country": [
         {
-          "confidence": 1,
+          "confidence": 0.87171200685531,
           "value": "America",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99660454250547,
-          "value": "personal_info"
+          "confidence": 0.99738625408078,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0JmMDd3Pnfw9ioEdS"
+    "msg_id": "04sLDx5ohKgJM9kAQ"
   },
   {
     "_text": "Do you like cheeseburger?",
@@ -698,38 +698,38 @@
       ],
       "food": [
         {
-          "confidence": 1,
+          "confidence": 0.91666916058917,
           "value": "burger",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99945225741759,
-          "value": "personal_info"
+          "confidence": 0.99739082768279,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0OIVtKit31fPtEyL2"
+    "msg_id": "0d9XhxaCAPqqgP71A"
   },
   {
     "_text": "Where is my cheeseburger?",
     "entities": {
       "food": [
         {
-          "confidence": 1,
+          "confidence": 0.92748865964448,
           "value": "burger",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99952868038234,
-          "value": "personal_info"
+          "confidence": 0.99868800290629,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0Hk5I3IQBuNj4mG7R"
+    "msg_id": "0E1UFDLSLqQfeQCms"
   },
   {
     "_text": "Are you living in New Jersey?",
@@ -743,38 +743,38 @@
       ],
       "city": [
         {
-          "confidence": 1,
+          "confidence": 0.93751423953875,
           "value": "New Jersey",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99971490586388,
-          "value": "personal_info"
+          "confidence": 0.99860598956764,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0J5xP6C9U8mqou4XA"
+    "msg_id": "0XmNNS7ahdqG0Z69b"
   },
   {
     "_text": "Where is New York?",
     "entities": {
       "city": [
         {
-          "confidence": 1,
+          "confidence": 0.9277273358166,
           "value": "New York",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99889177333994,
-          "value": "personal_info"
+          "confidence": 0.99729575346343,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0RVCof6eQzIPL9E1N"
+    "msg_id": "0dshzMMwy3D5MgEew"
   },
   {
     "_text": "Do you like boxing?",
@@ -788,38 +788,38 @@
       ],
       "hobby": [
         {
-          "confidence": 1,
+          "confidence": 0.92454313911195,
           "value": "boxing",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99891703609433,
-          "value": "personal_info"
+          "confidence": 0.99398270935585,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0Aq9AMahNRYDcKpbk"
+    "msg_id": "0kAfEThXHQPa2JLnb"
   },
   {
     "_text": "Who like boxing?",
     "entities": {
       "hobby": [
         {
-          "confidence": 1,
+          "confidence": 0.93203980846095,
           "value": "boxing",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99567400621381,
-          "value": "personal_info"
+          "confidence": 0.99063793317355,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0e5pqFwOXvxmFGHj2"
+    "msg_id": "0RuAU0IPgtkPbiPTa"
   },
   {
     "_text": "Are you Iron Man?",
@@ -833,38 +833,38 @@
       ],
       "alias": [
         {
-          "confidence": 1,
+          "confidence": 0.96334930871936,
           "value": "Iron Man",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.9995237674579,
-          "value": "personal_info"
+          "confidence": 0.99776712151006,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0mSvcpcCHdhEIqoyz"
+    "msg_id": "0co4A3Wdcn0MNvz9I"
   },
   {
     "_text": "Who is Iron Man?",
     "entities": {
       "alias": [
         {
-          "confidence": 1,
+          "confidence": 0.9701767691789,
           "value": "Iron Man",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99773313371893,
-          "value": "personal_info"
+          "confidence": 0.99795085312293,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0L8ngz2QZHG6cgbgo"
+    "msg_id": "03fCyklAqJ8QXTWZX"
   },
   {
     "_text": "Do you know PTSD?",
@@ -878,38 +878,38 @@
       ],
       "medical_history": [
         {
-          "confidence": 1,
+          "confidence": 0.92195623599312,
           "value": "PTSD",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99801285763015,
-          "value": "personal_info"
+          "confidence": 0.99618876619758,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "076XL0whTNPecEzOt"
+    "msg_id": "0fGnDyuayAbuGrE5k"
   },
   {
     "_text": "What is PTSD?",
     "entities": {
       "medical_history": [
         {
-          "confidence": 1,
+          "confidence": 0.91446268309914,
           "value": "PTSD",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99397658984228,
-          "value": "personal_info"
+          "confidence": 0.99642819240444,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0ocF7oNW6WbrBYact"
+    "msg_id": "0NptnwTIefyN7s16m"
   },
   {
     "_text": "Did you go to MIT?",
@@ -923,19 +923,19 @@
       ],
       "education": [
         {
-          "confidence": 1,
+          "confidence": 0.92745149487368,
           "value": "MIT",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99122233744838,
-          "value": "personal_info"
+          "confidence": 0.98193803645388,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "011SrFsboheCeRGLd"
+    "msg_id": "0Fihc5RS4BpZ0cCMs"
   },
   {
     "_text": "What is your opinion towards MIT?",
@@ -949,19 +949,19 @@
       ],
       "education": [
         {
-          "confidence": 1,
+          "confidence": 0.92421812500316,
           "value": "MIT",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99964733416207,
-          "value": "personal_info"
+          "confidence": 0.99869958015189,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0tVJjRrQYyj6mCuuW"
+    "msg_id": "0u8lbiF1xbGHt9Pya"
   },
   {
     "_text": "Are you American?",
@@ -975,19 +975,19 @@
       ],
       "citizenship": [
         {
-          "confidence": 1,
+          "confidence": 0.88623483110317,
           "value": "American",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99933049364478,
-          "value": "personal_info"
+          "confidence": 0.99894181311035,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0SwXft4hA2QdZmWZO"
+    "msg_id": "017vpAp4HYqkLrAXA"
   },
   {
     "_text": "Do you prefer whisky or martini?",
@@ -1001,45 +1001,43 @@
       ],
       "liquor": [
         {
-          "confidence": 1,
+          "confidence": 0.92244488741967,
           "value": "whisky",
           "type": "value"
-        }
-      ],
-      "alias": [
+        },
         {
-          "confidence": 1,
-          "value": "Martini",
+          "confidence": 0.89846723280036,
+          "value": "martini",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.9989649011884,
-          "value": "personal_info"
+          "confidence": 0.99828704668795,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0yRy6JpRF76I2zMmY"
+    "msg_id": "0NxMR3IzaLUov4dgk"
   },
   {
     "_text": "Where I can buy some whisky?",
     "entities": {
       "liquor": [
         {
-          "confidence": 1,
+          "confidence": 0.93769852894737,
           "value": "whisky",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99880718873775,
-          "value": "personal_info"
+          "confidence": 0.99656223657254,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0WMPVv8ieztTWI3SN"
+    "msg_id": "0ztv8Ckl3pii6vlA4"
   },
   {
     "_text": "Did you create Javis?",
@@ -1053,38 +1051,38 @@
       ],
       "creation": [
         {
-          "confidence": 1,
+          "confidence": 0.92514662373029,
           "value": "Javis",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99884893811235,
-          "value": "personal_info"
+          "confidence": 0.99580380071209,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0lZSq62eBf9cueYPh"
+    "msg_id": "0JumWzm9wJoMoXV8h"
   },
   {
     "_text": "Who is Javis?",
     "entities": {
       "creation": [
         {
-          "confidence": 1,
+          "confidence": 0.9178242045698,
           "value": "Javis",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99592499007192,
-          "value": "personal_info"
+          "confidence": 0.99754875438801,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0HLUJ5LXUuxNsEF41"
+    "msg_id": "03vHCp9kALh78UC7g"
   },
   {
     "_text": "Do you like Audi R8?",
@@ -1098,19 +1096,19 @@
       ],
       "car": [
         {
-          "confidence": 1,
+          "confidence": 0.91252746280384,
           "value": "Audi R8",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99814470365583,
-          "value": "personal_info"
+          "confidence": 0.99725416915601,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0GpfsnCZ9ETiPjzwN"
+    "msg_id": "0qRVKTgaX6tukgims"
   },
   {
     "_text": "Are you CEO of Stark Industries?",
@@ -1124,26 +1122,26 @@
       ],
       "occupation": [
         {
-          "confidence": 1,
+          "confidence": 0.8701359401647,
           "value": "CEO",
           "type": "value"
         }
       ],
       "organization": [
         {
-          "confidence": 1,
+          "confidence": 0.91311019016483,
           "value": "Stark Industries",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99987154982189,
-          "value": "personal_info"
+          "confidence": 0.99840850990315,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0T96yCtAGLrm52rO7"
+    "msg_id": "0p8XrkWapbGpG28vL"
   },
   {
     "_text": "Is your father's name Howard?",
@@ -1155,7 +1153,7 @@
           "type": "value"
         },
         {
-          "confidence": 1,
+          "confidence": 0.973139833433,
           "value": "father",
           "type": "value"
         }
@@ -1169,19 +1167,19 @@
       ],
       "person_name": [
         {
-          "confidence": 1,
+          "confidence": 0.92185588753897,
           "value": "Howard Stark",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99965529094364,
-          "value": "personal_info"
+          "confidence": 0.99458599165759,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "03ldy6PlkXAqGKIDT"
+    "msg_id": "096L49OLraUuWQHMJ"
   },
   {
     "_text": "What do you think of tesla?",
@@ -1195,19 +1193,19 @@
       ],
       "car": [
         {
-          "confidence": 1,
+          "confidence": 0.92807080942587,
           "value": "Tesla",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.9951155570638,
-          "value": "personal_info"
+          "confidence": 0.99499472336152,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0r57zG3qowGV5hx2L"
+    "msg_id": "0OFiSUQCdnQQKLdZA"
   },
   {
     "_text": "How did you build iron man?",
@@ -1221,19 +1219,19 @@
       ],
       "alias": [
         {
-          "confidence": 1,
+          "confidence": 0.98085308361734,
           "value": "Iron Man",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99966424112146,
-          "value": "personal_info"
+          "confidence": 0.98868255591493,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0YwJB1jDCYm6FMIRA"
+    "msg_id": "0uk1UWZM2C5i1nptk"
   },
   {
     "_text": "What did you do to build iron man?",
@@ -1247,19 +1245,19 @@
       ],
       "alias": [
         {
-          "confidence": 1,
+          "confidence": 0.97967772846246,
           "value": "Iron Man",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99987488494751,
-          "value": "personal_info"
+          "confidence": 0.99920976100687,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0Ye9VfRjg0JXoe1gV"
+    "msg_id": "02bgpIZVo8QpIMvgx"
   },
   {
     "_text": "Did you build iron man?",
@@ -1273,19 +1271,19 @@
       ],
       "alias": [
         {
-          "confidence": 1,
+          "confidence": 0.98241744820127,
           "value": "Iron Man",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99866015492473,
-          "value": "personal_info"
+          "confidence": 0.9854804778228,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0g10dVIiOJbOAFqAj"
+    "msg_id": "0E1UiqcSinx9vf2Jz"
   },
   {
     "_text": "Is your suit made of iron?",
@@ -1297,14 +1295,22 @@
           "type": "value"
         }
       ],
-      "intent": [
+      "alias": [
         {
-          "confidence": 0.99923725685025,
-          "value": "personal_info"
+          "suggested": true,
+          "confidence": 0.29242127055056,
+          "value": "iron",
+          "type": "value"
+        }
+      ],
+      "conversation_type": [
+        {
+          "confidence": 0.99304605254395,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0HMzjcSdpAPWYBvWm"
+    "msg_id": "0nMdrnxWKN2nuF1XU"
   },
   {
     "_text": "What is your suit made of?",
@@ -1316,14 +1322,14 @@
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99975449281064,
-          "value": "personal_info"
+          "confidence": 0.99650971149011,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0QRLOWUmEZCXXxfwJ"
+    "msg_id": "09dIOL6gySyJDfkNH"
   },
   {
     "_text": "Are you chinese?",
@@ -1337,19 +1343,19 @@
       ],
       "citizenship": [
         {
-          "confidence": 1,
+          "confidence": 0.92417117646188,
           "value": "Chinese",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99884940561745,
-          "value": "personal_info"
+          "confidence": 0.99786233446023,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0X5UgxtykC1Qcb6DW"
+    "msg_id": "0RVLvRws74xQ16uKt"
   },
   {
     "_text": "Are you rich?",
@@ -1363,19 +1369,19 @@
       ],
       "reputation": [
         {
-          "confidence": 1,
+          "confidence": 0.94219583086783,
           "value": "rich",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.999299681755,
-          "value": "personal_info"
+          "confidence": 0.99770778911698,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0OBEyoVF578BVG0U9"
+    "msg_id": "00ssuSXJAWGDElc0N"
   },
   {
     "_text": "What is your father's name?",
@@ -1387,26 +1393,26 @@
           "type": "value"
         },
         {
-          "confidence": 1,
+          "confidence": 0.96108306153079,
           "value": "father",
           "type": "value"
         }
       ],
       "subject": [
         {
-          "confidence": 1,
+          "confidence": 0.88749115349599,
           "value": "name",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99981734899966,
-          "value": "personal_info"
+          "confidence": 0.99861425352444,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0w7v83psJgbsrOVo4"
+    "msg_id": "02jbG9flb9BRGYpTP"
   },
   {
     "_text": "Where is your father?",
@@ -1418,19 +1424,19 @@
           "type": "value"
         },
         {
-          "confidence": 1,
+          "confidence": 0.97453057157058,
           "value": "father",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99994217064346,
-          "value": "personal_info"
+          "confidence": 0.99691239688366,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "08TeSjRjWhn3JI4Fh"
+    "msg_id": "0pvDVdIKez5Q4cqZn"
   },
   {
     "_text": "When is your flight going to take off?",
@@ -1442,14 +1448,14 @@
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99970008389838,
-          "value": "personal_info"
+          "confidence": 0.99838122704103,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0LoUE7kIF7L5e80LU"
+    "msg_id": "08OZv81PyJjjvqOKl"
   },
   {
     "_text": "How did you study ece?",
@@ -1463,19 +1469,19 @@
       ],
       "education": [
         {
-          "confidence": 1,
+          "confidence": 0.8943231547069,
           "value": "electrical engineering",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99779605278511,
-          "value": "personal_info"
+          "confidence": 0.99583211370858,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0IiZ4g3ckJVHSem2J"
+    "msg_id": "0GBjaftS8N6m93lTY"
   },
   {
     "_text": "Do you like chinese food?",
@@ -1489,26 +1495,26 @@
       ],
       "citizenship": [
         {
-          "confidence": 1,
+          "confidence": 0.93470614162347,
           "value": "Chinese",
           "type": "value"
         }
       ],
       "subject": [
         {
-          "confidence": 1,
+          "confidence": 0.91951466197613,
           "value": "food",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99877838360009,
-          "value": "personal_info"
+          "confidence": 0.99864173689688,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "04AGQP9kJpJuxrzzo"
+    "msg_id": "0D9QGUr208xueS9Hm"
   },
   {
     "_text": "How do you like tesla?",
@@ -1522,19 +1528,19 @@
       ],
       "car": [
         {
-          "confidence": 1,
+          "confidence": 0.94440830918492,
           "value": "Tesla",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99906763185071,
-          "value": "personal_info"
+          "confidence": 0.99538278156805,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0RWyj1oBUq4JTRhQz"
+    "msg_id": "0wdmkk8zarYgra4Oa"
   },
   {
     "_text": "Do you want to be rich?",
@@ -1548,26 +1554,26 @@
       ],
       "reputation": [
         {
-          "confidence": 1,
+          "confidence": 0.95953885983577,
           "value": "rich",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99749709227968,
-          "value": "personal_info"
+          "confidence": 0.99443740662879,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0ohniK6tLXHImIbdn"
+    "msg_id": "0UtnpSx4qFTDqDNYi"
   },
   {
     "_text": "Which school did you go to?",
     "entities": {
-      "subject": [
+      "education": [
         {
-          "confidence": 1,
+          "confidence": 0.90324366436214,
           "value": "school",
           "type": "value"
         }
@@ -1579,14 +1585,14 @@
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99961006814139,
-          "value": "personal_info"
+          "confidence": 0.99426588876331,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0IFGPiW8gwZcl8Vnl"
+    "msg_id": "0m1MB7SZC9uLhk1Az"
   },
   {
     "_text": "What did you do to be so rich?",
@@ -1600,19 +1606,19 @@
       ],
       "reputation": [
         {
-          "confidence": 1,
+          "confidence": 0.96086057455257,
           "value": "rich",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.9999316528996,
-          "value": "personal_info"
+          "confidence": 0.99911989422632,
+          "value": "information"
         }
       ]
     },
-    "msg_id": "0ZfMDJlrQYH9XYbkD"
+    "msg_id": "0RQctGs4XBv6BrYtG"
   },
   {
     "_text": "Is your father howard?",
@@ -1624,26 +1630,26 @@
           "type": "value"
         },
         {
-          "confidence": 1,
+          "confidence": 0.97207385368213,
           "value": "father",
           "type": "value"
         }
       ],
       "person_name": [
         {
-          "confidence": 1,
+          "confidence": 0.94522125806743,
           "value": "Howard Stark",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99914327074422,
-          "value": "personal_info"
+          "confidence": 0.99367235513643,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "0VlWikHli2BAMVvK5"
+    "msg_id": "05oA6ktEs3HYS3b9z"
   },
   {
     "_text": "Do you have a girlfriend?",
@@ -1653,20 +1659,22 @@
           "confidence": 1,
           "value": "you",
           "type": "value"
-        },
+        }
+      ],
+      "howard": [
         {
-          "confidence": 1,
+          "confidence": 0.86658680622205,
           "value": "girlfriend",
           "type": "value"
         }
       ],
-      "intent": [
+      "conversation_type": [
         {
-          "confidence": 0.99892703293884,
-          "value": "personal_info"
+          "confidence": 0.99956210489423,
+          "value": "confirmation"
         }
       ]
     },
-    "msg_id": "01sXmgjk8iz5JLcdw"
+    "msg_id": "0NmzMxM7HTBo0SZit"
   }
 ]
