@@ -1,6 +1,7 @@
 from Trainer import Trainer
-import urllib.parse
 import json
+import urllib.parse
+
 
 def main():
     access_token = 'MRWCQY74ZTT244XU4DUPHCMU4RIRUDKT'
