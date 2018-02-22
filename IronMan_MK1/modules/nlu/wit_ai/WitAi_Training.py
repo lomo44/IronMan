@@ -6,7 +6,7 @@ import time
 
 
 def generate_sample_json():
-    # inten_list=["personal_info", "person", "location", "information", "experience", "preference", "opinion", "ability"]
+    # inten_list=["personal_info","person", "location", "information", "experience", "preference", "opinion", "ability"]
     # question_type_list=["polar", "closed"]
     data_out = []
     with open("sample_question.txt",'r') as file_in:
@@ -91,7 +91,6 @@ def init_entity(access_token, input_json_file):
                 client.update_entity(new_entity['id'], new_entity)
 
 
-
 def main():
     access_token = 'MRWCQY74ZTT244XU4DUPHCMU4RIRUDKT'
     keyword_entity_file = "keyword_entities.json"
@@ -102,15 +101,18 @@ def main():
         client.init_training_sample(training_sample_file)
     elif sys.argv[1]=="-d" or sys.argv[1]=="-D" or sys.argv[1]=="delete":
         client.clean_up()
-    elif sys.argv[1] == "-g" or sys.argv[1] == "-G" or sys.argv[1] == "generate_sample_json":
+    elif sys.argv[1] == "-g" or sys.argv[1] == "-G":
         generate_sample_json()
-    elif sys.argv[1] == "-r" or sys.argv[1] == "-R" or sys.argv[1] == "message_response":
+    elif sys.argv[1] == "-r" or sys.argv[1] == "-R":
         sending_message(access_token)
+    elif sys.argv[1] == "-t" or sys.argv[1] == "-T":
+        client.init_training_sample(training_sample_file)
     elif sys.argv[1]=="-h" or sys.argv[1]=="-H" or sys.argv[1]=="help":
         print ("Default setting: Initialize and training the Wit.ai")
         print ("-d/-D/delete: delete all data in the wit.ai")
-        print ("-g/-G/generate_sample_json: generate training sample file in JSON")
-        print ("-r/-R/message_response: send question to Wit.ai to get response")
+        print ("-g/-G: generate training sample file in JSON")
+        print ("-r/-R: send question to Wit.ai to get response")
+        print ("-t/-T: training the WitAi")
     else:
         print ("Error Input: used -h for help")
 
