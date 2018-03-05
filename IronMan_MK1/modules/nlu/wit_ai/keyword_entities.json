@@ -462,6 +462,12 @@
     "id": "relationship",
     "values": [
       {
+        "value": "you",
+        "expressions": [
+          "you"
+        ]
+      },
+      {
         "value": "girlfriend",
         "expressions": [
           "girlfriend"
@@ -818,7 +824,8 @@
       {
         "value": "Howard Stark",
         "expressions": [
-          "Howard Stark"
+          "Howard Stark",
+          "Howard"
         ]
       },
       {
@@ -1237,7 +1244,11 @@
       {
         "value": "Iron Man",
         "expressions": [
-          "Iron Man"
+          "Iron Man",
+          "iron man",
+          "Ironman",
+          "IronMan",
+          "ironman"
         ]
       }
     ]
@@ -1320,7 +1331,9 @@
       {
         "value": "electrical engineering",
         "expressions": [
-          "electrical engineering"
+          "electrical engineering",
+          "EE",
+          "ECE"
         ]
       }
     ]
@@ -1338,6 +1351,13 @@
         "value": "Bulgarian",
         "expressions": [
           "Bulgarian"
+        ]
+      },
+      {
+        "value": "Chinese",
+        "expressions": [
+          "Chinese",
+          "chinese"
         ]
       }
     ]
@@ -1426,6 +1446,13 @@
         "value": "Audi R8",
         "expressions": [
           "Audi R8"
+        ]
+      },
+      {
+        "value": "Tesla",
+        "expressions": [
+          "Tesla",
+          "tesla"
         ]
       },
       {

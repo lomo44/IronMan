@@ -1,412 +1,1030 @@
 [
   {
-    "text": "Do you hate sunglasses?", 
+    "text": "Have you joined any organization?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 12, 
-        "end": 22, 
-        "value": "sunglasses", 
-        "entity": "accessory"
+        "entity": "subject",
+        "start": 20,
+        "end": 32,
+        "value": "organization"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you like Rolex watch?", 
+    "text": "What is your favourite color?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 12, 
-        "end": 17, 
-        "value": "Rolex", 
-        "entity": "brand"
-      }, 
-      {
-        "start": 18, 
-        "end": 23, 
-        "value": "watch", 
-        "entity": "accessory"
+        "entity": "subject",
+        "start": 23,
+        "end": 28,
+        "value": "color"
       }
     ]
-  }, 
+  },
   {
-    "text": "What type of music you like?", 
+    "text": "Do you hate sunglasses?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 13, 
-        "end": 18, 
-        "value": "music", 
-        "entity": "subject"
+        "entity": "accessory",
+        "start": 12,
+        "end": 22,
+        "value": "sunglasses"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you like rock music?", 
+    "text": "Which pair of sunglasses is your favourite?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 12, 
-        "end": 22, 
-        "value": "rock music", 
-        "entity": "music"
+        "entity": "accessory",
+        "start": 14,
+        "end": 24,
+        "value": "sunglasses"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you prefer AC/DC or Queen?", 
+    "text": "Do you like Rolex watch?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 14, 
-        "end": 19, 
-        "value": "AC/DC", 
-        "entity": "band"
-      }, 
+        "entity": "brand",
+        "start": 12,
+        "end": 17,
+        "value": "Rolex"
+      },
       {
-        "start": 23, 
-        "end": 28, 
-        "value": "Queen", 
-        "entity": "band"
+        "entity": "accessory",
+        "start": 18,
+        "end": 23,
+        "value": "watch"
       }
     ]
-  }, 
+  },
   {
-    "text": "Where is Stark Tower?", 
+    "text": "How do you like your Rolex watches?",
     "entities": [
       {
-        "value": "location", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 9, 
-        "end": 20, 
-        "value": "Stark Tower", 
-        "entity": "place"
+        "entity": "accessory",
+        "start": 27,
+        "end": 34,
+        "value": "watch"
+      },
+      {
+        "entity": "brand",
+        "start": 21,
+        "end": 26,
+        "value": "Rolex"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you think you are arrogant?", 
+    "text": "Do you like rock music?",
     "entities": [
       {
-        "value": "personal_info", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 21, 
-        "end": 29, 
-        "value": "arrogant", 
-        "entity": "personality"
+        "entity": "music",
+        "start": 12,
+        "end": 22,
+        "value": "rock music"
       }
     ]
-  }, 
+  },
   {
-    "text": "Are you rich?", 
+    "text": "How do you like the rock music?",
     "entities": [
       {
-        "value": "personal_info", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 8, 
-        "end": 12, 
-        "value": "rich", 
-        "entity": "reputation"
+        "entity": "music",
+        "start": 20,
+        "end": 30,
+        "value": "rock music"
       }
     ]
-  }, 
+  },
   {
-    "text": "Are you married?", 
+    "text": "Do you prefer AC/DC or Queen?",
     "entities": [
       {
-        "value": "personal_info", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 8, 
-        "end": 15, 
-        "value": "married", 
-        "entity": "marital_status"
+        "entity": "band",
+        "start": 14,
+        "end": 19,
+        "value": "AC/DC"
+      },
+      {
+        "entity": "band",
+        "start": 23,
+        "end": 28,
+        "value": "Queen"
       }
     ]
-  }, 
+  },
   {
-    "text": "Is your hair red?", 
+    "text": "What is your opinion towards AC/DC?",
     "entities": [
       {
-        "value": "personal_info", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 8, 
-        "end": 12, 
-        "value": "hair", 
-        "entity": "characteristic"
-      }, 
-      {
-        "start": 13, 
-        "end": 16, 
-        "value": "red", 
-        "entity": "color"
+        "entity": "band",
+        "start": 29,
+        "end": 34,
+        "value": "AC/DC"
       }
     ]
-  }, 
+  },
   {
-    "text": "Can you speak french?", 
+    "text": "Are you living in Stark Tower?",
     "entities": [
       {
-        "value": "ability", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": -1, 
-        "end": 5, 
-        "value": "French", 
-        "entity": "language"
+        "entity": "place",
+        "start": 18,
+        "end": 29,
+        "value": "Stark Tower"
       }
     ]
-  }, 
+  },
   {
-    "text": "Who is your father?", 
+    "text": "Where is Stark Tower?",
     "entities": [
       {
-        "value": "person", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 12, 
-        "end": 18, 
-        "value": "father", 
-        "entity": "relationship"
+        "entity": "place",
+        "start": 9,
+        "end": 20,
+        "value": "Stark Tower"
       }
     ]
-  }, 
+  },
   {
-    "text": "Is Pepper your girlfriend?", 
+    "text": "Do you think you are arrogant?",
     "entities": [
       {
-        "value": "person", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 3, 
-        "end": 9, 
-        "value": "Pepper Potts", 
-        "entity": "person_name"
-      }, 
-      {
-        "start": 15, 
-        "end": 25, 
-        "value": "girlfriend", 
-        "entity": "relationship"
+        "entity": "personality",
+        "start": 21,
+        "end": 29,
+        "value": "arrogant"
       }
     ]
-  }, 
+  },
   {
-    "text": "Have you been to America?", 
+    "text": "Who you think is arrogant?",
     "entities": [
       {
-        "value": "experience", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 17, 
-        "end": 24, 
-        "value": "America", 
-        "entity": "country"
+        "entity": "personality",
+        "start": 17,
+        "end": 25,
+        "value": "arrogant"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you like cheeseburger?", 
+    "text": "Are you rich?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 12, 
-        "end": 24, 
-        "value": "burger", 
-        "entity": "food"
+        "entity": "reputation",
+        "start": 8,
+        "end": 12,
+        "value": "rich"
       }
     ]
-  }, 
+  },
   {
-    "text": "Where is New York?", 
+    "text": "Who is rich?",
     "entities": [
       {
-        "value": "location", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 9, 
-        "end": 17, 
-        "value": "New York", 
-        "entity": "city"
+        "entity": "reputation",
+        "start": 7,
+        "end": 11,
+        "value": "rich"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you like boxing?", 
+    "text": "Are you married?",
     "entities": [
       {
-        "value": "personal_info", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 12, 
-        "end": 18, 
-        "value": "boxing", 
-        "entity": "hobby"
+        "entity": "marital_status",
+        "start": 8,
+        "end": 15,
+        "value": "married"
       }
     ]
-  }, 
+  },
   {
-    "text": "Are you Iron Man?", 
+    "text": "Who is still single?",
     "entities": [
       {
-        "value": "personal_info", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 8, 
-        "end": 16, 
-        "value": "Iron Man", 
-        "entity": "alias"
+        "entity": "marital_status",
+        "start": 13,
+        "end": 19,
+        "value": "single"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you know PTSD?", 
+    "text": "Is your hair red?",
     "entities": [
       {
-        "value": "knowledge", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 12, 
-        "end": 16, 
-        "value": "PTSD", 
-        "entity": "medical_history"
+        "entity": "characteristic",
+        "start": 8,
+        "end": 12,
+        "value": "hair"
+      },
+      {
+        "entity": "color",
+        "start": 13,
+        "end": 16,
+        "value": "red"
       }
     ]
-  }, 
+  },
   {
-    "text": "What is your opinion towards MIT?", 
+    "text": "What is your eye color?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 29, 
-        "end": 32, 
-        "value": "MIT", 
-        "entity": "education"
+        "entity": "characteristic",
+        "start": 13,
+        "end": 16,
+        "value": "eye"
+      },
+      {
+        "entity": "subject",
+        "start": 17,
+        "end": 22,
+        "value": "color"
       }
     ]
-  }, 
+  },
   {
-    "text": "Are you American?", 
+    "text": "Can you speak French?",
     "entities": [
       {
-        "value": "personal_info", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 8, 
-        "end": 16, 
-        "value": "American", 
-        "entity": "citizenship"
+        "entity": "language",
+        "start": 14,
+        "end": 20,
+        "value": "French"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you prefer whisky or martini?", 
+    "text": "Who speaks English?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 14, 
-        "end": 20, 
-        "value": "whisky", 
-        "entity": "liquor"
-      }, 
-      {
-        "start": 24, 
-        "end": 31, 
-        "value": "martini", 
-        "entity": "liquor"
+        "entity": "language",
+        "start": 11,
+        "end": 18,
+        "value": "English"
       }
     ]
-  }, 
+  },
   {
-    "text": "Did you create Javis?", 
+    "text": "Is Pepper your girlfriend?",
     "entities": [
       {
-        "value": "experience", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 15, 
-        "end": 20, 
-        "value": "Javis", 
-        "entity": "creation"
+        "entity": "person_name",
+        "start": 3,
+        "end": 9,
+        "value": "Pepper Potts"
+      },
+      {
+        "entity": "relationship",
+        "start": 15,
+        "end": 25,
+        "value": "girlfriend"
       }
     ]
-  }, 
+  },
   {
-    "text": "Do you like Audi R8?", 
+    "text": "Who is your father?",
     "entities": [
       {
-        "value": "preference", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "information"
+      },
       {
-        "start": 12, 
-        "end": 19, 
-        "value": "Audi R8", 
-        "entity": "car"
+        "entity": "relationship",
+        "start": 12,
+        "end": 18,
+        "value": "father"
       }
     ]
-  }, 
+  },
   {
-    "text": "Are you CEO of Stark Industries?", 
+    "text": "Have you been to America?",
     "entities": [
       {
-        "value": "personal_info", 
-        "entity": "intent"
-      }, 
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
       {
-        "start": 8, 
-        "end": 11, 
-        "value": "CEO", 
-        "entity": "occupation"
-      }, 
+        "entity": "country",
+        "start": 17,
+        "end": 24,
+        "value": "America"
+      }
+    ]
+  },
+  {
+    "text": "Where is USA?",
+    "entities": [
       {
-        "start": 15, 
-        "end": 31, 
-        "value": "Stark Industries", 
-        "entity": "organization"
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "country",
+        "start": 9,
+        "end": 12,
+        "value": "America"
+      }
+    ]
+  },
+  {
+    "text": "Do you like cheeseburger?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "food",
+        "start": 12,
+        "end": 24,
+        "value": "burger"
+      }
+    ]
+  },
+  {
+    "text": "Where is my cheeseburger?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "food",
+        "start": 12,
+        "end": 24,
+        "value": "burger"
+      }
+    ]
+  },
+  {
+    "text": "Are you living in New Jersey?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "city",
+        "start": 18,
+        "end": 28,
+        "value": "New Jersey"
+      }
+    ]
+  },
+  {
+    "text": "Where is New York?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "city",
+        "start": 9,
+        "end": 17,
+        "value": "New York"
+      }
+    ]
+  },
+  {
+    "text": "Do you like boxing?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "hobby",
+        "start": 12,
+        "end": 18,
+        "value": "boxing"
+      }
+    ]
+  },
+  {
+    "text": "Who like boxing?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "hobby",
+        "start": 9,
+        "end": 15,
+        "value": "boxing"
+      }
+    ]
+  },
+  {
+    "text": "Are you Iron Man?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "alias",
+        "start": 8,
+        "end": 16,
+        "value": "Iron Man"
+      }
+    ]
+  },
+  {
+    "text": "Who is Iron Man?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "alias",
+        "start": 7,
+        "end": 15,
+        "value": "Iron Man"
+      }
+    ]
+  },
+  {
+    "text": "Do you know PTSD?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "medical_history",
+        "start": 12,
+        "end": 16,
+        "value": "PTSD"
+      }
+    ]
+  },
+  {
+    "text": "What is PTSD?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "medical_history",
+        "start": 8,
+        "end": 12,
+        "value": "PTSD"
+      }
+    ]
+  },
+  {
+    "text": "Did you go to MIT?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "education",
+        "start": 14,
+        "end": 17,
+        "value": "MIT"
+      }
+    ]
+  },
+  {
+    "text": "What is your opinion towards MIT?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "education",
+        "start": 29,
+        "end": 32,
+        "value": "MIT"
+      }
+    ]
+  },
+  {
+    "text": "Are you American?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "citizenship",
+        "start": 8,
+        "end": 16,
+        "value": "American"
+      }
+    ]
+  },
+  {
+    "text": "Do you prefer whisky or martini?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "liquor",
+        "start": 14,
+        "end": 20,
+        "value": "whisky"
+      },
+      {
+        "entity": "liquor",
+        "start": 24,
+        "end": 31,
+        "value": "martini"
+      }
+    ]
+  },
+  {
+    "text": "Where I can buy some whisky?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "liquor",
+        "start": 21,
+        "end": 27,
+        "value": "whisky"
+      }
+    ]
+  },
+  {
+    "text": "Did you create Javis?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "creation",
+        "start": 15,
+        "end": 20,
+        "value": "Javis"
+      }
+    ]
+  },
+  {
+    "text": "Who is Javis?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "creation",
+        "start": 7,
+        "end": 12,
+        "value": "Javis"
+      }
+    ]
+  },
+  {
+    "text": "Do you like Audi R8?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "car",
+        "start": 12,
+        "end": 19,
+        "value": "Audi R8"
+      }
+    ]
+  },
+  {
+    "text": "Are you CEO of Stark Industries?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "occupation",
+        "start": 8,
+        "end": 11,
+        "value": "CEO"
+      },
+      {
+        "entity": "organization",
+        "start": 15,
+        "end": 31,
+        "value": "Stark Industries"
+      }
+    ]
+  },
+  {
+    "text": "Is your father's name Howard?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "relationship",
+        "start": 8,
+        "end": 14,
+        "value": "father"
+      },
+      {
+        "entity": "person_name",
+        "start": 22,
+        "end": 28,
+        "value": "Howard Stark"
+      }
+    ]
+  },
+  {
+    "text": "What do you think of tesla?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "car",
+        "start": 21,
+        "end": 26,
+        "value": "Tesla"
+      }
+    ]
+  },
+  {
+    "text": "How did you build iron man?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "alias",
+        "start": 18,
+        "end": 26,
+        "value": "Iron Man"
+      }
+    ]
+  },
+  {
+    "text": "What did you do to build iron man?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "alias",
+        "start": 25,
+        "end": 33,
+        "value": "Iron Man"
+      }
+    ]
+  },
+  {
+    "text": "Did you build iron man?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "alias",
+        "start": 14,
+        "end": 22,
+        "value": "Iron Man"
+      }
+    ]
+  },
+  {
+    "text": "Is your suit made of iron?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      }
+    ]
+  },
+  {
+    "text": "What is your suit made of?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      }
+    ]
+  },
+  {
+    "text": "Are you chinese?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "citizenship",
+        "start": 8,
+        "end": 15,
+        "value": "Chinese"
+      }
+    ]
+  },
+  {
+    "text": "Are you rich?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "reputation",
+        "start": 8,
+        "end": 12,
+        "value": "rich"
+      }
+    ]
+  },
+  {
+    "text": "What is your father's name?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "relationship",
+        "start": 13,
+        "end": 19,
+        "value": "father"
+      },
+      {
+        "entity": "subject",
+        "start": 22,
+        "end": 26,
+        "value": "name"
+      }
+    ]
+  },
+  {
+    "text": "Where is your father?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "relationship",
+        "start": 14,
+        "end": 20,
+        "value": "father"
+      }
+    ]
+  },
+  {
+    "text": "When is your flight going to take off?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      }
+    ]
+  },
+  {
+    "text": "How did you study ece?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "education",
+        "start": 18,
+        "end": 21,
+        "value": "electrical engineering"
+      }
+    ]
+  },
+  {
+    "text": "Do you like chinese food?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "citizenship",
+        "start": 12,
+        "end": 19,
+        "value": "Chinese"
+      },
+      {
+        "entity": "subject",
+        "start": 20,
+        "end": 24,
+        "value": "food"
+      }
+    ]
+  },
+  {
+    "text": "How do you like tesla?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "car",
+        "start": 16,
+        "end": 21,
+        "value": "Tesla"
+      }
+    ]
+  },
+  {
+    "text": "Do you want to be rich?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "reputation",
+        "start": 18,
+        "end": 22,
+        "value": "rich"
+      }
+    ]
+  },
+  {
+    "text": "Which school did you go to?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "education",
+        "start": 6,
+        "end": 12,
+        "value": "school"
+      }
+    ]
+  },
+  {
+    "text": "What did you do to be so rich?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "information"
+      },
+      {
+        "entity": "reputation",
+        "start": 25,
+        "end": 29,
+        "value": "rich"
+      }
+    ]
+  },
+  {
+    "text": "Is your father howard?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "relationship",
+        "start": 8,
+        "end": 14,
+        "value": "father"
+      },
+      {
+        "entity": "person_name",
+        "start": 15,
+        "end": 21,
+        "value": "Howard Stark"
+      }
+    ]
+  },
+  {
+    "text": "Do you have a girlfriend?",
+    "entities": [
+      {
+        "entity": "conversation_type",
+        "value": "confirmation"
+      },
+      {
+        "entity": "howard",
+        "start": 14,
+        "end": 24,
+        "value": "girlfriend"
       }
     ]
   }

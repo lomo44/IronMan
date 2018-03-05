@@ -1,26 +1,66 @@
 #Format: question,intent,entity_id_1, value_1,expression_1,entity_id_2, value_2,expression_2
-Do you hate sunglasses?,preference,accessory,sunglasses,sunglasses
-Do you like Rolex watch?,preference,brand,Rolex,Rolex,accessory,watch,watch
-What type of music you like?,preference,subject,music,music
-Do you like rock music?,preference,music,rock music,rock music
-Do you prefer AC/DC or Queen?,preference,band,AC/DC,AC/DC,band,Queen,Queen
-Where is Stark Tower?,location,place,Stark Tower,Stark Tower
-Do you think you are arrogant?,personal_info,personality,arrogant,arrogant
-Are you rich?,personal_info,reputation,rich,rich
-Are you married?,personal_info,marital_status,married,married
-Is your hair red?,personal_info,characteristic,hair,hair,color,red,red
-Can you speak french?,ability,language,French,French
-Who is your father?,person,relationship,father,father
-Is Pepper your girlfriend?,person,person_name,Pepper Potts,Pepper,relationship,girlfriend,girlfriend
-Have you been to America?,experience,country,America,America
-Do you like cheeseburger?,preference,food,burger,cheeseburger
-Where is New York?,location,city,New York,New York
-Do you like boxing?,personal_info,hobby,boxing,boxing
-Are you Iron Man?,personal_info,alias,Iron Man,Iron Man
-Do you know PTSD?,knowledge,medical_history,PTSD,PTSD
-What is your opinion towards MIT?,preference,education,MIT,MIT
-Are you American?,personal_info,citizenship,American,American
-Do you prefer whisky or martini?,preference,liquor,whisky,whisky,liquor,martini,martini
-Did you create Javis?,experience,creation,Javis,Javis
-Do you like Audi R8?,preference,car,Audi R8,Audi R8
-Are you CEO of Stark Industries?,personal_info,occupation,CEO,CEO,organization,Stark Industries,Stark Industries
+Have you joined any organization?,personal_info,confirmation,subject,organization,organization
+What is your favourite color?,preference,information,subject,color,color
+Do you hate sunglasses?,preference,confirmation,accessory,sunglasses,sunglasses
+Which pair of sunglasses is your favourite?,preference,information,accessory,sunglasses,sunglasses
+Do you like Rolex watch?,preference,confirmation,brand,Rolex,Rolex,accessory,watch,watch
+How do you like your Rolex watches?,preference,information,accessory,watch,watches,brand,Rolex,Rolex
+Do you like rock music?,preference,confirmation,music,rock music,rock music
+How do you like the rock music?,preference,information,music,rock music,rock music
+Do you prefer AC/DC or Queen?,preference,confirmation,band,AC/DC,AC/DC,band,Queen,Queen
+What is your opinion towards AC/DC?,opinion,information,band,AC/DC,AC/DC
+Are you living in Stark Tower?,personal_info,confirmation,place,Stark Tower,Stark Tower
+Where is Stark Tower?,location,information,place,Stark Tower,Stark Tower
+Do you think you are arrogant?,personal_info,confirmation,personality,arrogant,arrogant
+Who you think is arrogant?,person,information,personality,arrogant,arrogant
+Are you rich?,personal_info,confirmation,reputation,rich,rich
+Who is rich?,person,information,reputation,rich,rich
+Are you married?,personal_info,confirmation,marital_status,married,married
+Who is still single?,person,information,marital_status,single,single
+Is your hair red?,personal_info,confirmation,characteristic,hair,hair,color,red,red
+What is your eye color?,personal_info,information,characteristic,eye,eye,subject,color,color
+Can you speak French?,ability,confirmation,language,French,French
+Who speaks English?,person,information,language,English,English
+Is Pepper your girlfriend?,person,confirmation,person_name,Pepper Potts,Pepper,relationship,girlfriend,girlfriend
+Who is your father?,person,information,relationship,father,father
+Have you been to America?,experience,confirmation,country,America,America
+Where is USA?,location,information,country,America,USA
+Do you like cheeseburger?,preference,confirmation,food,burger,cheeseburger
+Where is my cheeseburger?,location,information,food,burger,cheeseburger
+Are you living in New Jersey?,personal_info,confirmation,city,New Jersey,New Jersey
+Where is New York?,location,information,city,New York,New York
+Do you like boxing?,preference,confirmation,hobby,boxing,boxing
+Who like boxing?,person,information,hobby,boxing,boxing
+Are you Iron Man?,personal_info,confirmation,alias,Iron Man,Iron Man
+Who is Iron Man?,person,information,alias,Iron Man,Iron Man
+Do you know PTSD?,information,confirmation,medical_history,PTSD,PTSD
+What is PTSD?,information,information,medical_history,PTSD,PTSD
+Did you go to MIT?,experience,confirmation,education,MIT,MIT
+What is your opinion towards MIT?,opinion,information,education,MIT,MIT
+Are you American?,personal_info,confirmation,citizenship,American,American
+Do you prefer whisky or martini?,preference,confirmation,liquor,whisky,whisky,liquor,martini,martini
+Where I can buy some whisky?,location,information,liquor,whisky,whisky
+Did you create Javis?,experience,confirmation,creation,Javis,Javis
+Who is Javis?,person,information,creation,Javis,Javis
+Do you like Audi R8?,preference,confirmation,car,Audi R8,Audi R8
+Are you CEO of Stark Industries?,personal_info,confirmation,occupation,CEO,CEO,organization,Stark Industries,Stark Industries
+Is your father's name Howard?,person,confirmation,relationship,father,father,person_name,Howard Stark,Howard
+What do you think of tesla?,opinion,information,car,Tesla,tesla
+How did you build iron man?,method,information,alias,Iron Man,iron man
+What did you do to build iron man?,experience,information,alias,Iron Man,iron man
+Did you build iron man?,experience,confirmation,alias,Iron Man,iron man
+Is your suit made of iron?,information,confirmation
+What is your suit made of?,information,information
+Are you chinese?,personal_info,confirmation,citizenship,Chinese,chinese
+Are you rich?,personal_info,confirmation,reputation,rich,rich
+What is your father's name?,person,information,relationship,father,father,subject,name,name
+Where is your father?,location,information,relationship,father,father
+When is your flight going to take off?,time,information
+How did you study ece?,method,information,education,electrical engineering,ece
+Do you like chinese food?,preference,confirmation,citizenship,Chinese,chinese,subject,food,food
+How do you like tesla?,preference,information,car,Tesla,tesla
+Do you want to be rich?,opinion,confirmation,reputation,rich,rich
+Which school did you go to?,experience,information,education,school,school
+What did you do to be so rich?,experience,information,reputation,rich,rich
+Is your father howard?,person,confirmation,relationship,father,father,person_name,Howard Stark,howard
+Do you have a girlfriend?,person,confirmation,howard,girlfriend,girlfriend
