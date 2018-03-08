@@ -6,7 +6,7 @@
     },
     "sub-templates" : {
       "definition" : {
-        "[content] (be) [content]" : {},
+        "[subject] (be) [content]" : {},
         "It is [content]" : {},
         "Yeah, [content] (be)" : {"assertion" : true},
         "No, [content] (be) not" : {"assertion" : false},
@@ -60,13 +60,13 @@
             "No, I (do) not" : {"preference" : false},
             "Yeah, I do like [content]" : {"preference" : true},
             "No, I hate [content]" : {"preference" : false},
-            "My favourite [content] (be) [content]" : {"preference" : true},
+            "My favourite [category] (be) [content]" : {"preference" : true},
             "My favourite is [content]" : {"preference" : true},
             "I prefer [content]" : {"preference" : true},
             "I like it" : {"preference" : true},
             "It is alright" : {"preference" : true},
             "Absolutely" : {"preference" : true},
-            "My least favourite [content] on Earth is [content]" : {"preference" : false}
+            "My least favourite [category] on Earth is [content]" : {"preference" : false}
 
         },
         "ability" : {
@@ -89,15 +89,15 @@
         "opinion" : {
             "I mean, <definition>" : {},
             "Well, I mean, <definition>" : {},
-            "Very [content]" : {},
-            "I'm not saying that <definition>" : {"assertioin": false},
+            "Very [adjective]" : {},
+            "I'm not saying that <definition>" : {"assertion": false},
             "It was alright. {opinion}" : {"assertion" : true},
             "Well, you can forget it. {opinion}" : {"assertion" : false},
-            "If you will direct your attention to said [content], I believe that’s [content]. " : {},
+            "If you will direct your attention to said [topic], I believe that’s [content]. " : {},
             "Yeah, I’d say" : {"assertion" : true},
             "Hey, I’m thinking {opinion}" : {},
             "Alright. {opinion}" : {},
-            "Speaking of [content], {opinion}" : {},
+            "Speaking of [topic], {opinion}" : {},
             "Honestly, {opinion}" : {},
             "Fantastic." : {"preference":true},
             "Listen, {opinion}" : {}

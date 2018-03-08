@@ -8,7 +8,7 @@ from typing import List
 class NLG_Recipe(object):
     def __init__(self, intent):
         self.intent = intent
-        self.contents = []
+        self.contents = {}
         self.attributes = {}
         self.tense = "VB"
         self.descriptors = {}
@@ -18,7 +18,7 @@ class NLG_Recipe(object):
         """
         Add contents to the recipe
         """
-        self.contents.extend(contents)
+        self.contents.update(contents)
         self.GenerateIClause()
         self.GenerateMeClause()
         self.GenerateClause()
@@ -40,12 +40,12 @@ class NLG_Recipe(object):
         ["Mary","you","I"] and ["Mary","I","you"] return "Mary, you and I"
         ["David", "Mary", "Steven"] -> ["David, Mary and Steven"]
         """
-        for i, content in enumerate(self.contents):
+        for key, content in self.contents.items():
             if not isinstance(content, list):
                 continue
 
             if len(content) == 1:
-                self.contents[i] = content[0]
+                self.contents[key] = content[0]
                 continue
 
             clause = ""
@@ -73,7 +73,7 @@ class NLG_Recipe(object):
                     else:
                         foundI = True
             if (foundI):
-                self.contents[i] = clause
+                self.contents[key] = clause
 
     def GenerateMeClause(self):
         """
@@ -85,12 +85,12 @@ class NLG_Recipe(object):
         ["her","me"] and ["me","her"] -> "her and me"
         ["Mary, "her","me"] and ["me","Mary","her"] -> "Mary, her and me"
         """
-        for i, content in enumerate(self.contents):
+        for key, content in self.contents.items():
             if not isinstance(content, list):
                 continue
 
             if len(content) == 1:
-                self.contents[i] = content[0]
+                self.contents[key] = content[0]
                 continue
 
             clause = ""
@@ -118,15 +118,15 @@ class NLG_Recipe(object):
                     else:
                         foundme = True
             if (foundme):
-                self.contents[i] = clause
+                self.contents[key] = clause
 
     def GenerateClause(self):
-        for i, content in enumerate(self.contents):
+        for key, content in self.contents.items():
             if not isinstance(content, list):
                 continue
 
             if len(content) == 1:
-                self.contents[i] = content[0]
+                self.contents[key] = content[0]
                 continue
 
             clause = ""
@@ -138,7 +138,7 @@ class NLG_Recipe(object):
                     clause += " and " + elem
                 else:
                     clause += ", " + elem
-            self.contents[i] = clause
+            self.contents[key] = clause
 
     def AddDescriptor(self, key, description):
         self.descriptors[key] = description
