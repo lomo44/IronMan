@@ -1,4 +1,4 @@
-{
+Iron_Man_NLG_DATA = {
     "ID" : "Iron_Man",
     "lex" : {
         "adverb" : {

@@ -1,20 +1,51 @@
-import json
+import re
 
-def to_past_tense(verb : str):
-    if verb in modal_verb_list:
-        return verb
-    elif verb in irregular_past:
-        return irregular_past[verb]
-    elif verb[-1] == 'e':
-        return verb + 'd'
-    elif verb[-1] == 'y':
-        return verb[0:-1] + "ied"
-    elif verb[-1] == 'c':
-        return verb[0:-1] + "ked"
-    elif verb[-1] in double_ending_list and verb[-2] in vowel_list:
-        return verb + verb[-1]+ "ed"
+def to_present_tense(tag, last_phrase, verb):
+    common_case = (tag == u'PRP' and last_phrase in ["he", "she", "it"]) or tag == u'NNP' or tag == u'NN'
+    if verb == "be":
+        if tag == u'PRP':
+            if (last_phrase == "i"):
+                verb = "am"
+            elif (last_phrase in ["he", "she", "it"]):
+                verb = "is"
+            else:
+                verb = "are"
+        elif tag == u'NNS' or tag == u'NNPS':
+            verb = "are"
+        else:
+            verb = "is"
+    elif verb == "do":
+        if common_case:
+            verb = "does"
     else:
-        return verb + 'ed'
+        if common_case:
+            if re.match(".+s", verb):
+                verb = verb + "es"
+            else:
+                verb = verb + "s"
+    return verb
+
+def to_past_tense(tag, last_phrase, verb):
+
+    if verb == "be":
+        if (tag == u'PRP' and last_phrase in ["he", "she", "it", "i"]) or tag == u'NNP' or tag == u'NN':
+            verb = "was"
+        else:
+            verb = "were"
+    elif verb in irregular_past:
+        verb = irregular_past[verb]
+    elif verb[-1] == 'e':
+        verb =  verb + 'd'
+    elif verb[-1] == 'y':
+        verb =  verb[0:-1] + "ied"
+    elif verb[-1] == 'c':
+        verb =  verb[0:-1] + "ked"
+    elif verb[-1] in double_ending_list and verb[-2] in vowel_list:
+        verb = verb + verb[-1] + "ed"
+    else:
+        verb =  verb + 'ed'
+
+    return verb
 
 def to_past_participle(verb : str):
     if verb in modal_verb_list:
@@ -46,13 +77,9 @@ def to_progressive(verb : str):
     else:
         return verb + 'ing'
 
-modal_verb_list = ["can", "could", "may", "might", "will", "would", "shall", "should", "must"]
-
 irregular_past = {
     "arise": "arose",
     "babysit": "babysat",
-    "is": "was",
-    "are": "were",
     "beat": "beat",
     "become": "became",
     "bend": "bent",
@@ -166,8 +193,7 @@ irregular_past = {
 irregular_past_participle = {
     "arise": "arisen",
     "babysit": "babysat",
-    "is": "been",
-    "are": "been",
+    "be": "been",
     "beat": "beaten",
     "become": "become",
     "bend": "bent",
@@ -282,7 +308,3 @@ irregular_past_participle = {
 vowel_list = ["a", "e", "i", "o", "u"]
 double_ending_list = [ "b", "d", "g", "l", "m", "n", "p", "r", "t"]
 
-if __name__ == "__main__":
-    test_verbs = ["do","die","stop","climb","see"]
-    for verb in test_verbs:
-        print(to_past_tense(verb),to_past_participle(verb),to_progressive(verb))
