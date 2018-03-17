@@ -6,7 +6,7 @@ from typing import List
 
 
 class NLG_Recipe(object):
-    def __init__(self, intent):
+    def __init__(self, intent="default"):
         self.intent = intent
         self.contents = {}
         self.attributes = {}

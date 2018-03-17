@@ -1,21 +1,18 @@
-from typing import List,Dict
 from IronMan_MK1.modules.base.base_module import Base_module
-from IronMan_MK1.modules.base.converse_context import Converse_context
-from IronMan_MK1.modules.base.personality_context import Personality_context
 from IronMan_MK1.modules.base.nlg_recipe import NLG_Recipe
 from IronMan_MK1.modules.nlg.sentence_template import Sentence_Template
 import json
-import os
-import sys
 import re
 import random
-import copy
-from functools import lru_cache
+import IronMan_MK1.modules.nlg.utility as utility
+import spacy
 
 content_prog = re.compile("\[(.*)\]")
 descriptor_prog = re.compile("{(.*)}")
-verb_prog = re.compile("\((.*)\)")
+verb_prog = re.compile("\[verb\]")
 subtemplate_prog = re.compile("<(.*)>")
+
+modal_verb_list = ["can", "could", "may", "might", "will", "would", "shall", "should", "must"]
 
 class IM_NLG_Module(Base_module):
     def __init__(self, json_file="IronMan_MK1/modules/nlg/iron_man_data.json"):
@@ -25,6 +22,8 @@ class IM_NLG_Module(Base_module):
         self.defaults = {}
         self.LoadNLGData(json_file)
         self.parseNLGData()
+        #TODO should be loaded in the main pipeline?
+        self.nlp = spacy.load('en')
         del self.nlg_data
         # Make sure there are default responses (at least one)
         #defaults = self.nlg_data["default"]
@@ -41,7 +40,7 @@ class IM_NLG_Module(Base_module):
             if "ID" in loaded_data:
                 self.nlg_data = loaded_data
 
-    def SelectResult(self, recipe : NLG_Recipe, results):
+    def SelectResult(self, results):
         """
         Given a list of results, select the proper one
         """
@@ -50,13 +49,33 @@ class IM_NLG_Module(Base_module):
             pick = random.randint(0, size-1)
             return results[pick]
         else:
-            num_defaults = len(self.defaults)
+            num_defaults = len(self.templates["default"])
             pick = random.randint(0, num_defaults-1)
-            return list(self.defaults.keys())[pick]
+            return " ".join(self.templates["default"][pick].pattern)
 
     # TODO
     def ChangeTense(self, verb, words_before, tense="VB"):
-        return verb
+        if len(words_before) == 0:
+            return verb
+        last_phrase = words_before[-1]
+
+        if last_phrase in modal_verb_list:
+            return verb
+
+        if re.match(".*and.*", last_phrase):
+            tag = u'NNS'
+        else:
+            doc = self.nlp(last_phrase)
+            token = doc[-1]
+            tag = token.tag_
+        last_phrase = last_phrase.lower()
+        transformed_verb = verb
+        if tense == "VB" or tense == "VPB" or tense == "VPZ":
+            transformed_verb = utility.to_present_tense(tag, last_phrase, verb)
+        elif tense == "VBD":
+            transformed_verb = utility.to_past_tense(tag, last_phrase,verb)
+
+        return transformed_verb
 
     def parseNLGData(self):
         for intent in self.nlg_data["templates"]:
@@ -71,9 +90,6 @@ class IM_NLG_Module(Base_module):
             for subtemplate in self.nlg_data["sub-templates"][subtem_type]:
                 sen_tem = Sentence_Template(subtemplate, self.nlg_data["sub-templates"][subtem_type][subtemplate])
                 self.subtemplates[subtem_type].append(sen_tem)
-
-        for default in self.nlg_data["default"]:
-            self.defaults[default] = self.nlg_data["default"][default]
 
     def Realization(self, recipe: NLG_Recipe, template_library):
         """
@@ -137,13 +153,14 @@ class IM_NLG_Module(Base_module):
             for token in template.pattern:
                 match = content_prog.match(token)
                 if match:
-                    sentences[sentence_index].append(recipe.contents[match.group(1)])
+                    match1 = verb_prog.match(token)
+                    if match1:
+                        verb = self.ChangeTense(recipe.contents[verb], sentences[sentence_index], recipe.tense)
+                        sentences[sentence_index].append(verb)
+                    else:
+                        sentences[sentence_index].append(recipe.contents[match.group(1)])
                     continue
-                match = verb_prog.match(token)
-                if match:
-                    verb = self.ChangeTense(match.group(1), sentences[sentence_index], recipe.tense)
-                    sentences[sentence_index].append(verb)
-                    continue
+
                 match = descriptor_prog.match(token)
                 if match:
                     sentences[sentence_index].append(recipe.descriptors[match.group(1)])

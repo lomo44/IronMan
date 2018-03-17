@@ -7,7 +7,7 @@ from math import pow
 
 content_prog = re.compile("\[(.*)\]")
 descriptor_prog = re.compile("{(.*)}")
-verb_prog = re.compile("\((.*)\)")
+verb_prog = re.compile("\[verb\]")
 subtemplate_prog = re.compile("<(.*)>")
 
 class Sentence_Template(object):
@@ -16,7 +16,6 @@ class Sentence_Template(object):
         self.attributes = {}
         self.contents = set()
         self.descriptors = set()
-        self.hasVerbs = False
         self.hasSubtemplate = False
         for attribute in attributes:
             self.attributes[attribute] = attributes[attribute]
@@ -25,12 +24,6 @@ class Sentence_Template(object):
             match = content_prog.match(token)
             if match:
                 self.contents.add(match.group(1))
-                continue
-
-            # token ~= "(verb)"
-            match = verb_prog.match(token)
-            if match:
-                self.hasVerbs = True
                 continue
 
             match = subtemplate_prog.match(token)
