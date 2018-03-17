@@ -824,7 +824,8 @@
       {
         "value": "Howard Stark",
         "expressions": [
-          "Howard Stark"
+          "Howard Stark",
+          "Howard"
         ]
       },
       {
@@ -1243,7 +1244,11 @@
       {
         "value": "Iron Man",
         "expressions": [
-          "Iron Man"
+          "Iron Man",
+          "iron man",
+          "Ironman",
+          "IronMan",
+          "ironman"
         ]
       }
     ]
@@ -1326,7 +1331,9 @@
       {
         "value": "electrical engineering",
         "expressions": [
-          "electrical engineering"
+          "electrical engineering",
+          "EE",
+          "ECE"
         ]
       }
     ]
@@ -1344,6 +1351,13 @@
         "value": "Bulgarian",
         "expressions": [
           "Bulgarian"
+        ]
+      },
+      {
+        "value": "Chinese",
+        "expressions": [
+          "Chinese",
+          "chinese"
         ]
       }
     ]
@@ -1432,6 +1446,13 @@
         "value": "Audi R8",
         "expressions": [
           "Audi R8"
+        ]
+      },
+      {
+        "value": "Tesla",
+        "expressions": [
+          "Tesla",
+          "tesla"
         ]
       },
       {
@@ -1709,54 +1730,6 @@
           "HYDRA"
         ]
       }
-    ]
-  },
-  {
-    "id": "info_question",
-    "values": [
-      {
-        "value": "what",
-        "expressions": [
-          "what"
-        ]
-      },
-      {
-        "value": "how",
-        "expressions": [
-          "how"
-        ]
-      },
-      {
-        "value": "who",
-        "expressions": [
-          "who"
-        ]
-      },
-      {
-        "value": "where",
-        "expressions": [
-          "where"
-        ]
-      },
-      {
-        "value": "when",
-        "expressions": [
-          "when"
-        ]
-      },
-      {
-        "value": "which",
-        "expressions": [
-          "which"
-        ]
-      },
-      {
-        "value": "why",
-        "expressions": [
-          "why"
-        ]
-      }
-
     ]
   }
 ]

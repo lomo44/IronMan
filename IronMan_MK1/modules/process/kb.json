@@ -1,0 +1,166 @@
+[
+    {
+        "NBR": [
+            3,
+            5,
+            6,
+            14,
+            15
+        ],
+        "cat": "SELF",
+        "id": "SELF",
+        "indx": 0
+    },
+    {
+        "NBR": [
+            2,
+            3
+        ],
+        "cat": "TOP",
+        "id": "name",
+        "indx": 1
+    },
+    {
+        "NBR": [
+            5,
+            1
+        ],
+        "cat": "name",
+        "id": "Howard Stark",
+        "indx": 2
+    },
+    {
+        "NBR": [
+            0,
+            1
+        ],
+        "cat": "name",
+        "id": "Tony Stark",
+        "indx": 3
+    },
+    {
+        "NBR": [
+            5
+        ],
+        "cat": "TOP",
+        "id": "relationship",
+        "indx": 4
+    },
+    {
+        "NBR": [
+            0,
+            2,
+            4
+        ],
+        "cat": "relationship",
+        "description": [
+            "My father helped defeat Nazis. He worked on the Manhattan Project.",
+            "I never got to say goodbye to my father. There's questions I would've asked him. I would've asked him how he felt about what his company did, if he was conflicted, if he ever had doubts. Or maybe he was every inch of man we remember from the newsreels.",
+            "He was one of the founding members of S.H.I.E.L.D."
+        ],
+        "id": "father",
+        "indx": 5
+    },
+    {
+        "NBR": [
+            7,
+            8,
+            0
+        ],
+        "cat": "OWN",
+        "id": "creation",
+        "indx": 6
+    },
+    {
+        "NBR": [
+            9,
+            6
+        ],
+        "cat": "creation",
+        "id": "AI",
+        "indx": 7
+    },
+    {
+        "NBR": [
+            10,
+            11,
+            6
+        ],
+        "cat": "creation",
+        "id": "armor",
+        "indx": 8
+    },
+    {
+        "NBR": [
+            7
+        ],
+        "cat": "ai",
+        "id": "J.A.R.V.I.S.",
+        "indx": 9,
+        "pause": [
+            "J.A.R.V.I.S., do me a favor and blow Mark 42.",
+            "J.A.R.V.I.S.? J.A.R.V.I.S.!? Don't leave me, buddy."
+        ]
+    },
+    {
+        "NBR": [
+            8
+        ],
+        "cat": "armor",
+        "id": "Mark I",
+        "indx": 10,
+        "likeness": 5.5
+    },
+    {
+        "NBR": [
+            8
+        ],
+        "armor type": "Emergency Suit",
+        "cat": "armor",
+        "code name": "Suitcase Armor",
+        "id": "Mark V",
+        "indx": 11,
+        "likeness": 7.5
+    },
+    {
+        "NBR": [],
+        "cat": "TOP",
+        "id": "food",
+        "indx": 12
+    },
+    {
+        "NBR": [
+            14,
+            15
+        ],
+        "cat": "TOP",
+        "id": "car",
+        "indx": 13
+    },
+    {
+        "NBR": [
+            0,
+            13
+        ],
+        "cat": "car",
+        "description": [
+            "It was a gift from Elon."
+        ],
+        "id": "Tesla Roadster",
+        "indx": 14,
+        "likeness": 9.5
+    },
+    {
+        "NBR": [
+            0,
+            13
+        ],
+        "cat": "car",
+        "description": [
+            "I crashed it when I was test piloting Mark II."
+        ],
+        "id": "Shelby Cobra",
+        "indx": 15,
+        "likeness": 9.1
+    }
+]
