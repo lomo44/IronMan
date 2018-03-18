@@ -69,29 +69,35 @@ class NLGTestCases(unittest.TestCase):
     def testRealizationPositiveTests(self):
         test_recipe = NLG_Recipe("greetings")
         results = self.nlg_module.Realization(test_recipe, "templates")
+        print([tup[0] for tup in results])
         
-        test_recipe = NLG_Recipe("initialization")
+        test_recipe = NLG_Recipe("initiation")
         test_recipe.AddDescriptor("question", "What would you do if you were me?")
         results = self.nlg_module.Realization(test_recipe, "templates")
+        print([tup[0] for tup in results])
 
-        test_recipe = NLG_Recipe("person")
+        test_recipe = NLG_Recipe("identity")
         test_recipe.AddContents({"content": ["Pepper", "I"]})
         test_recipe.AddAttribute("assertion", True)
         results = self.nlg_module.Realization(test_recipe, "templates")
+        print([tup[0] for tup in results])
 
         test_recipe = NLG_Recipe("preference")
         test_recipe.AddContents({"content": "burgers"})
-        test_recipe.AddAttribute("preference", True)
+        test_recipe.AddAttribute("assertion", True)
         results = self.nlg_module.Realization(test_recipe, "templates")
+        print([tup[0] for tup in results])
 
         test_recipe = NLG_Recipe("opinion")
         test_recipe.AddContents({"topic": ["Climate change"], "content": ["happening"]})
         results = self.nlg_module.Realization(test_recipe, "templates")
+        print([tup[0] for tup in results])
 
         test_recipe = NLG_Recipe("experience")
         test_recipe.AddDescriptor("experience", "I don't know how to drive!")
         test_recipe.AddDescriptor("opinion", "Personally, I think driving is really hard")
         results = self.nlg_module.Realization(test_recipe, "templates")
+        print([tup[0] for tup in results])
 
     def testRealizationNegativeTests(self):
         test_recipe = NLG_Recipe("invalid intent")
