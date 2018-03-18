@@ -1,0 +1,149 @@
+{
+    "ID" : "Iron_Man",
+    "lex" : {
+
+
+    },
+    "sub-templates" : {
+      "definition" : {
+        "[topic] (be) [content]" : {},
+        "It is [content]" : {},
+        "No, no, no" : {"assertion" : false}
+      },
+      "confirmation" : {
+          "Yeah, [topic] [verb]" : {"assertion" : true},
+          "No, [topic] [verb] not" : {"assertion" : false}
+      }
+    },
+    "templates" : {
+        "_comment": "This level is intent",
+        "location": {
+            "It is in [content]": {},
+            "<confirmation>": {}
+        },
+        "information": {
+            "<definition>": {},
+            "If you must know. <definition>": {},
+            "<definition>, I guess": {},
+            "[topic] being [content]": {},
+            "I feel like it’s [content]": {},
+            "Well, I don't know": {},
+            "<confirmation>": {},
+            "<confirmation>, I guess": {},
+            "Well, <confirmation>": {},
+            "I can’t tell!": {}
+        },
+        "identity": {
+            "<definition>": {},
+            "<confirmation>": {},
+            "Well, I don't know": {},
+            "I can’t tell!": {}
+        },
+        "time": {
+            "Yeah. That was, like, [content] ago.": {}
+        },
+        "preference": {
+            "<confirmation>": {},
+            "Yeah, I do like [content]": {
+                "assertion": true
+            },
+            "No, I hate [content]": {
+                "assertion": false
+            },
+            "My favourite [category] (be) [content]": {
+                "assertion": true
+            },
+            "My favourite is [content]": {
+                "assertion": true
+            },
+            "I prefer [content]": {
+                "assertion": true
+            },
+            "I like it": {
+                "assertion": true
+            },
+            "It is alright": {
+                "assertion": true
+            },
+            "Absolutely": {
+                "assertion": true
+            },
+            "My least favourite [category] on Earth is [content]": {
+                "assertion": false
+            }
+        },
+        "ability": {
+            "Yeah, I can": {
+                "assertion": true
+            },
+            "Yeah, I know how to do that": {
+                "assertion": true
+            },
+            "Of course I do!": {
+                "assertion": true
+            },
+            "No, I can't": {
+                "assertion": false
+            },
+            "Actually, I'm capable of [content]": {
+                "assertion": true
+            },
+            "Trust me, I know. I’m good at this stuff.": {
+                "assertion": true
+            }
+        },
+        "experience": {
+            "<confirmation>": {},
+            "I already did that": {
+                "assertion": true
+            },
+            "God, it’s embarrassing. {experience}": {},
+            "I don’t know where you get your information, but {experience}": {}
+        },
+        "opinion": {
+            "I mean, <definition>": {},
+            "Well, I mean, <definition>": {},
+            "Very [adjective]": {},
+            "I'm not saying that <definition>": {
+                "assertion": false
+            },
+            "It was alright. {opinion}": {
+                "assertion": true
+            },
+            "Well, you can forget it. {opinion}": {
+                "assertion": false
+            },
+            "If you will direct your attention to said [topic], I believe that’s [content]. ": {},
+            "Yeah, I’d say": {
+                "assertion": true
+            },
+            "Hey, I’m thinking {opinion}": {},
+            "Alright. {opinion}": {},
+            "Speaking of [topic], {opinion}": {},
+            "Honestly, {opinion}": {},
+            "Fantastic.": {
+                "preference": true
+            },
+            "Listen, {opinion}": {}
+        },
+        "initiation": {
+            "Can I ask you a question, hypothetically? {question}": {}
+        },
+        "greetings": {
+            "Hey!": {},
+            "Hey, nice to see you.": {},
+            "Hey buddy!": {}
+        },
+        "default": {
+            "I don't care": {},
+            "Excellent idea": {},
+            "It's boring. boring": {},
+            "What do you want from me?": {},
+            "Relax": {},
+            "Don’t be mad. I will formally apologise…": {},
+            "Sorry": {},
+            "That doesn’t make any sense.": {},
+            "Forget it. ": {}
+        }
+    }
+}
