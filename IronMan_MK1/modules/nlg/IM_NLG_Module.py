@@ -21,8 +21,7 @@ class IM_NLG_Module(Base_module):
         self.subtemplates = {}
         self.defaults = {}
         self.LoadNLGData(json_file)
-        self.parseNLGData()
-        #TODO should be loaded in the main pipeline?
+        self.ParseNLGData()
         self.nlp = spacy.load('en')
         del self.nlg_data
         # Make sure there are default responses (at least one)
@@ -40,6 +39,44 @@ class IM_NLG_Module(Base_module):
             if "ID" in loaded_data:
                 self.nlg_data = loaded_data
 
+    def ParseNLGData(self):
+        for intent in self.nlg_data["templates"]:
+            if intent == "_comment":
+                continue
+            self.templates[intent] = []
+            for template in self.nlg_data["templates"][intent]:
+                sen_tem = Sentence_Template(template, self.nlg_data["templates"][intent][template])
+                self.templates[intent].append(sen_tem)
+        for subtem_type in self.nlg_data["sub-templates"]:
+            self.subtemplates[subtem_type] = []
+            for subtemplate in self.nlg_data["sub-templates"][subtem_type]:
+                sen_tem = Sentence_Template(subtemplate, self.nlg_data["sub-templates"][subtem_type][subtemplate])
+                self.subtemplates[subtem_type].append(sen_tem)
+
+    #TODO are we keeping this base function name?
+    def process(self, _input):
+        recipe = self.JSONToRecipe(_input)
+        results = self.Realization(recipe, "templates")
+        response = self.SelectResult(results)
+        return response
+
+
+    def JSONToRecipe(self, json_dic):
+        recipe = NLG_Recipe()
+        for key in json_dic:
+            if key == "intent":
+                recipe.SetIntent(json_dic[key])
+            elif key == "contents":
+                recipe.AddContents(json_dic[key])
+            elif key == "tense":
+                recipe.SetTense(json_dic[key])
+            elif key== "descriptions":
+                for descriptor in json_dic[key]:
+                    recipe.AddDescriptor(descriptor, json_dic[key][descriptor])
+            else:
+                recipe.AddAttribute(key, json_dic[key])
+        return recipe
+
     def SelectResult(self, results):
         """
         Given a list of results, select the proper one
@@ -53,7 +90,6 @@ class IM_NLG_Module(Base_module):
             pick = random.randint(0, num_defaults-1)
             return " ".join(self.templates["default"][pick].pattern)
 
-    # TODO
     def ChangeTense(self, verb, words_before, tense="VB"):
         if len(words_before) == 0:
             return verb
@@ -76,20 +112,6 @@ class IM_NLG_Module(Base_module):
             transformed_verb = utility.to_past_tense(tag, last_phrase,verb)
 
         return transformed_verb
-
-    def parseNLGData(self):
-        for intent in self.nlg_data["templates"]:
-            if intent == "_comment":
-                continue
-            self.templates[intent] = []
-            for template in self.nlg_data["templates"][intent]:
-                sen_tem = Sentence_Template(template, self.nlg_data["templates"][intent][template])
-                self.templates[intent].append(sen_tem)
-        for subtem_type in self.nlg_data["sub-templates"]:
-            self.subtemplates[subtem_type] = []
-            for subtemplate in self.nlg_data["sub-templates"][subtem_type]:
-                sen_tem = Sentence_Template(subtemplate, self.nlg_data["sub-templates"][subtem_type][subtemplate])
-                self.subtemplates[subtem_type].append(sen_tem)
 
     def Realization(self, recipe: NLG_Recipe, template_library):
         """
