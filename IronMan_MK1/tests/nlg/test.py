@@ -70,18 +70,18 @@ class NLGTestCases(unittest.TestCase):
         test_recipe = NLG_Recipe("greetings")
         results = self.nlg_module.Realization(test_recipe, "templates")
         
-        test_recipe = NLG_Recipe("initialization")
+        test_recipe = NLG_Recipe("initiation")
         test_recipe.AddDescriptor("question", "What would you do if you were me?")
         results = self.nlg_module.Realization(test_recipe, "templates")
 
-        test_recipe = NLG_Recipe("person")
+        test_recipe = NLG_Recipe("identity")
         test_recipe.AddContents({"content": ["Pepper", "I"]})
         test_recipe.AddAttribute("assertion", True)
         results = self.nlg_module.Realization(test_recipe, "templates")
 
         test_recipe = NLG_Recipe("preference")
         test_recipe.AddContents({"content": "burgers"})
-        test_recipe.AddAttribute("preference", True)
+        test_recipe.AddAttribute("assertion", True)
         results = self.nlg_module.Realization(test_recipe, "templates")
 
         test_recipe = NLG_Recipe("opinion")
