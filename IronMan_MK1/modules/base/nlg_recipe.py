@@ -30,6 +30,12 @@ class NLG_Recipe(object):
     def AddAttribute(self, attribute, attribute_val):
         self.attributes[attribute] = attribute_val
 
+    def SetIntent(self, intent):
+        self.intent = intent
+
+    def SetTense(self, tense):
+        self.tense = tense
+
     def GenerateIClause(self):
         """
         for each content element in self.contents, if a content is still a list (unprocessed),

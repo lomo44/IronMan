@@ -1,0 +1,16 @@
+ json = {
+ 	"intent" : "preference", 
+ 	"contents" : {
+ 		"category" : "food", 
+ 		"content" : "cheeseburger",
+ 		"verb" : "xxx"
+ 		}, 
+ 	"assertion": True, 
+ 	"tense" : "VB", 
+ 	"description" : {
+ 		"opinion" : "Actually, Burger King has the best burgers"
+ 		"pause" : ""
+ 		"experience" : ""
+ 		"questions" : ""
+ 		}
+ }
