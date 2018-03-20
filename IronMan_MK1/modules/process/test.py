@@ -6,7 +6,7 @@ import spacy
 import sys
 import os
 
-sys.path.insert(0, '/Users/yeshuai/Documents/IronMan/')
+sys.path.insert(0, '../../../')
 
 from IronMan_MK1.modules.nlg import IM_NLG_Module
 from IronMan_MK1.modules.nlu.wit_ai.Trainer import Trainer
@@ -65,13 +65,13 @@ def play_spacy():
         print(ent.text, ent.start_char, ent.end_char, ent.label_)
 
 def test_kb():
-    logic = Logic.Logic('/Users/yeshuai/Documents/IronMan/IronMan_MK1/modules/process/kb.json')
+    logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
     SELF = logic.kb.get_node('SELF')
     name = logic.kb.get_node('name')
     pprint(logic.kb.bridge(SELF, name))
 
 def test_logic():
-    logic = Logic.Logic('/Users/yeshuai/Documents/IronMan/IronMan_MK1/modules/process/kb.json')
+    logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
     msg = u'What is your name?'
 
     # msg = u'who is your father?'
@@ -84,7 +84,7 @@ def test_logic():
     return resp
 
 if __name__ == "__main__":
-    os.chdir('/Users/yeshuai/Documents/IronMan/')
+    os.chdir('../../../')
     # nlg = IM_NLG_Module.IM_NLG_Module()
     # print(nlg.process(test_logic()))
     pprint(test_logic())
