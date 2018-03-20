@@ -1,9 +1,15 @@
-from Trainer import Trainer
 from pprint import pprint
 import json
 import urllib.parse
 import Logic
 import spacy
+import sys
+import os
+
+sys.path.insert(0, '/Users/yeshuai/Documents/IronMan/')
+
+from IronMan_MK1.modules.nlg import IM_NLG_Module
+from IronMan_MK1.modules.nlu.wit_ai.Trainer import Trainer
 
 def test_loading():
     data = json.load(open('kb.json'))
@@ -59,28 +65,27 @@ def play_spacy():
         print(ent.text, ent.start_char, ent.end_char, ent.label_)
 
 def test_kb():
-    logic = Logic.Logic('kb.json')
+    logic = Logic.Logic('/Users/yeshuai/Documents/IronMan/IronMan_MK1/modules/process/kb.json')
     SELF = logic.kb.get_node('SELF')
     name = logic.kb.get_node('name')
     pprint(logic.kb.bridge(SELF, name))
 
 def test_logic():
-    logic = Logic.Logic('kb.json')
-    msg = u'Do you like green flowers?'
+    logic = Logic.Logic('/Users/yeshuai/Documents/IronMan/IronMan_MK1/modules/process/kb.json')
+    msg = u'What is your name?'
 
     # msg = u'who is your father?'
     wit_recipe = test_msg(msg)
     real_recipe = logic.posproc(wit_recipe)
 
-    pprint(real_recipe)
+    # pprint(real_recipe)
 
-    # resp = logic.respond(wit_recipe)
-    # pprint(resp)
+    resp = logic.respond(wit_recipe)
+    return resp
 
 if __name__ == "__main__":
-    # msg = u'who is your father?'
-    # pprint(test_msg(msg))
-    # test_logic()
-    play_spacy()
+    os.chdir('/Users/yeshuai/Documents/IronMan/')
+    # nlg = IM_NLG_Module.IM_NLG_Module()
+    # print(nlg.process(test_logic()))
+    pprint(test_logic())
 
-    # fill_nbr()
