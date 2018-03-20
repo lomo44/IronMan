@@ -84,6 +84,16 @@ class Logic:
         self.name = name
         self.kb = KnowledgeBase(file)
         self.nlp = spacy.load('en')
+        self.intents = [
+            'information',
+            'identity',
+            'time',
+            'preference',
+            'ability',
+            'experience',
+            'opinion',
+            'initiation',
+            'greetings']
 
     def extract(self, entities, key):
         ans = []
@@ -138,9 +148,40 @@ class Logic:
 
     def pick(self, things):
         np.random.shuffle(things)
-        return things.pop()
+        return things.pop() if len(things) > 0 else None
+
+    def describe(self, node):
+        d = []
+        for key in node.keys():
+            if key in ['opinion', 'experience', 'pause', 'description']:
+                np.random.shuffle(node[key])
+                d.append(node[key][0])
+        return self.pick(d)
 
     def respond(self, recipe):
+        '''
+        intent:
+            information
+            identity
+            time
+            preference
+            ability
+            experience
+            opinion
+            initiation
+            greetings
+        contents:
+            content
+            category
+            verb
+        assertion:
+        tense:
+        description:
+            opinion
+            pause
+            experience
+        '''
+
         recipe = self.posproc(recipe)
         keys = recipe.keys()
         c_type = recipe['c_type']
@@ -149,7 +190,9 @@ class Logic:
         if c_type == 'greeting':
             return recipe
 
-        # if 'pref' in keys:
+        contents = {}
+        if 'pref' in keys:
+            intent = 'preference'
         #     pref = recipe['pref']
         #     if pref == 'favorite':
         #         cat = self.get_cat(subj)
@@ -158,6 +201,7 @@ class Logic:
         #         answer = np.average(self.like(subj))
                 
         else:
+            intent = 'information' 
             if 'poss' in keys:
                 poss = recipe['poss']
                 start = self.kb.walk(poss)
@@ -165,7 +209,16 @@ class Logic:
                 start = subj.pop()
 
         answer = self.pick(self.kb.bridge(start, subj.pop()))
-        recipe['answer'] = answer['id']
+        contents['content'] = answer['id']
+        description = self.describe(answer)
 
+        response = {
+            'intent' : intent,
+            'contents' : contents,
+            'tense' : recipe['tense']
+        }
+
+        if description is not None:
+            response['description'] = description
             
-        return recipe
+        return response

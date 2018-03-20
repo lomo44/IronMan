@@ -15,7 +15,7 @@ subtemplate_prog = re.compile("<(.*)>")
 modal_verb_list = ["can", "could", "may", "might", "will", "would", "shall", "should", "must"]
 
 class IM_NLG_Module(Base_module):
-    def __init__(self, json_file="IronMan_MK1/modules/nlg/iron_man_data.json"):
+    def __init__(self, json_file="IronMan_MK1/modules/nlg/iron_man_data2.json"):
         self.nlg_data = None
         self.templates = {}
         self.subtemplates = {}
@@ -84,7 +84,7 @@ class IM_NLG_Module(Base_module):
         size = len(results)
         if (size > 0):
             pick = random.randint(0, size-1)
-            return results[pick]
+            return results[pick][0]
         else:
             num_defaults = len(self.templates["default"])
             pick = random.randint(0, num_defaults-1)
