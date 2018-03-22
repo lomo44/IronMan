@@ -40,7 +40,8 @@
     },
     {
         "NBR": [
-            5
+            5,
+            18
         ],
         "cat": "TOP",
         "id": "relationship",
@@ -92,7 +93,8 @@
     },
     {
         "NBR": [
-            7
+            7,
+            18
         ],
         "cat": "ai",
         "id": "J.A.R.V.I.S.",
@@ -140,7 +142,8 @@
     {
         "NBR": [
             0,
-            13
+            13,
+            17
         ],
         "cat": "car",
         "description": [
@@ -159,8 +162,35 @@
         "description": [
             "I crashed it when I was test piloting Mark II."
         ],
-        "id": "shelby cobra",
+        "id": "Shelby Cobra",
         "indx": 15,
         "likeness": 9.1
+    },
+    {
+        "NBR": [
+            17
+        ],
+        "cat": "TOP",
+        "id": "color",
+        "indx": 16
+    },
+    {
+        "NBR": [
+            16, 
+            14
+        ],
+        "cat": "color",
+        "id": "green",
+        "indx": 17,
+        "likeness" : 7
+    },
+    {
+        "NBR": [
+            9,
+            4
+        ],
+        "cat": "relationship",
+        "id": "butler",
+        "indx": 18
     }
 ]

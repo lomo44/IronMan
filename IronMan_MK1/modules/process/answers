@@ -1,45 +1,24 @@
-What's your favorite car?
-{'ROOT': 's, 'chain': [[What], [your, favorite, car]]}
-
-Which armor is your favorite?
-{'ROOT': is, 'chain': [[Which, armor], [your, favorite]]}
-
-What kind of car is your favorite?
-{'ROOT': is, 'chain': [[What, kind, car], [your, favorite]]}
-
-Which is your favorite armor?
-{'ROOT': is, 'chain': [[Which], [your, favorite, armor]]}
-
-Where is Stark Tower?
-{'ROOT': is, 'chain': [[Where], [Stark, Tower]]}
-
-Where do you live?
-{'ROOT': live, 'chain': [[Where], [you]]}
-
-What's your father's name?
-{'ROOT': 's, 'chain': [[What], [your, father, name]]}
+What's up
+Hey!
 
 What's your name?
-{'ROOT': 's, 'chain': [[What], [your, name]]}
+If you must know. It is Tony Stark 
 
-Do you like cars?
-{'ROOT': like, 'chain': [[you], [cars]]}
+What's your father's name?
+ my father's name (be) Howard Stark 
 
-Who is he?
-{'ROOT': is, 'chain': [[Who], [he]]}
+Who is Howard Stark?
+If you must know. It is my father 
 
-Who are you?
-{'ROOT': are, 'chain': [[Who], [you]]}
+Who is your father?
+my father being Howard Stark
 
-What do you think of your father?
-{'ROOT': think, 'chain': [[What], [you], [your, father]]}
+Are you Tony?
+ Yeah, I (be) Tony Stark 
 
-What's your opinion on your father?
-{'ROOT': 's, 'chain': [[What], [your, opinion, your, father]]}
+Which armor is your favorite?
+If you must know. my favorite armor (be) Mark V 
 
-How old are you?
-{'ROOT': are, 'chain': [[How, old], [you]]}
-
-Is your name Tony?
-{'ROOT': Is, 'chain': [[your, name], [Tony]]}
+What is your favorite car?
+If you must know. It is Tesla Roadster  It was a gift from Elon.
 

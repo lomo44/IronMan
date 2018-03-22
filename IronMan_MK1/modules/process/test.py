@@ -16,14 +16,14 @@ def test_loading():
     data = json.load(open('kb.json'))
     return data
 
-# def test_msg(msg):
-#     access_token = 'L6BRA7QWWZJZK2LGAS7E3EPIMSB22R7D'
-#     client = Trainer(access_token=access_token)
-#     msg = msg.lower()
+def test_wit(msg):
+    access_token = 'PGV3XK5N7W7VX6YLPRGZKN7QPXKMLD2W'
+    client = Trainer(access_token=access_token)
+    msg = msg.lower()
 
-#     url = urllib.parse.quote(msg, safe='/', encoding=None, errors=None)
-#     nlu_resp = client.get_message(url)
-#     return nlu_resp
+    url = urllib.parse.quote(msg, safe='/', encoding=None, errors=None)
+    nlu_resp = client.get_message(url)
+    return nlu_resp
 
 def add_indx():
     data = json.load(open('kb.json'))
@@ -62,9 +62,6 @@ def play_spacy(msg, file=None):
         print(token.text, token.lemma_, token.dep_, token.tag_,
           [child for child in token.children], file=file)
 
-    for ent in doc.ents:
-        print(ent.text, ent.start_char, ent.end_char, ent.label_m, file=file)
-
 def test_kb():
     logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
     SELF = logic.kb.get_node('SELF')
@@ -89,31 +86,39 @@ def decomp_file(input, output):
         lines = [d.strip() for d in data]
         for line in lines:
             print(line, file=write)
-            # logic.test_spacy(line, file=write)
-            print(logic.rootproc(line), file=write)
+            print(test_pipe(line), file=write)
             print('', file=write)
 
-def test_msg(msg):
+# def test_msg(msg, debug=False):
+#     logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
+#     return logic.rootproc(msg)
+
+def test_conv():
     logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
-    return logic.try_respond(msg)
+    while True:
+        msg = input(': ')
+        wit_recipe = test_wit(msg)
+        logic_recipe = logic.try_respond(wit_recipe)
+        nlg = IM_NLG_Module.IM_NLG_Module()
+        print(nlg.process(logic_recipe))
+
+def test_pipe(msg, debug=False):
+    logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
+    wit_recipe = test_wit(msg)
+    wit_recipe['_text'] = msg
+    logic_recipe = logic.try_respond(wit_recipe, debug=debug)
+    nlg = IM_NLG_Module.IM_NLG_Module()
+    return nlg.process(logic_recipe)
 
 if __name__ == "__main__":
     os.chdir('../../../')
-<<<<<<< HEAD
-    msg = u'Which car is your favorite?'
-    # decomp_file('IronMan_MK1/modules/process/questions', 'IronMan_MK1/modules/process/answers')
+    if 'conv' in sys.argv:
+        test_conv()
+    elif 'file' in sys.argv:
+        decomp_file('IronMan_MK1/modules/process/questions', 'IronMan_MK1/modules/process/answers')
+    else:
+        msg = u'Who is J.A.R.V.I.S.?' 
+        # play_spacy(msg)
+        print(test_pipe(msg, True))
     
-    # test_msg(msg)
-    # play_spacy(msg)
-    # print(rootproc(msg))
-
-    # pprint(test_msg(msg))
-    # pprint(test_logic(msg))
-    nlg = IM_NLG_Module.IM_NLG_Module()
-    print(nlg.process(test_msg(msg)))
-=======
-    # nlg = IM_NLG_Module.IM_NLG_Module()
-    # print(nlg.process(test_logic()))
-    pprint(test_logic())
->>>>>>> 402ae94b3c9648bdfe05a72abcf90b3e710312c1
 

@@ -12,6 +12,7 @@ import string
 
 class KnowledgeBase:
     def __init__(self, file):
+        np.random.seed()
         data = json.load(open(file))
         self.verify(data)
         self.map = data
@@ -37,6 +38,10 @@ class KnowledgeBase:
     def get_node(self, name):
         try:
             return self.map[self.anchor[name][0]]
+        except:
+            print('node_with_name: Node does not exist: {' + name + "}")
+        try:
+            return self.map[self.anchor[name.upper()][0]]
         except:
             print('node_with_name: Node does not exist: {' + name + "}")
 
@@ -105,36 +110,21 @@ class Logic:
     def remmap(self, poss):
         return [re.sub(r'(?<=^)(you|your)(?=$)', 'SELF', p) for p in poss]
 
-    def posproc(self, recipe):
-        text = recipe['_text']
-        entities = recipe['entities']
-        doc = self.nlp(text)
-
-        rrecipe = {}
-        c_type = self.extract(entities, 'c_type')
-        subj = self.lemmanize(self.extract(entities, 'subject'))
-        pref = self.extract(entities, 'preference')
-        chain = self.remmap(self.get_poss_chain(doc))
-        tense = self.get_tense(doc)
-
-        def add_to_recipe(content, name):
-            for i, c in enumerate(content):
-                if len(c) != 0:
-                    rrecipe[name[i]] = c
-
-        add_to_recipe(
-            [c_type, subj, chain, tense, pref], 
-            ['c_type', 'subj', 'poss', 'tense', 'pref']
-            )
-
-        return rrecipe
-
     def pick(self, things):
         np.random.shuffle(things)
         return things.pop() if len(things) > 0 else None
 
     def like(self, nodes):
-        return [n['likeness'] for n in nodes if 'likeness' in n.keys()]
+        likeness = []
+        for n in nodes:
+            if 'likeness' in n.keys():
+                likeness.append(n['likeness'])
+            elif n['cat'] == 'TOP':
+                likeness.append(np.average(self.like(self.kb.get_nbr(n))))
+            else:
+                likeness.append(6)
+
+        return likeness
 
     def favorite(self, node):
         nbr = self.kb.get_nbr(node)
@@ -149,96 +139,40 @@ class Logic:
                 d.append(node[key][0])
         return self.pick(d)
 
-    def respond(self, recipe):
-        '''
-        intent:
-            information
-            identity
-            time
-            preference
-            ability
-            experience
-            opinion
-            initiation
-            greetings
-        contents:
-            content
-            category
-            verb
-        assertion:
-        tense:
-        description:
-            opinion
-            pause
-            experience
-        '''
-
-        recipe = self.posproc(recipe)
-
-        keys = recipe.keys()
-        c_type = recipe['c_type']
-        subj = [self.kb.get_node(s) for s in recipe['subj']]
-
-        if c_type == 'greeting':
-            return recipe
-
-        response = {}
-        contents = {}
-
-        if 'pref' in keys:
-            intent = 'preference'
-            pref = recipe['pref'][0]
-            if pref == 'favorite':
-                cat = self.get_cat(subj)
-                answer = self.like(cat)
-            elif pref == 'like':
-                likeness = np.average(self.like(subj))
-                answer = self.pick(subj)
-                contents['content'] = answer['id']
-                response['assertion'] = likeness > .5
-                
-        else:
-            intent = 'information'
-            if 'poss' in keys:
-                poss = recipe['poss']
-                start = self.kb.walk(poss)
-            elif len(subj) == 2:
-                start = subj.pop()
-
-            answer = self.pick(self.kb.bridge(start, subj.pop()))
-        
-            contents['content'] = answer['id']
-        
-        description = self.describe(answer)
-
-        response['intent'] = intent
-        response['contents'] = contents
-        response['tense'] = recipe['tense']
-    
-        if description is not None:
-            response['description'] = description
-            
-        return response
     #*************FUCK WIT AI****************
     def rootproc(self, msg):
-        # nlp = spacy.load('en')
         doc = self.nlp(msg)
 
-        stop = list(string.punctuation) + ['do', '\'s', 'a']
-        
         tokens = [token for token in doc]
         dep_ = [token.dep_ for token in doc]
+        
 
+        if 'compound' in dep_:
+            comp_idx = dep_.index('compound')
+            comp_an = tokens.pop(comp_idx + 1)
+            new_words = []
+            for i, token in enumerate(tokens):
+                if i == comp_idx:
+                    new_words.append(token.text + ' ' + comp_an.text)
+                else:
+                    new_words.append(token.text)
+
+            doc = spacy.tokens.Doc(self.nlp.vocab, words=new_words)
+            doc = self.nlp.parser(doc)
+            tokens = [token for token in doc]
+            dep_ = [token.dep_ for token in doc]
+
+        stop = list(string.punctuation) + ['do', '\'s', 'a']
         chains = []
 
         root_idx = dep_.index('ROOT')
         root = tokens[root_idx]
-        root_children = [child for child in root.children if child.lemma_ not in stop]
+        root_children = [child for child in root.children if child.lemma_.lower() not in stop]
         for head in root_children:
             chain = []
 
             def build_dep(child):
-                for c in [asdasd for asdasd in child.children if asdasd.lemma_ not in stop]:
+                for c in [asdasd for asdasd in child.children if asdasd.lemma_.lower() not in stop]:
                     if c.dep_ == 'prep':
                         for a in c.ancestors:
                             if a.lemma_ not in stop and a != root:
@@ -252,46 +186,7 @@ class Logic:
             build_dep(head)
             chains.append(chain)
 
-        
-
         return {'ROOT' : root, 'chain' : chains}
-    
-    def proc_intent(self, chains):
-        intent_map = {
-            'what' : 'general',
-            'how' : 'eval',
-            'when' : 'time',
-            'who' : 'identity',
-            'which' : 'reorder',
-            'where' : 'location'
-        }
-        
-        chain = chains[0]
-        lead = chain[0]
-
-        if lead.lemma_ in intent_map.keys():
-            chain.pop(0)
-            chains.pop(0)
-            intent = intent_map[lead.lemma_]
-
-            if intent == 'reorder':
-                chains.append(chain)
-
-            elif intent == 'eval':
-                if len(chain) == 0:
-                    chains.append([lead])
-                elif chain[0].lemma_ == 'old':
-                    chains.append(['age'])
-                else:
-                    chains.append(chain)
-
-            elif intent == 'general':
-                if len(chain) != 0:
-                    chains.append(chain)
-
-            else:
-                chains.append([intent])
-        return chains
 
     def test_spacy(self, msg, file=None):
         doc = self.nlp(msg)
@@ -301,7 +196,7 @@ class Logic:
               [child for child in token.children], file=file)
 
     def norm(self, token):
-        if token is str:
+        if type(token) is str:
             return token
         elif token.text.lower() == 'your' or token.text.lower() == 'you':
             return 'SELF'
@@ -321,6 +216,13 @@ class Logic:
                 break
             elif name == 'kind':
                 continue
+            elif name == 'identity':
+                nbr = self.kb.get_nbr(end)
+                for n in nbr:
+                    if 'name' == n['cat'] or 'relationship' == n['cat']:
+                        end = n
+                        break
+                break
             if end is None:
                 end = self.kb.get_node(name)
             else:
@@ -334,7 +236,13 @@ class Logic:
         return end
 
     def verify(self, node, string):
-        return string in node['id'].lower()
+        if string in node['id'].lower():
+            return True, node
+        else:
+            for nbr in self.kb.get_nbr(node):
+                if string in nbr['id'].lower():
+                    return True, nbr
+        return False, None
 
     def read_chain(self, chain):
         path = [self.norm(token) for token in chain]
@@ -344,18 +252,27 @@ class Logic:
     def get_topic(self, chain):
         top = []
         for word in chain:
-            if word.text.lower() == 'you':
+            if type(word) is str:
+                continue
+            elif word.text.lower() == 'you':
                 top.append('I')
             elif word.text.lower() == 'your':
                 top.append('my')
             elif word.dep_ == 'poss':
-                top.append(word.lemma_ + '\'s')
+                top.append(word.text + '\'s')
             else:
-                top.append(word.lemma_)
+                top.append(word.text)
         return ' '.join(top)
 
-    def try_respond(self, msg):
- 
+    def try_respond(self, recipe, debug=False):
+        response = {}
+
+        msg = recipe['_text']
+        entities = recipe['entities']
+        if 'greetings' in entities.keys():
+            response['intent'] = 'greetings'
+            return response
+        
         intent_map = {
             'what' : 'general',
             'how old' : 'age',
@@ -368,20 +285,20 @@ class Logic:
         recipe = self.rootproc(msg)
         root = recipe['ROOT']
         chains = recipe['chain']
-        self.test_spacy(msg)
 
-        # print('')
-        # print(chains, '\n')
-        response = {}
+        if debug:
+            self.test_spacy(msg)
+            print('')
+            print(chains, '\n')
 
         if root.lemma_ == 'be':
             response['intent'] = 'information'
 
             lead = chains.pop(0)
-            lead_str = ' '.join([l.lemma_ for l in lead])
-            if lead[0].lemma_ in intent_map.keys():
+            lead_str = ' '.join([l.lemma_.lower() for l in lead])
+            if lead[0].lemma_.lower() in intent_map.keys():
                 head = lead.pop(0)
-                intent = intent_map[head.lemma_]
+                intent = intent_map[head.lemma_.lower()]
                 if len(lead) == 0 and intent != 'general':
                     chains[0].append(intent)
                 else:
@@ -391,34 +308,71 @@ class Logic:
                 chains[0].append(intent)
             else:
                 chains.insert(0, lead)
+            if debug:
+                print(chains, '\n')
+
             if len(chains) == 1:
                 answer = self.read_chain(chains[0])
                 contents = {}
-                contents['topic'] = self.get_topic(chains[0])
-                contents['content'] = answer['id']
+                if np.random.ranf() > 0.3:
+                    contents['topic'] = self.get_topic(chains[0])
+
+                content = answer['id']
+
+                #WARN SELF is the only identity at this point
+                if answer['cat'] == 'relationship':
+                    content = 'my ' + content
+
+                contents['content'] = content
                 response['contents'] = contents
                 description = self.describe(answer)
 
-                if description is not None:
-                    response['description'] = description
+                testf = np.random.ranf()
+                if description is not None and testf > 0:
+                    response['descriptions'] = {'description' : description}
 
             elif len(chains) == 2:
                 answer = self.read_chain(chains[0])
-                asser = self.verify(answer, ' '.join([c.lemma_ for c in chains[1]]))
+                asser, v_answer = self.verify(answer, ' '.join([c.lemma_ for c in chains[1]]))
                 response['assertion'] = asser
 
                 contents = {}
-                contents['topic'] = self.get_topic(chains[0])
-                contents['content'] = answer['id']
-                response['contents'] = contents
-                description = self.describe(answer)
-
-                if description is not None:
-                    response['description'] = description
-
+                if np.random.ranf() > 0.65 and asser:
+                    contents['topic'] = self.get_topic(chains[0])
+                    contents['content'] = v_answer['id']
+                    response['contents'] = contents
+                    description = self.describe(v_answer)
+                    if description is not None:
+                        response['descriptions'] = {'description' : description}
 
         if root.lemma_ == 'like':
-            None
+            response['intent'] = 'preference'
+            for i, chain in enumerate(chains):
+                print(chain)
+                if len(chain) == 1 and chain[0].text.lower() == 'you':
+                    chains.pop(i)
+                    break
+
+            if len(chains) == 1:
+                path = [self.norm(c) for c in chains[0]]
+                nodes = [self.kb.get_node(p) for p in path]
+
+                likeness = np.average(self.like(nodes))
+                response['assertion'] = likeness > 7
+                contents = {}
+
+                if np.random.ranf() > 0.25:
+                    contents['content'] = self.get_topic(chains[0])
+                    response['contents'] = contents
+
+                last_node = self.kb.get_node(path[-1])
+                description = self.describe(last_node)
+
+                if description is not None:
+                    response['descriptions'] = {'description' : description}
+
+        if debug:
+            print(response,'\n')
 
         return response
         

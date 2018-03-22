@@ -11,7 +11,9 @@
         "No, no, no" : {"assertion" : false}
       },
       "confirmation" : {
+          "Yeah, it is" : {"assertion" : true},
           "Yeah, [topic] [verb]" : {"assertion" : true},
+          "Yeah, [topic] (be) [content]" : {"assertion" : true},
           "No, [topic] [verb] not" : {"assertion" : false}
       }
     },
@@ -59,11 +61,9 @@
             "My favourite [category] (be) [content]": {
                 "assertion": true
             },
-            "My favourite is [content]": {
-                "assertion": true
-            },
             "I prefer [content]": {
-                "assertion": true
+                "assertion": true,
+                "choose" : true
             },
             "I like it": {
                 "assertion": true
@@ -133,7 +133,8 @@
             "Listen, {opinion}": {}
         },
         "initiation": {
-            "Can I ask you a question, hypothetically? {question}": {}
+            "Can I ask you a question, hypothetically? {question}": {},
+            "Uh, " : {}
         },
         "greetings": {
             "Hey!": {},
