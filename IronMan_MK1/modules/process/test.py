@@ -99,6 +99,7 @@ def test_msg(msg):
 
 if __name__ == "__main__":
     os.chdir('../../../')
+<<<<<<< HEAD
     msg = u'Which car is your favorite?'
     # decomp_file('IronMan_MK1/modules/process/questions', 'IronMan_MK1/modules/process/answers')
     
@@ -110,4 +111,9 @@ if __name__ == "__main__":
     # pprint(test_logic(msg))
     nlg = IM_NLG_Module.IM_NLG_Module()
     print(nlg.process(test_msg(msg)))
+=======
+    # nlg = IM_NLG_Module.IM_NLG_Module()
+    # print(nlg.process(test_logic()))
+    pprint(test_logic())
+>>>>>>> 402ae94b3c9648bdfe05a72abcf90b3e710312c1
 
