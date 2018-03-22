@@ -169,7 +169,9 @@ class IM_NLG_Module(Base_module):
                     if (not template.hasSubtemplate):
                         continue
             else:
-                if template.hasSubtemplate:
+                if len(missing_attributes) > 0 or len(missing_contents) > 0:
+                    continue
+                elif template.hasSubtemplate:
                     print("Found an invalid sub-template that itself has a sub-template: " + " ".join(template.pattern))
                     continue
             for token in template.pattern:
