@@ -80,7 +80,7 @@ class NLGTestCases(unittest.TestCase):
         results = self.nlg_module.Realization(test_recipe, "templates")
 
         test_recipe = NLG_Recipe("preference")
-        test_recipe.AddContents({"content": "burgers"})
+        test_recipe.AddContents({"category": "food", "content": "burgers", "verb": "be"})
         test_recipe.AddAttribute("assertion", True)
         results = self.nlg_module.Realization(test_recipe, "templates")
 
@@ -97,7 +97,12 @@ class NLGTestCases(unittest.TestCase):
         test_recipe.AddContents({"content": "summer"})
         test_recipe.AddAttribute("confidence", 0.5)
         results = self.nlg_module.Realization(test_recipe, "templates")
-        print(results)
+
+        test_recipe = NLG_Recipe("information")
+        test_recipe.AddContents({"topic": "Smartphones", "content": "still just phones", "verb": "be"})
+        test_recipe.AddAttribute("assertion", True)
+        results = self.nlg_module.Realization(test_recipe, "templates")
+
 
     def testRealizationNegativeTests(self):
         test_recipe = NLG_Recipe("invalid intent")

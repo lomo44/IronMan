@@ -6,14 +6,14 @@
     },
     "sub-templates" : {
       "definition" : {
-        "[topic] (be) [content]" : {},
+        "[topic] [verb] [content]" : {},
         "It is [content]" : {},
         "No, no, no" : {"assertion" : false}
       },
       "confirmation" : {
           "Yeah, it is" : {"assertion" : true},
           "Yeah, [topic] [verb]" : {"assertion" : true},
-          "Yeah, [topic] (be) [content]" : {"assertion" : true},
+          "Yeah, [topic] [verb] [content]" : {"assertion" : true},
           "No, [topic] [verb] not" : {"assertion" : false}
       }
     },
@@ -58,7 +58,7 @@
             "No, I hate [content]": {
                 "assertion": false
             },
-            "My favourite [category] (be) [content]": {
+            "My favourite [category] [verb] [content]": {
                 "assertion": true
             },
             "I prefer [content]": {

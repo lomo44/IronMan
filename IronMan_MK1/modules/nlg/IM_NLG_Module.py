@@ -179,7 +179,7 @@ class IM_NLG_Module(Base_module):
                 if match:
                     match1 = verb_prog.match(token)
                     if match1:
-                        verb = self.ChangeTense(recipe.contents[verb], sentences[sentence_index], recipe.tense)
+                        verb = self.ChangeTense(recipe.contents["verb"], sentences[sentence_index], recipe.tense)
                         sentences[sentence_index].append(verb)
                     else:
                         sentences[sentence_index].append(recipe.contents[match.group(1)])
