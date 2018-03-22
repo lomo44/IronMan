@@ -93,6 +93,12 @@ class NLGTestCases(unittest.TestCase):
         test_recipe.AddDescriptor("opinion", "Personally, I think driving is really hard")
         results = self.nlg_module.Realization(test_recipe, "templates")
 
+        test_recipe = NLG_Recipe("information")
+        test_recipe.AddContents({"content": "summer"})
+        test_recipe.AddAttribute("confidence", 0.5)
+        results = self.nlg_module.Realization(test_recipe, "templates")
+        print(results)
+
     def testRealizationNegativeTests(self):
         test_recipe = NLG_Recipe("invalid intent")
         results = self.nlg_module.Realization(test_recipe, "templates")

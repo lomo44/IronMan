@@ -24,12 +24,18 @@
         "information": {
             "<definition>": {},
             "If you must know. <definition>": {},
-            "<definition>, I guess": {},
+            "<definition>, I guess": {
+                "confidence" : 0.5
+            },
             "[topic] being [content]": {},
-            "I feel like it’s [content]": {},
+            "I feel like it’s [content]": {
+                "confidence" : 0.5
+            },
             "Well, I don't know": {},
             "<confirmation>": {},
-            "<confirmation>, I guess": {},
+            "<confirmation>, I guess": {
+                "confidence" : 0.5
+            },
             "Well, <confirmation>": {},
             "I can’t tell!": {}
         },
