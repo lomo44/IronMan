@@ -25,7 +25,7 @@ SPACY_MODULE_NAME = r'en_core_web_sm'
 
 spacy_module = spacy.load(SPACY_MODULE_NAME);
 witAITrainer = Trainer(access_token = WIT_AI_ACCESS_TOKEN)
-logicModule = Logic(spacy_module, LOGIC_BASE_PATH,name=None)
+logicModule = Logic(LOGIC_BASE_PATH,spacy_module, name=None)
 nlgModule = IM_NLG_Module(spacy_module,json_file=NLG_BASE_PATH)
 
 
