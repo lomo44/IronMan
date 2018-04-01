@@ -10,7 +10,6 @@ import string
 # from pprint import pprint
 # from copy import deepcopy
 
-SPACY_MODULE_NAME = r"en_core_web_sm"
 
 class KnowledgeBase:
     def __init__(self, file):
@@ -70,7 +69,7 @@ class KnowledgeBase:
 
 class Logic:
 
-    def __init__(self, file, nlp = spacy.load(SPACY_MODULE_NAME), name=None):
+    def __init__(self, file, nlp, name=None):
         self.name = name
         self.kb = KnowledgeBase(file)
         self.nlp = nlp

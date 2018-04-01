@@ -15,7 +15,7 @@ subtemplate_prog = re.compile("<(.*)>")
 modal_verb_list = ["can", "could", "may", "might", "will", "would", "shall", "should", "must"]
 
 class IM_NLG_Module(Base_module):
-    def __init__(self,nlp = spacy.load('en'), json_file="IronMan_MK1/modules/nlg/iron_man_data2.json"):
+    def __init__(self,nlp,json_file="IronMan_MK1/modules/nlg/iron_man_data2.json"):
         self.nlg_data = None
         self.templates = {}
         self.subtemplates = {}

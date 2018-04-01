@@ -1,7 +1,7 @@
 from pprint import pprint
 import json
 import urllib.parse
-import Logic
+from IronMan_MK1.modules.process.Logic import Logic
 import spacy
 import sys
 import os
@@ -12,6 +12,8 @@ sys.path.insert(0, '../../../')
 from IronMan_MK1.modules.nlg import IM_NLG_Module
 from IronMan_MK1.modules.nlu.wit_ai.Trainer import Trainer
 
+SPACY_MODULE_NAME = r"en_core_web_sm"
+nlp = spacy.load(SPACY_MODULE_NAME)
 def test_loading():
     data = json.load(open('kb.json'))
     return data
@@ -94,20 +96,21 @@ def decomp_file(input, output):
 #     return logic.rootproc(msg)
 
 def test_conv():
-    logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
+
+    logic = Logic('IronMan_MK1/modules/process/kb.json',nlp)
+    nlg = IM_NLG_Module.IM_NLG_Module(nlp)
     while True:
         msg = input(': ')
         wit_recipe = test_wit(msg)
         logic_recipe = logic.try_respond(wit_recipe)
-        nlg = IM_NLG_Module.IM_NLG_Module()
         print(nlg.process(logic_recipe))
 
 def test_pipe(msg, debug=False):
-    logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
+    logic = Logic('IronMan_MK1/modules/process/kb.json',nlp)
     wit_recipe = test_wit(msg)
     wit_recipe['_text'] = msg
     logic_recipe = logic.try_respond(wit_recipe, debug=debug)
-    nlg = IM_NLG_Module.IM_NLG_Module()
+    nlg = IM_NLG_Module.IM_NLG_Module(nlp)
     return nlg.process(logic_recipe)
 
 if __name__ == "__main__":
@@ -117,7 +120,7 @@ if __name__ == "__main__":
     elif 'file' in sys.argv:
         decomp_file('IronMan_MK1/modules/process/questions', 'IronMan_MK1/modules/process/answers')
     else:
-        msg = u'Who is J.A.R.V.I.S.?' 
+        msg = u'What is your name?'
         # play_spacy(msg)
         print(test_pipe(msg, True))
     
