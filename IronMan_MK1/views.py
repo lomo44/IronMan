@@ -83,7 +83,7 @@ class fb_echo(generic.View):
                 if 'message' in message:
                     # Print the message to the terminal
                     pprint(message)
-                    output = r'I\'m having some problem,get back to you later'
+                    output = 'I\'m having some problems, will get back to you later'
                     if 'text' in message['message']:
                         try:
                             msg = message['message']['text']
