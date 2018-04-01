@@ -39,7 +39,8 @@
             75,
             76,
             77,
-            78
+            78,
+            82
         ],
         "cat": "SELF",
         "id": "SELF",
@@ -76,6 +77,9 @@
             1
         ],
         "cat": "name",
+        "description": [
+            " I am Iron Man"
+        ],
         "id": "Tony Stark",
         "indx": 3
     },
@@ -173,7 +177,8 @@
         "NBR": [
             62,
             63,
-            64
+            64,
+            82
         ],
         "cat": "TOP",
         "id": "food",
@@ -612,6 +617,9 @@
             51
         ],
         "cat": "name",
+        "description": [
+            "She is the most capable, qualified, trustworthy person I've ever met."
+        ],
         "id": "Pepper Potts",
         "indx": 55,
         "likeness": 9
@@ -642,6 +650,9 @@
             52
         ],
         "cat": "name",
+        "description": [
+            "I'm huge fan of the way he lose control and turn into an enormous green range monster"
+        ],
         "id": "Bruce Banner",
         "indx": 58,
         "likeness": 9
@@ -868,8 +879,24 @@
             0
         ],
         "cat": "organization",
+        "description": [
+            "I don't want to join that super-secret boy band"
+        ],
         "id": "S.H.I.E.L.D.",
         "indx": 81,
         "likeness": 9.1
+    },
+    {
+        "NBR": [
+            12,
+            0
+        ],
+        "cat": "food",
+        "description": [
+            "I don't know what it is, but I wanna try it."
+        ],
+        "id": "shawarma",
+        "indx": 82,
+        "likeness": 8
     }
 ]
