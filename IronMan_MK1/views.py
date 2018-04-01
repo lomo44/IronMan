@@ -6,6 +6,7 @@ import json
 from pprint import pprint
 import requests
 import urllib.parse
+import traceback,sys
 import sputnik
 import spacy.about
 from IronMan_MK1.modules.nlu.wit_ai.Trainer import Trainer
@@ -49,7 +50,9 @@ def post_fb_messager_msg(fbid, received_message):
     pprint(status.json())
 
 
-
+def printStackTrace():
+    exc_type, exc_value, exc_traceback = sys.exc_info()
+    traceback.print_tb(exc_traceback, limit=60, file=sys.stdout)
 
 
 class fb_echo(generic.View):
@@ -80,14 +83,23 @@ class fb_echo(generic.View):
                 if 'message' in message:
                     # Print the message to the terminal
                     pprint(message)
+                    output = r'I\'m having some problem,get back to you later'
                     if 'text' in message['message']:
-                        msg = message['message']['text']
-                        wit_recipe = processNLU(msg)
-                        logic_recipe = processLogic(wit_recipe)
-                        output = processNLG(logic_recipe)
-                        post_fb_messager_msg(message['sender']['id'],output)
-                    else:
-                        post_fb_messager_msg(message['sender']['id'],"Invalid Input")
+                        try:
+                            msg = message['message']['text']
+                            wit_recipe = processNLU(msg)
+                            logic_recipe = processLogic(wit_recipe)
+                            output = processNLG(logic_recipe)
+                        except IOError as e:
+                            print("I/O error({0}): {1}".format(e.errno, e.strerror))
+                            printStackTrace()
+                        except ValueError:
+                            print("Could not convert data to an integer.")
+                            printStackTrace()
+                        except TypeError:
+                            print("Unexpected type error")
+                            printStackTrace()
+                    post_fb_messager_msg(message['sender']['id'], output)
                     # if 'text' in message['message']:
                     #     if message['message']['text'] == 'mike is stupid':
                     #         post_fb_messager_msg(message['sender']['id'],"No, he is smart")
