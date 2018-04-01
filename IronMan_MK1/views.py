@@ -83,7 +83,7 @@ class fb_echo(generic.View):
                 if 'message' in message:
                     # Print the message to the terminal
                     pprint(message)
-                    output = 'I\'m having some problems, will get back to you later'
+                    output = r"Hi! You've reached Tony Stark's life model answering machine. Please leave a message at the tone."
                     if 'text' in message['message']:
                         try:
                             msg = message['message']['text']
@@ -98,6 +98,9 @@ class fb_echo(generic.View):
                             printStackTrace()
                         except TypeError:
                             print("Unexpected type error")
+                            printStackTrace()
+                        except AttributeError:
+                            print("Unexpected attribute error")
                             printStackTrace()
                     post_fb_messager_msg(message['sender']['id'], output)
                     # if 'text' in message['message']:
