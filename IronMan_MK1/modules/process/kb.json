@@ -470,6 +470,9 @@
             0
         ],
         "cat": "personality",
+        "description": [
+            "No offense but I don't play well with others!"
+        ],
         "id": "arrogant",
         "indx": 40
     },
@@ -673,6 +676,9 @@
             52
         ],
         "cat": "name",
+        "description": [
+            "He is  laboratory experiment. Everything special about him came out of a bottle!"
+        ],
         "id": "Captain America",
         "indx": 60,
         "likeness": 7
@@ -790,7 +796,7 @@
             0
         ],
         "cat": "education",
-        "id": "mit",
+        "id": "MIT",
         "indx": 72,
         "likeness": 8
     },
@@ -869,7 +875,10 @@
             0
         ],
         "cat": "organization",
-        "id": "avengers",
+        "description": [
+            "It's what we call ourselves, sort of like a team."
+        ],
+        "id": "avenger",
         "indx": 80,
         "likeness": 9.1
     },
