@@ -99,6 +99,9 @@ class fb_echo(generic.View):
                         except TypeError:
                             print("Unexpected type error")
                             printStackTrace()
+                        except AttributeError:
+                            print("Unexpected attribute error")
+                            printStackTrace()
                     post_fb_messager_msg(message['sender']['id'], output)
                     # if 'text' in message['message']:
                     #     if message['message']['text'] == 'mike is stupid':
