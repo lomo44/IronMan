@@ -16,6 +16,7 @@ pylint==1.7.1
 pytz==2017.2
 requests==2.18.1
 six==1.10.0
+spacy==2.0.10
 urllib3==1.21.1
 whitenoise==3.3.1
 wikia==1.4.3
