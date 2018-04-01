@@ -14,7 +14,7 @@ from IronMan_MK1.modules.nlg.IM_NLG_Module import IM_NLG_Module
 # Create your views here.
 
 # Launch script to install spacy's english module.
-package = sputnik.install('spacy', spacy.about.__version__, spacy.about.__default_model__)
+# package = sputnik.install('spacy', spacy.about.__version__, spacy.about.__default_model__)
 
 FB_VERIFICATION_TOKEN = 'ece496'
 FB_PAGE_ACCESS_TOKEN = r'EAAWlbODcLv0BAHQu707XLzZAxoPIvluEX12pvADWuXIv2dd5qIYtqIYNZC67k5DrtYnSWdumHLiEjnliw0odaZBH48XXKu3ILViPAZAaSvLfyUS5ikOPWsIWagLgh6N5eoFKbfoZAaO50Jc1DiSwc0f8KKilpqKrZAPsBld1eqhkPtlF5PeKbt'
