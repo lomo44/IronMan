@@ -10,6 +10,8 @@ import string
 # from pprint import pprint
 # from copy import deepcopy
 
+SPACY_MODULE_NAME = r"en_core_web_sm"
+
 class KnowledgeBase:
     def __init__(self, file):
         np.random.seed()
@@ -71,7 +73,7 @@ class Logic:
     def __init__(self, file, name=None):
         self.name = name
         self.kb = KnowledgeBase(file)
-        self.nlp = spacy.load('en')
+        self.nlp = spacy.load(SPACY_MODULE_NAME)
         self.intents = [
             'information',
             'identity',
