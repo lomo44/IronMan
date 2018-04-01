@@ -15,23 +15,19 @@ subtemplate_prog = re.compile("<(.*)>")
 modal_verb_list = ["can", "could", "may", "might", "will", "would", "shall", "should", "must"]
 
 class IM_NLG_Module(Base_module):
-    def __init__(self, json_file="IronMan_MK1/modules/nlg/iron_man_data2.json"):
+    def __init__(self,nlp = spacy.load('en'), json_file="IronMan_MK1/modules/nlg/iron_man_data2.json"):
         self.nlg_data = None
         self.templates = {}
         self.subtemplates = {}
         self.defaults = {}
         self.LoadNLGData(json_file)
         self.ParseNLGData()
-        self.nlp = spacy.load('en')
+        self.nlp = nlp
         del self.nlg_data
         # Make sure there are default responses (at least one)
         #defaults = self.nlg_data["default"]
         #num_defaults = len(defaults)
         #assert num_defaults > 0, "Default responses are missing in the json file!"
-
-    def __int__(self,nlp_module, json_file):
-        self.__init__(self,json_file)
-        self.nlp = nlp_module
 
 
     def LoadNLGData(self, path : str):

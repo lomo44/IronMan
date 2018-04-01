@@ -70,10 +70,10 @@ class KnowledgeBase:
 
 class Logic:
 
-    def __init__(self, file, name=None):
+    def __init__(self, file, nlp = spacy.load(SPACY_MODULE_NAME), name=None):
         self.name = name
         self.kb = KnowledgeBase(file)
-        self.nlp = spacy.load(SPACY_MODULE_NAME)
+        self.nlp = nlp
         self.intents = [
             'information',
             'identity',
@@ -84,11 +84,6 @@ class Logic:
             'opinion',
             'initiation',
             'greetings']
-
-    def __int__(self,file, nlp_module, name=None):
-        self.__init__(self,file,name)
-        self.nlp = nlp_module
-
     def extract(self, entities, key):
         ans = []
         try:
