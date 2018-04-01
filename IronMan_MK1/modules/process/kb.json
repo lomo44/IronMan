@@ -5,7 +5,41 @@
             5,
             6,
             14,
-            15
+            15,
+            40,
+            41,
+            43,
+            48,
+            49,
+            50,
+            65,
+            66,
+            71,
+            72,
+            73,
+            80,
+            81,
+            51,
+            52,
+            53,
+            54,
+            24,
+            25,
+            27,
+            28,
+            30,
+            31,
+            32,
+            35,
+            36,
+            45,
+            62,
+            68,
+            69,
+            75,
+            76,
+            77,
+            78
         ],
         "cat": "SELF",
         "id": "SELF",
@@ -14,7 +48,14 @@
     {
         "NBR": [
             2,
-            3
+            3,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61
         ],
         "cat": "TOP",
         "id": "name",
@@ -41,7 +82,11 @@
     {
         "NBR": [
             5,
-            18
+            18,
+            51,
+            52,
+            53,
+            54
         ],
         "cat": "TOP",
         "id": "relationship",
@@ -125,7 +170,11 @@
         "likeness": 7.5
     },
     {
-        "NBR": [],
+        "NBR": [
+            62,
+            63,
+            64
+        ],
         "cat": "TOP",
         "id": "food",
         "indx": 12
@@ -133,7 +182,8 @@
     {
         "NBR": [
             14,
-            15
+            15,
+            78
         ],
         "cat": "TOP",
         "id": "car",
@@ -168,7 +218,10 @@
     },
     {
         "NBR": [
-            17
+            17,
+            44,
+            45,
+            46
         ],
         "cat": "TOP",
         "id": "color",
@@ -176,13 +229,13 @@
     },
     {
         "NBR": [
-            16, 
+            16,
             14
         ],
         "cat": "color",
         "id": "green",
         "indx": 17,
-        "likeness" : 7
+        "likeness": 7
     },
     {
         "NBR": [
@@ -192,5 +245,631 @@
         "cat": "relationship",
         "id": "butler",
         "indx": 18
+    },
+    {
+        "NBR": [
+            20,
+            21,
+            22
+        ],
+        "cat": "TOP",
+        "id": "accessory",
+        "indx": 19
+    },
+    {
+        "NBR": [
+            19,
+            24,
+            25
+        ],
+        "cat": "accessory",
+        "id": "watch",
+        "indx": 20,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            19
+        ],
+        "cat": "accessory",
+        "id": "sunglasses",
+        "indx": 21,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            19
+        ],
+        "cat": "accessory",
+        "id": "ring",
+        "indx": 22,
+        "likeness": 5
+    },
+    {
+        "NBR": [
+            24,
+            25
+        ],
+        "cat": "TOP",
+        "id": "brand",
+        "indx": 23
+    },
+    {
+        "NBR": [
+            23,
+            20,
+            0
+        ],
+        "cat": "brand",
+        "id": "rolex",
+        "indx": 24,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            23,
+            20,
+            0
+        ],
+        "cat": "brand",
+        "id": "bvlgari",
+        "indx": 25,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            27,
+            28
+        ],
+        "cat": "TOP",
+        "id": "music",
+        "indx": 26
+    },
+    {
+        "NBR": [
+            26,
+            30,
+            31,
+            32,
+            0
+        ],
+        "cat": "music",
+        "id": "rock music",
+        "indx": 27,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            26,
+            0
+        ],
+        "cat": "music",
+        "id": "heavy metal",
+        "indx": 28,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            30,
+            31,
+            32
+        ],
+        "cat": "TOP",
+        "id": "band",
+        "indx": 29
+    },
+    {
+        "NBR": [
+            29,
+            27,
+            0
+        ],
+        "cat": "band",
+        "id": "black sabbath",
+        "indx": 30,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            29,
+            27,
+            0
+        ],
+        "cat": "band",
+        "id": "AC/DC",
+        "indx": 31,
+        "likeness": 9
+    },
+    {
+        "NBR": [
+            29,
+            27,
+            0
+        ],
+        "cat": "band",
+        "id": "queen",
+        "indx": 32,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            34,
+            35,
+            36,
+            65,
+            66
+        ],
+        "cat": "TOP",
+        "id": "location",
+        "indx": 33
+    },
+    {
+        "NBR": [
+            33
+        ],
+        "cat": "location",
+        "id": "hospital",
+        "indx": 34,
+        "likeness": 2
+    },
+    {
+        "NBR": [
+            33,
+            0
+        ],
+        "cat": "location",
+        "id": "casino",
+        "indx": 35,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            33,
+            0
+        ],
+        "cat": "location",
+        "id": "Stark Tower",
+        "indx": 36,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            38,
+            39,
+            40,
+            41
+        ],
+        "cat": "TOP",
+        "id": "personality",
+        "indx": 37
+    },
+    {
+        "NBR": [
+            37
+        ],
+        "cat": "personality",
+        "id": "paranoid",
+        "indx": 38
+    },
+    {
+        "NBR": [
+            37
+        ],
+        "cat": "personality",
+        "id": "anxious",
+        "indx": 39
+    },
+    {
+        "NBR": [
+            37,
+            0
+        ],
+        "cat": "personality",
+        "id": "arrogant",
+        "indx": 40
+    },
+    {
+        "NBR": [
+            37,
+            0
+        ],
+        "cat": "personality",
+        "id": "narcissism",
+        "indx": 41
+    },
+    {
+        "NBR": [
+            43
+        ],
+        "cat": "TOP",
+        "id": "marital status",
+        "indx": 42
+    },
+    {
+        "NBR": [
+            42,
+            0
+        ],
+        "cat": "marital status",
+        "id": "single",
+        "indx": 43
+    },
+    {
+        "NBR": [
+            16
+        ],
+        "cat": "color",
+        "id": "red",
+        "indx": 44,
+        "likeness": 9
+    },
+    {
+        "NBR": [
+            16,
+            0
+        ],
+        "cat": "color",
+        "id": "golden",
+        "indx": 45,
+        "likeness": 9
+    },
+    {
+        "NBR": [
+            16
+        ],
+        "cat": "color",
+        "id": "silver",
+        "indx": 46,
+        "likeness": 9
+    },
+    {
+        "NBR": [
+            48,
+            49,
+            50
+        ],
+        "cat": "TOP",
+        "id": "language",
+        "indx": 47
+    },
+    {
+        "NBR": [
+            47,
+            0
+        ],
+        "cat": "language",
+        "id": "English",
+        "indx": 48
+    },
+    {
+        "NBR": [
+            47,
+            0
+        ],
+        "cat": "language",
+        "id": "French",
+        "indx": 49
+    },
+    {
+        "NBR": [
+            47,
+            0
+        ],
+        "cat": "language",
+        "id": "Russian",
+        "indx": 50
+    },
+    {
+        "NBR": [
+            4,
+            55,
+            0
+        ],
+        "cat": "relationship",
+        "id": "girlfriend",
+        "indx": 51,
+        "likeness": 9
+    },
+    {
+        "NBR": [
+            4,
+            58,
+            59,
+            60,
+            61,
+            0
+        ],
+        "cat": "relationship",
+        "id": "teammate",
+        "indx": 52,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            4,
+            56,
+            0
+        ],
+        "cat": "relationship",
+        "id": "mother",
+        "indx": 53,
+        "likeness": 9
+    },
+    {
+        "NBR": [
+            4,
+            57,
+            0
+        ],
+        "cat": "relationship",
+        "id": "brother",
+        "indx": 54,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            1,
+            51
+        ],
+        "cat": "name",
+        "id": "Pepper Potts",
+        "indx": 55,
+        "likeness": 9
+    },
+    {
+        "NBR": [
+            1,
+            53
+        ],
+        "cat": "name",
+        "id": "Maria Stark",
+        "indx": 56,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            1,
+            54
+        ],
+        "cat": "name",
+        "id": "Arno Stark",
+        "indx": 57,
+        "likeness": 6
+    },
+    {
+        "NBR": [
+            1,
+            52
+        ],
+        "cat": "name",
+        "id": "Bruce Banner",
+        "indx": 58,
+        "likeness": 9
+    },
+    {
+        "NBR": [
+            1,
+            52
+        ],
+        "cat": "name",
+        "id": "Thor",
+        "indx": 59,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            1,
+            52
+        ],
+        "cat": "name",
+        "id": "Captain America",
+        "indx": 60,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            1,
+            52
+        ],
+        "cat": "name",
+        "id": "Black Widow",
+        "indx": 61,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            12,
+            0
+        ],
+        "cat": "food",
+        "id": "burger",
+        "indx": 62,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            12
+        ],
+        "cat": "food",
+        "id": "sandwich",
+        "indx": 63,
+        "likeness": 6
+    },
+    {
+        "NBR": [
+            12
+        ],
+        "cat": "food",
+        "id": "pizza",
+        "indx": 64,
+        "likeness": 6
+    },
+    {
+        "NBR": [
+            33,
+            0
+        ],
+        "cat": "location",
+        "id": "America",
+        "indx": 65,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            33,
+            0
+        ],
+        "cat": "location",
+        "id": "New York",
+        "indx": 66,
+        "likeness": 7
+    },
+    {
+        "NBR": [
+            68,
+            69
+        ],
+        "cat": "TOP",
+        "id": "hobby",
+        "indx": 67
+    },
+    {
+        "NBR": [
+            67,
+            0
+        ],
+        "cat": "hobby",
+        "id": "car modification",
+        "indx": 68,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            67,
+            0
+        ],
+        "cat": "hobby",
+        "id": "vintage car",
+        "indx": 69,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            71,
+            72,
+            73
+        ],
+        "cat": "TOP",
+        "id": "education",
+        "indx": 70
+    },
+    {
+        "NBR": [
+            70,
+            0
+        ],
+        "cat": "education",
+        "id": "mechanical engineering",
+        "indx": 71,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            70,
+            0
+        ],
+        "cat": "education",
+        "id": "mit",
+        "indx": 72,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            70,
+            0
+        ],
+        "cat": "education",
+        "id": "electrical engineering",
+        "indx": 73,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            75,
+            76,
+            77
+        ],
+        "cat": "TOP",
+        "id": "liquor",
+        "indx": 74
+    },
+    {
+        "NBR": [
+            74,
+            0
+        ],
+        "cat": "liquor",
+        "id": "whisky",
+        "indx": 75,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            74,
+            0
+        ],
+        "cat": "liquor",
+        "id": "martini",
+        "indx": 76,
+        "likeness": 8
+    },
+    {
+        "NBR": [
+            74,
+            0
+        ],
+        "cat": "liquor",
+        "id": "champagne",
+        "indx": 77,
+        "likeness": 6
+    },
+    {
+        "NBR": [
+            13,
+            0
+        ],
+        "cat": "car",
+        "id": "Audi R8",
+        "indx": 78,
+        "likeness": 9.1
+    },
+    {
+        "NBR": [
+            80,
+            81
+        ],
+        "cat": "TOP",
+        "id": "organization",
+        "indx": 79
+    },
+    {
+        "NBR": [
+            79,
+            0
+        ],
+        "cat": "organization",
+        "id": "avengers",
+        "indx": 80,
+        "likeness": 9.1
+    },
+    {
+        "NBR": [
+            79,
+            0
+        ],
+        "cat": "organization",
+        "id": "S.H.I.E.L.D.",
+        "indx": 81,
+        "likeness": 9.1
     }
 ]
