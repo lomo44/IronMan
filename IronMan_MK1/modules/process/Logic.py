@@ -85,6 +85,10 @@ class Logic:
             'initiation',
             'greetings']
 
+    def __int__(self,file, nlp_module, name=None):
+        self.__init__(self,file,name)
+        self.nlp = nlp_module
+
     def extract(self, entities, key):
         ans = []
         try:

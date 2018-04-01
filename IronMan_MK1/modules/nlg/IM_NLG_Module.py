@@ -29,6 +29,10 @@ class IM_NLG_Module(Base_module):
         #num_defaults = len(defaults)
         #assert num_defaults > 0, "Default responses are missing in the json file!"
 
+    def __int__(self,nlp_module, json_file):
+        self.__init__(self,json_file)
+        self.nlp = nlp_module
+
 
     def LoadNLGData(self, path : str):
         """
