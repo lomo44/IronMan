@@ -88,7 +88,7 @@ class IM_NLG_Module(Base_module):
         else:
             num_defaults = len(self.templates["default"])
             pick = random.randint(0, num_defaults-1)
-            return " ".join(self.templates["default"][pick].pattern)
+            return " ".join(self.templates["default"][pick].pattern).capitalize()
 
     def ChangeTense(self, verb, words_before, tense="VB"):
         if len(words_before) == 0:
