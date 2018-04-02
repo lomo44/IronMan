@@ -293,7 +293,6 @@ class Logic:
 
         if root.lemma_ == 'be':
             response['intent'] = 'information'
-
             lead = chains.pop(0)
             lead_str = ' '.join([l.lemma_.lower() for l in lead])
             if lead[0].lemma_.lower() in intent_map.keys():
@@ -316,6 +315,8 @@ class Logic:
                 contents = {}
                 if np.random.ranf() > 0.3:
                     contents['topic'] = self.get_topic(chains[0])
+                    # if root.text == '\'s' or root.text == 'is':
+                    #     contents['verb'] = 'is'
 
                 content = answer['id']
 
@@ -348,7 +349,6 @@ class Logic:
         if root.lemma_ == 'like':
             response['intent'] = 'preference'
             for i, chain in enumerate(chains):
-                print(chain)
                 if len(chain) == 1 and chain[0].text.lower() == 'you':
                     chains.pop(i)
                     break

@@ -102,6 +102,7 @@ def test_conv():
     while True:
         msg = input(': ')
         wit_recipe = test_wit(msg)
+        wit_recipe['_text'] = msg
         logic_recipe = logic.try_respond(wit_recipe)
         print(nlg.process(logic_recipe))
 
