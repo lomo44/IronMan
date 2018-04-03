@@ -37,7 +37,7 @@ def processNLU(msg):
     return nlu_resp
 
 def processLogic(recipe):
-    return logicModule.try_respond(recipe)
+    return logicModule.respond(recipe)
 
 def processNLG(logic_recipe):
     return nlgModule.process(logic_recipe)

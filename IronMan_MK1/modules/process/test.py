@@ -1,19 +1,23 @@
 from pprint import pprint
+import sys
+import os
+sys.path.insert(0, '../../../')
+
 import json
 import urllib.parse
 from IronMan_MK1.modules.process.Logic import Logic
 import spacy
-import sys
-import os
+
 import string
 
-sys.path.insert(0, '../../../')
+
 
 from IronMan_MK1.modules.nlg import IM_NLG_Module
 from IronMan_MK1.modules.nlu.wit_ai.Trainer import Trainer
 
 SPACY_MODULE_NAME = r"en_core_web_sm"
 nlp = spacy.load(SPACY_MODULE_NAME)
+
 def test_loading():
     data = json.load(open('kb.json'))
     return data
@@ -83,12 +87,12 @@ def test_logic(msg):
 
 def decomp_file(input, output):
     with open(input, 'r') as read, open(output, 'w') as write:
-        logic = Logic.Logic('IronMan_MK1/modules/process/kb.json')
+        logic = Logic('IronMan_MK1/modules/process/kb.json', nlp)
         data = read.readlines()
         lines = [d.strip() for d in data]
         for line in lines:
             print(line, file=write)
-            print(test_pipe(line), file=write)
+            print(test_pipe(line, True), file=write)
             print('', file=write)
 
 # def test_msg(msg, debug=False):
@@ -96,7 +100,6 @@ def decomp_file(input, output):
 #     return logic.rootproc(msg)
 
 def test_conv():
-
     logic = Logic('IronMan_MK1/modules/process/kb.json',nlp)
     nlg = IM_NLG_Module.IM_NLG_Module(nlp)
     while True:
@@ -114,14 +117,37 @@ def test_pipe(msg, debug=False):
     nlg = IM_NLG_Module.IM_NLG_Module(nlp)
     return nlg.process(logic_recipe)
 
+def sim():
+    nlp_md = spacy.load(r"en_vectors_web_lg")
+    while True:
+        in1 = input('doc1: ')
+        doc1 = nlp_md(in1)
+        in2 = input('doc2: ')
+        doc2 = nlp_md(in2)
+
+        print(doc1.similarity(doc2))
+
+
+def get_related():
+    nlp_lg = spacy.load(r"en_vectors_web_lg")
+    word = nlp_lg.vocab[u'father']
+    filtered_words = [w for w in word.vocab if w.is_lower == word.is_lower]
+    similarity = sorted(filtered_words, key=lambda w: word.similarity(w), reverse=True)
+    print([s.lower_ for s in similarity[:10]])
+
+
 if __name__ == "__main__":
     os.chdir('../../../')
+    print('module loaded')
     if 'conv' in sys.argv:
         test_conv()
     elif 'file' in sys.argv:
         decomp_file('IronMan_MK1/modules/process/questions', 'IronMan_MK1/modules/process/answers')
+    elif 'sim' in sys.argv:
+        # sim()
+        get_related()
     else:
-        msg = u'What is your name?'
+        msg = u'who is howard?'
         # play_spacy(msg)
         print(test_pipe(msg, True))
     
