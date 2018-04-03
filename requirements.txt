@@ -23,4 +23,4 @@ whitenoise==3.3.1
 wikia==1.4.3
 wit==4.2.0
 wrapt==1.10.10
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.0.0/en_core_web_sm-2.0.0.tar.gz
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz
