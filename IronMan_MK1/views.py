@@ -22,7 +22,7 @@ FB_PAGE_ACCESS_TOKEN = r'EAAWlbODcLv0BAHQu707XLzZAxoPIvluEX12pvADWuXIv2dd5qIYtqI
 WIT_AI_ACCESS_TOKEN = r'PGV3XK5N7W7VX6YLPRGZKN7QPXKMLD2W'
 LOGIC_BASE_PATH = r'IronMan_MK1/modules/process/kb.json'
 NLG_BASE_PATH  =r'IronMan_MK1/modules/nlg/iron_man_data2.json'
-SPACY_MODULE_NAME = r'en_core_web_md'
+SPACY_MODULE_NAME = r'en_core_web_sm'
 
 spacy_module = spacy.load(SPACY_MODULE_NAME);
 witAITrainer = Trainer(access_token = WIT_AI_ACCESS_TOKEN)
