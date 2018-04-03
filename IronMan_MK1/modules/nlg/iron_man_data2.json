@@ -150,7 +150,15 @@
             "Don’t be mad. I will formally apologise…": {},
             "Sorry ": {},
             "That doesn’t make any sense. ": {},
-            "Forget it. ": {}
+            "Forget it. ": {},
+            "Interesting.": {},
+            "What do you think?": {},
+            "So?" : {},
+            "Hmmm." : {},
+            "Emmm." : {},
+            "I don't know and I don't care." : {},
+            "Why would you ask me this?" : {},
+            "Dude, really?" : {}
         }
     }
 }
