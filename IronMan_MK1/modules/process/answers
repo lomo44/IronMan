@@ -1,24 +1,33 @@
 What's up
-Hey!
+[[What], [up]]
 
 What's your name?
-If you must know. It is Tony Stark 
+[[What], [your, name]]
 
 What's your father's name?
- my father's name (be) Howard Stark 
+[[What], [your, father, name]]
 
 Who is Howard Stark?
-If you must know. It is my father 
+[[Who], [Howard Stark]]
 
 Who is your father?
-my father being Howard Stark
+[[Who], [your, father]]
+
+Who is J.A.R.V.I.S.?
+[[Who], [J.A.R.V.I.S.]]
 
 Are you Tony?
- Yeah, I (be) Tony Stark 
+[[you], [Tony]]
 
 Which armor is your favorite?
-If you must know. my favorite armor (be) Mark V 
+[[Which, armor], [your, favorite]]
 
 What is your favorite car?
-If you must know. It is Tesla Roadster  It was a gift from Elon.
+[[What], [your, favorite, car]]
+
+Do you like Shelby Cobra?
+[[you], [Shelby Cobra]]
+
+Do you like green cars?
+[[you], [green, cars]]
 

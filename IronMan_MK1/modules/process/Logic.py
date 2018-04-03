@@ -28,12 +28,21 @@ class KnowledgeBase:
     def gen_anchor(self):
         anchor = {}
         for node in self.map:
-            nname = node['id']
+            nname = node['id'].lower()
             indx = node['indx']
-            try:
-                anchor[nname].append(indx)
-            except:
-                anchor[nname] = [indx]
+            anchor[nname] = [indx]
+
+            s = nname.split(' ')
+            if len(s) > 1:
+                if 'split' in node.keys():
+                    if node['split'] == 1:
+                        anchor[s[0]] = [indx]
+                    elif node['split'] == 2:
+                        anchor[s[1]] = [indx]
+                else:
+                    anchor[s[0]] = [indx]
+                    anchor[s[1]] = [indx]
+
         self.anchor = anchor
 
     def get_node(self, name):
@@ -83,6 +92,7 @@ class Logic:
             'opinion',
             'initiation',
             'greetings']
+
     def extract(self, entities, key):
         ans = []
         try:
@@ -199,9 +209,9 @@ class Logic:
         if type(token) is str:
             return token
         elif token.text.lower() == 'your' or token.text.lower() == 'you':
-            return 'SELF'
+            return 'self'
         else:
-            return token.lemma_
+            return token.lemma_.lower()
 
     def walk(self, path):
         #path: list of node names in string
@@ -223,16 +233,18 @@ class Logic:
                         end = n
                         break
                 break
+
             if end is None:
                 end = self.kb.get_node(name)
             else:
                 nbr = self.kb.get_nbr(end)
+                end = None
                 for n in nbr:
-                    if name == n['id']:
+                    if name == n['id'] or name == n['cat']:
                         end = n
                         break
-                    elif name == n['cat']:
-                        end = n
+                if end == None:
+                    return end
         return end
 
     def verify(self, node, string):
@@ -246,6 +258,8 @@ class Logic:
 
     def read_chain(self, chain):
         path = [self.norm(token) for token in chain]
+        # print(path)
+        # exit(0)
         result = self.walk(path)
         return result
 
@@ -263,6 +277,12 @@ class Logic:
             else:
                 top.append(word.text)
         return ' '.join(top)
+
+    def respond(self, recipe, debug=False):
+        try:
+            return self.try_respond(recipe, debug)
+        except:
+            return {}
 
     def try_respond(self, recipe, debug=False):
         response = {}
@@ -293,8 +313,10 @@ class Logic:
 
         if root.lemma_ == 'be':
             response['intent'] = 'information'
+
             lead = chains.pop(0)
             lead_str = ' '.join([l.lemma_.lower() for l in lead])
+
             if lead[0].lemma_.lower() in intent_map.keys():
                 head = lead.pop(0)
                 intent = intent_map[head.lemma_.lower()]
@@ -312,11 +334,13 @@ class Logic:
 
             if len(chains) == 1:
                 answer = self.read_chain(chains[0])
+                if answer is None:
+                    return response
+
                 contents = {}
                 if np.random.ranf() > 0.3:
                     contents['topic'] = self.get_topic(chains[0])
-                    # if root.text == '\'s' or root.text == 'is':
-                    #     contents['verb'] = 'is'
+                    contents['verb'] = 'be'
 
                 content = answer['id']
 
@@ -341,6 +365,7 @@ class Logic:
                 if np.random.ranf() > 0.65 and asser:
                     contents['topic'] = self.get_topic(chains[0])
                     contents['content'] = v_answer['id']
+                    contents['verb'] = 'be'
                     response['contents'] = contents
                     description = self.describe(v_answer)
                     if description is not None:

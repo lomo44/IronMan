@@ -6,15 +6,15 @@
     },
     "sub-templates" : {
       "definition" : {
-        "[topic] [verb] [content]" : {},
-        "It is [content]" : {},
-        "No, no, no" : {"assertion" : false}
+        "[topic] [verb] [content]. " : {},
+        "It is [content]. " : {},
+        "No, no, no. " : {"assertion" : false}
       },
       "confirmation" : {
-          "Yeah, it is" : {"assertion" : true},
-          "Yeah, [topic] [verb]" : {"assertion" : true},
-          "Yeah, [topic] [verb] [content]" : {"assertion" : true},
-          "No, [topic] [verb] not" : {"assertion" : false}
+          "Yeah, it is. " : {"assertion" : true},
+          "Yeah, [topic] [verb]. " : {"assertion" : true},
+          "Yeah, [topic] [verb].  [content]" : {"assertion" : true},
+          "No, [topic] [verb] not. " : {"assertion" : false}
       }
     },
     "templates" : {
@@ -29,7 +29,7 @@
             "<definition>, I guess": {
                 "confidence" : 0.5
             },
-            "[topic] being [content]": {},
+            "[topic] [verb] [content]": {},
             "I feel like it’s [content]": {
                 "confidence" : 0.5
             },
@@ -39,59 +39,59 @@
                 "confidence" : 0.5
             },
             "Well, <confirmation>": {},
-            "I can’t tell!": {}
+            "I don't know!": {}
         },
         "identity": {
             "<definition>": {},
             "<confirmation>": {},
-            "Well, I don't know": {},
-            "I can’t tell!": {}
+            "Well, I don't know. ": {},
+            "I can’t tell! ": {}
         },
         "time": {
-            "Yeah. That was, like, [content] ago.": {}
+            "Yeah. That was, like, [content] ago. ": {}
         },
         "preference": {
             "<confirmation>": {},
-            "Yeah, I do like [content]": {
+            "Yeah, I do like [content]. ": {
                 "assertion": true
             },
-            "No, I hate [content]": {
+            "No, I hate [content]. ": {
                 "assertion": false
             },
-            "My favourite [category] [verb] [content]": {
+            "My favourite [category] [verb] [content]. ": {
                 "assertion": true
             },
-            "I prefer [content]": {
+            "I prefer [content]. ": {
                 "assertion": true,
                 "choose" : true
             },
-            "I like it": {
+            "I like it. ": {
                 "assertion": true
             },
-            "It is alright": {
+            "It is alright. ": {
                 "assertion": true
             },
-            "Absolutely": {
+            "Absolutely. ": {
                 "assertion": true
             },
-            "My least favourite [category] on Earth is [content]": {
+            "My least favourite [category] on Earth is [content]. ": {
                 "assertion": false
             }
         },
         "ability": {
-            "Yeah, I can": {
+            "Yeah, I can. ": {
                 "assertion": true
             },
-            "Yeah, I know how to do that": {
+            "Yeah, I know how to do that. ": {
                 "assertion": true
             },
-            "Of course I do!": {
+            "Of course I do! ": {
                 "assertion": true
             },
-            "No, I can't": {
+            "No, I can't. ": {
                 "assertion": false
             },
-            "Actually, I'm capable of [content]": {
+            "Actually, I'm capable of [content]. ": {
                 "assertion": true
             },
             "Trust me, I know. I’m good at this stuff.": {
@@ -100,11 +100,11 @@
         },
         "experience": {
             "<confirmation>": {},
-            "I already did that": {
+            "I already did that. ": {
                 "assertion": true
             },
-            "God, it’s embarrassing. {experience}": {},
-            "I don’t know where you get your information, but {experience}": {}
+            "God, it’s embarrassing. {experience}. ": {},
+            "I don’t know where you get your information, but {experience}. ": {}
         },
         "opinion": {
             "I mean, <definition>": {},
@@ -120,36 +120,36 @@
                 "assertion": false
             },
             "If you will direct your attention to said [topic], I believe that’s [content]. ": {},
-            "Yeah, I’d say": {
+            "Yeah, I’d say. ": {
                 "assertion": true
             },
-            "Hey, I’m thinking {opinion}": {},
-            "Alright. {opinion}": {},
-            "Speaking of [topic], {opinion}": {},
-            "Honestly, {opinion}": {},
-            "Fantastic.": {
+            "Hey, I’m thinking {opinion}. ": {},
+            "Alright. {opinion}. ": {},
+            "Speaking of [topic], {opinion}. ": {},
+            "Honestly, {opinion}. ": {},
+            "Fantastic. ": {
                 "preference": true
             },
-            "Listen, {opinion}": {}
+            "Listen, {opinion}.": {}
         },
         "initiation": {
-            "Can I ask you a question, hypothetically? {question}": {},
+            "Can I ask you a question, hypothetically? {question}. ": {},
             "Uh, " : {}
         },
         "greetings": {
-            "Hey!": {},
-            "Hey, nice to see you.": {},
-            "Hey buddy!": {}
+            "Hey! ": {},
+            "Hey, nice to see you. ": {},
+            "Hey buddy! ": {}
         },
         "default": {
-            "I don't care": {},
-            "Excellent idea": {},
-            "It's boring. boring": {},
-            "What do you want from me?": {},
-            "Relax": {},
+            "I don't care. ": {},
+            "Excellent idea! ": {},
+            "It's boring. boring. ": {},
+            "What do you want from me? ": {},
+            "Relax ": {},
             "Don’t be mad. I will formally apologise…": {},
-            "Sorry": {},
-            "That doesn’t make any sense.": {},
+            "Sorry ": {},
+            "That doesn’t make any sense. ": {},
             "Forget it. ": {}
         }
     }

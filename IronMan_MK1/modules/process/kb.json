@@ -69,7 +69,8 @@
         ],
         "cat": "name",
         "id": "Howard Stark",
-        "indx": 2
+        "indx": 2,
+        "split": 1
     },
     {
         "NBR": [
@@ -81,7 +82,8 @@
             " I am Iron Man"
         ],
         "id": "Tony Stark",
-        "indx": 3
+        "indx": 3,
+        "split": 1
     },
     {
         "NBR": [
@@ -105,7 +107,7 @@
         "cat": "relationship",
         "description": [
             "My father helped defeat Nazis. He worked on the Manhattan Project.",
-            "I never got to say goodbye to my father. There's questions I would've asked him. I would've asked him how he felt about what his company did, if he was conflicted, if he ever had doubts. Or maybe he was every inch of man we remember from the newsreels.",
+            "I never got to say goodbye to him. There's questions I would've asked him. I would've asked him how he felt about what his company did, if he was conflicted, if he ever had doubts. Or maybe he was every inch of man we remember from the newsreels.",
             "He was one of the founding members of S.H.I.E.L.D."
         ],
         "id": "father",
@@ -160,7 +162,8 @@
         "cat": "armor",
         "id": "Mark I",
         "indx": 10,
-        "likeness": 5.5
+        "likeness": 5.5,
+        "split": 0
     },
     {
         "NBR": [
@@ -171,7 +174,8 @@
         "code name": "Suitcase Armor",
         "id": "Mark V",
         "indx": 11,
-        "likeness": 7.5
+        "likeness": 7.5,
+        "split": 0
     },
     {
         "NBR": [
@@ -206,7 +210,8 @@
         ],
         "id": "Tesla Roadster",
         "indx": 14,
-        "likeness": 9.5
+        "likeness": 9.5,
+        "split": 2
     },
     {
         "NBR": [
@@ -219,7 +224,8 @@
         ],
         "id": "Shelby Cobra",
         "indx": 15,
-        "likeness": 9.1
+        "likeness": 9.1,
+        "split": 0
     },
     {
         "NBR": [
@@ -341,7 +347,8 @@
         "cat": "music",
         "id": "rock music",
         "indx": 27,
-        "likeness": 8
+        "likeness": 8,
+        "split": 1
     },
     {
         "NBR": [
@@ -351,7 +358,8 @@
         "cat": "music",
         "id": "heavy metal",
         "indx": 28,
-        "likeness": 8
+        "likeness": 8,
+        "split": 2
     },
     {
         "NBR": [
@@ -372,7 +380,8 @@
         "cat": "band",
         "id": "black sabbath",
         "indx": 30,
-        "likeness": 8
+        "likeness": 8,
+        "split": 0
     },
     {
         "NBR": [
@@ -435,7 +444,8 @@
         "cat": "location",
         "id": "Stark Tower",
         "indx": 36,
-        "likeness": 7
+        "likeness": 7,
+        "split": 0
     },
     {
         "NBR": [
@@ -491,7 +501,8 @@
         ],
         "cat": "TOP",
         "id": "marital status",
-        "indx": 42
+        "indx": 42,
+        "split": 0
     },
     {
         "NBR": [
@@ -500,7 +511,8 @@
         ],
         "cat": "marital status",
         "id": "single",
-        "indx": 43
+        "indx": 43,
+        "split": 0
     },
     {
         "NBR": [
@@ -625,7 +637,8 @@
         ],
         "id": "Pepper Potts",
         "indx": 55,
-        "likeness": 9
+        "likeness": 9,
+        "split": 1
     },
     {
         "NBR": [
@@ -635,7 +648,8 @@
         "cat": "name",
         "id": "Maria Stark",
         "indx": 56,
-        "likeness": 8
+        "likeness": 8,
+        "split": 1
     },
     {
         "NBR": [
@@ -645,7 +659,8 @@
         "cat": "name",
         "id": "Arno Stark",
         "indx": 57,
-        "likeness": 6
+        "likeness": 6,
+        "split": 1
     },
     {
         "NBR": [
@@ -658,7 +673,8 @@
         ],
         "id": "Bruce Banner",
         "indx": 58,
-        "likeness": 9
+        "likeness": 9,
+        "split": 1
     },
     {
         "NBR": [
@@ -681,7 +697,8 @@
         ],
         "id": "Captain America",
         "indx": 60,
-        "likeness": 7
+        "likeness": 7,
+        "split": 0
     },
     {
         "NBR": [
@@ -691,7 +708,8 @@
         "cat": "name",
         "id": "Black Widow",
         "indx": 61,
-        "likeness": 8
+        "likeness": 8,
+        "split": 0
     },
     {
         "NBR": [
@@ -739,7 +757,8 @@
         "cat": "location",
         "id": "New York",
         "indx": 66,
-        "likeness": 7
+        "likeness": 7,
+        "split": 0
     },
     {
         "NBR": [
@@ -758,7 +777,8 @@
         "cat": "hobby",
         "id": "car modification",
         "indx": 68,
-        "likeness": 8
+        "likeness": 8,
+        "split": 0
     },
     {
         "NBR": [
@@ -768,7 +788,8 @@
         "cat": "hobby",
         "id": "vintage car",
         "indx": 69,
-        "likeness": 8
+        "likeness": 8,
+        "split": 0
     },
     {
         "NBR": [
@@ -858,7 +879,8 @@
         "cat": "car",
         "id": "Audi R8",
         "indx": 78,
-        "likeness": 9.1
+        "likeness": 9.1,
+        "split": 2
     },
     {
         "NBR": [
