@@ -143,11 +143,7 @@
         },
         "default": {
             "I don't care. ": {},
-            "Excellent idea! ": {},
-            "It's boring. boring. ": {},
             "What do you want from me? ": {},
-            "Relax ": {},
-            "Don’t be mad. I will formally apologise…": {},
             "Sorry ": {},
             "That doesn’t make any sense. ": {},
             "Forget it. ": {},
@@ -158,7 +154,13 @@
             "Emmm." : {},
             "I don't know and I don't care." : {},
             "Why would you ask me this?" : {},
-            "Dude, really?" : {}
+            "Dude, really?" : {},
+            "What?" : {},
+            "Huh?" :{},
+            "And?" :{},
+            "What do you mean?" : {},
+            "Why would I care?" :{},
+            "What are you taking about" :{}
         }
     }
 }
