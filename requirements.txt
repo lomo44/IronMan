@@ -18,7 +18,7 @@ requests==2.18.1
 six==1.10.0
 spacy==2.0.10
 sputnik==0.9.3
-urllib3==1.21.1
+urllib3==1.26.5
 whitenoise==3.3.1
 wikia==1.4.3
 wit==4.2.0
